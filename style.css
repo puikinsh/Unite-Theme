@@ -1,0 +1,831 @@
+/*
+Theme Name: Unite
+Theme URI: http://colorlib.com/wp/unite
+Author: Colorlib
+Author URI: http://colorlib.com/wp/
+Description: Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options.  Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support.  Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. 
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: unite
+Domain Path: /languages/
+Tags: purple, light, white, gray, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, responsive-layout, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+
+
+This theme, like WordPress, is licensed under the GPL.
+
+Unite is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+
+*/
+
+
+/* =Global
+----------------------------------------------- */
+body {
+	color: #6B6B6B;
+	word-wrap: break-word;
+	line-height: 1.7;
+	font-size: 15px;
+}
+
+a {
+  color: #54397E;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: 100;
+	color: #54397E;
+}
+h1,
+.h1 {
+  font-size: 48px;
+}
+
+h2,
+.h2 {
+  font-size: 38px;
+}
+
+h3,
+.h3 {
+  font-size: 28px;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	-moz-box-sizing:    content-box;
+	box-sizing:         content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	color: #111;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	padding-left: 3px;
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+}
+
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* Clearing */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: '';
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/* =Content
+----------------------------------------------- */
+
+.sticky {
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+.byline,
+.updated {
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+/* =Asides
+----------------------------------------------- */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* =Media
+----------------------------------------------- */
+
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+.site-main .gallery {
+	margin-bottom: 1.5em;
+}
+.gallery-caption {
+}
+.site-main .gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.site-main .gallery dd {
+	margin: 0;
+}
+.site-main .gallery-columns-4 .gallery-item {
+}
+.site-main .gallery-columns-4 .gallery-item img {
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* =Widgets
+----------------------------------------------- */
+
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+.widget > ul > li, 
+li.recentcomments {
+	border-bottom: 1px solid #EEE;
+	position: relative;
+  	display: block;
+  	padding: 10px 15px;
+}
+.widget ul {
+    padding: 10px 10px;
+}
+
+.widget-title {
+    border-bottom: 1px solid #eee;
+}
+.widget ul.nav.nav-tabs {
+    padding: 0;
+}
+.tab-content ul li {
+    list-style: none;
+}
+
+.tab-content .tab-thumb {
+    float: left;
+    margin-right: 8px;
+    padding-top: 5px;
+    float: left;
+    line-height: 0px;
+    width: 60px;
+    height: 60px;
+}
+.tab-content li {
+    overflow: hidden;
+    list-style: none;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0 0 8px;
+    padding: 0 0 6px;
+}
+.tab-content .tab-entry {
+	display: block;
+}
+.tab-content > .active {
+  border: 1px solid #DDD;
+  border-top: none;
+}
+.tab-content ul li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.tab-content .tab-entry {
+    font-weight: 600;
+    font-size: 14px
+}
+.tab-comment {
+    font-size: 18px;
+    padding: 0 10px;
+}
+.nav-tabs > li > a {
+    border-bottom-color: transparent;
+    text-transform: uppercase;
+}
+.tab-content i {
+    font-size: 12px;
+}
+.tab-thumb.thumbnail {
+    margin-bottom: 5px;
+}
+.tab-content #messages li:before {
+    content: '\f0e5';
+    font-family: fontawesome;
+    float: left;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #54397E;
+}
+.btn-primary, .label-primary {
+	background-color: #54397E;
+	border-color: #54397E;
+}
+.btn-primary:hover, .label-primary[href]:hover, .label-primary[href]:focus, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
+	background-color: #4b3371;
+	border-color: #4b3371;
+}
+/* =Infinite Scroll
+----------------------------------------------- */
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+#infinite-handle span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #DDD;
+    color: #54397E;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#infinite-handle span:hover {
+    background-color: #54397E;
+    color: #fff;
+}
+/* =Custom Styles
+----------------------------------------------- */
+.site-branding {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.site-description {
+    color: #777;
+    font-weight: 200;
+    font-size: 16px;
+}
+.page-template-page-homepage-php .carousel {
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+/* =Navigation
+----------------------------------------------- */
+
+.site-main [class*="navigation"] a,
+.more-link {
+	border: 1px solid #DDD;
+	padding: 6px 12px;
+	border-radius: 4px;
+	display: block;
+}
+.site-main [class*="navigation"] a:hover,
+.more-link:hover {
+    color: #fff;
+    background: #54397E;
+    text-decoration: none;
+}
+.more-link {
+    float: right;
+    margin: 10px 0;
+}
+.site-main [class*="navigation"] {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+[class*="navigation"] .nav-previous {
+	float: left;
+}
+[class*="navigation"] .nav-next {
+	float: right;
+	text-align: right;
+}
+.navbar.navbar-default {
+    background-color: #54397E;
+    font-weight: 200;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    border-right: 1px solid rgba(0,0,0,.2);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover,
+ .navbar-default .navbar-nav > .open > a:focus {
+	border-right: 1px solid rgba(0,0,0,.2);
+	border-left: none;
+}
+.navbar {
+	border-radius: 0;
+}
+.navbar-default {
+	border: none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #fff;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu > li > a {
+	padding: 18px 20px;
+	color: #fff;
+}
+.dropdown-menu,
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	background-color: #54397E;
+	border: none;
+}
+.dropdown-menu .divider {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-nav > li > .dropdown-menu {
+	padding: 0;
+}
+.navbar-nav > li > a {
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+/* =Comments
+----------------------------------------------- */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+}
+
+#respond {
+	background-color: transparent!important;
+	box-shadow: none!important;
+	padding: 0px!important;
+}
+	
+#respond > p, #respond p.comment-notes, p.logged-in-as {
+	margin-bottom: 10px;
+}
+
+p.logged-in-as {
+	padding-bottom: 0px;	
+}
+
+.comment-list {
+	margin-bottom: 40px!important;
+	margin-left: 0px!important;
+	padding-left: 0;	
+}
+
+.comment-list li {
+	list-style: none!important;
+}
+
+.comment .comment-body {
+	background-color: #ffffff;
+    margin: 0;
+    overflow: hidden;
+    padding: 25px;
+    margin-top: 2em;
+    padding-left: 116px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-color: #eee;
+    border-radius: 4px;
+}
+
+.comment-list .children {
+	margin-left: 0px!important;
+	padding-left: 40px;
+	border-left: 1px solid #EEE;
+	background-repeat: no-repeat;
+	background-position: left 20px;
+}
+
+.comment-list li.comment > div img.avatar {
+	position: absolute;
+	left: 29px;
+	top: 29px;
+}
+
+#comment-form-title {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.vcard .avatar {
+    position: absolute;  
+    left: 29px;  
+    top: 29px;
+}
+.comment-metadata {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.comment-reply-link {
+    float: right;
+}
+.form-allowed-tags code {
+    word-wrap: break-word;
+    white-space: inherit;
+}
+.comment-respond label {
+    display: block;
+    font-weight: normal;
+}
+.comment-respond .required {
+    color: #C7254E;
+}
+/* =Post styling
+----------------------------------------------- */
+.entry-meta a {
+	font-size: 12px;
+}
+#main .page-header {
+    margin-top: 0;
+}
+.entry-meta {
+    text-transform: uppercase;
+}
+.entry-meta a {
+    color: #6B6B6B;
+}
+.entry-meta .fa {
+    font-size: 16px;
+    margin-right: 3px;
+    color: #54397E;
+}
+.entry-meta span {
+    margin-right: 10px;
+}
+.entry-title {
+    font-size: 52px;
+    font-weight: 100;
+    color: #54397E;
+}
+.btn.btn-primary.read-more {
+    float: right;
+    border: 1px solid #DDD;
+    color: #54397E;
+    background-color: transparent;
+}
+.btn.btn-primary.read-more:hover {
+	color: #FFF;
+    background-color: #54397E;
+}
+hr.section-divider {
+  height: 1px;
+  background: #EEE;
+  position: relative;
+  overflow: visible;
+  z-index: 100;
+  margin-top: 70px;
+  margin-bottom: 70px; 
+}
+
+hr.section-divider:after {
+  z-index: 10000;
+  content: "\f004";
+  font-family: FontAwesome;
+  color: #54397E;
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  right: 50%;
+  width: 40px;
+  height: 30px;
+  margin-left: -20px;
+  font-size: 30px;
+}
+.entry-content {
+	margin: 0;
+}
+/* =Attachment styling
+----------------------------------------------- */
+#image-navigation .nav-previous a,
+#image-navigation .nav-next a{
+    padding: 5px 20px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    display: block;
+}
+#image-navigation .nav-previous a:hover,
+#image-navigation .nav-next a:hover{
+    background-color: #54397E;
+    color: #fff;
+}
+#image-navigation .nav-previous,
+#image-navigation .nav-next {
+    margin: 10px 0;
+}
+
+/* =Footer
+----------------------------------------------- */
+
+.footer-nav.nav > li {
+  position: relative;
+  display: inline-block;
+}
+.footer-nav.nav {
+	float: left;
+	margin-bottom: 2px;
+}
+.copyright {
+    margin-top: 10px;
+    float: right;
+    text-align: right;
+}
+#colophon {
+    background-color: #54397E;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.site-info a {
+    color: #eee;
+}
+.site-info a:hover {
+	color: #999;
+}
+.site-info {
+    color: #999;
+    font-size: 12px;
+}
+.footer-nav.nav > li > a:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+	.site-info, .copyright {
+	    text-align: center;
+	}
+	.footer-nav.nav, .copyright {
+		float: none;
+	}
+	.carousel-caption {
+		display: none;
+	}
+}
+
+
+/* =Social icons
+----------------------------------------------- */
+
+.social-profile {
+    font-size: 24px;
+    margin: 6px;
+    color: #DDD;
+}
+
+#social {
+    float: right;
+    top: 55px;
+    position: relative;
+}
+
+@media (min-width: 992px) {
+	#social {
+		float: right;
+		top: 55px;
+		position: relative;
+	}
+}
+
+@media (max-width: 992px) {
+	.site-branding {
+		text-align: center;
+	}
+	#social {
+		top: 0;
+		float: none;
+		text-align: center;
+	}
+}
+
+/* =Slider
+----------------------------------------------- */
+.carousel-caption h4 {
+    background: rgba(84, 57, 126,0.7);
+    padding: 15px;
+    color: #fff;
+    max-width: 55%;
+    margin-bottom: 4px;
+}
+.carousel-caption {
+    left: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.carousel-caption p {
+    background: rgba(0, 0, 0,0.4);
+    padding: 15px;
+    max-width: 50%;
+}
+.carousel {
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .carousel-indicators {
+    bottom: 5px;
+  }
+}

@@ -1,0 +1,740 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Unite Theme\n"
+"POT-Creation-Date: 2014-01-20 20:43+0200\n"
+"PO-Revision-Date: 2014-01-20 20:44+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:39
+msgid "Asides"
+msgstr ""
+
+#: archive.php:42
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:45
+msgid "Images"
+msgstr ""
+
+#: archive.php:48
+msgid "Videos"
+msgstr ""
+
+#: archive.php:51
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:54
+msgid "Links"
+msgstr ""
+
+#: archive.php:57
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:60
+msgid "Audios"
+msgstr ""
+
+#: archive.php:63
+msgid "Chats"
+msgstr ""
+
+#: archive.php:66 sidebar.php:17
+msgid "Archives"
+msgstr ""
+
+#: comments.php:37 comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:38 comments.php:62
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:39 comments.php:63
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:73
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:18 content-single.php:23 content.php:31 image.php:82
+#: page-homepage.php:19
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:23 content-single.php:63 content.php:65
+#: page-homepage.php:24 inc/template-tags.php:81 inc/template-tags.php:100
+msgid "Edit"
+msgstr ""
+
+#: content-single.php:32 content-single.php:35 content.php:42 content.php:52
+msgid ", "
+msgstr ""
+
+#: content.php:24
+msgid "Continue reading"
+msgstr ""
+
+#: content.php:28
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content.php:46 content.php:56
+#, php-format
+msgid " %1$s"
+msgstr ""
+
+#: content.php:62
+msgid "Leave a comment"
+msgstr ""
+
+#: content.php:62
+msgid "1 Comment"
+msgstr ""
+
+#: content.php:62
+msgid "% Comments"
+msgstr ""
+
+#: functions.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:49 inc/extras.php:178
+msgid "Footer Links"
+msgstr ""
+
+#: functions.php:69
+msgid "Sidebar"
+msgstr ""
+
+#: image.php:25
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr ""
+
+#: image.php:26
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr ""
+
+#: options.php:30
+msgid "One"
+msgstr ""
+
+#: options.php:31
+msgid "Two"
+msgstr ""
+
+#: options.php:32
+msgid "Three"
+msgstr ""
+
+#: options.php:33
+msgid "Four"
+msgstr ""
+
+#: options.php:34
+msgid "Five"
+msgstr ""
+
+#: options.php:39
+msgid "French Toast"
+msgstr ""
+
+#: options.php:40
+msgid "Pancake"
+msgstr ""
+
+#: options.php:41
+msgid "Omelette"
+msgstr ""
+
+#: options.php:42
+msgid "Crepe"
+msgstr ""
+
+#: options.php:43
+msgid "Waffle"
+msgstr ""
+
+#: options.php:109
+msgid "Main"
+msgstr ""
+
+#: options.php:112
+msgid "Element color"
+msgstr ""
+
+#: options.php:113 options.php:119 options.php:141 options.php:147
+#: options.php:153 options.php:159 options.php:219 options.php:225
+msgid "Default used if no color is selected"
+msgstr ""
+
+#: options.php:118
+msgid "Element color on hover"
+msgstr ""
+
+#: options.php:124
+msgid "Custom Favicon"
+msgstr ""
+
+#: options.php:125
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr ""
+
+#: options.php:130
+msgid "Typography"
+msgstr ""
+
+#: options.php:133
+msgid "Main Body Text"
+msgstr ""
+
+#: options.php:134
+msgid "Used in P tags"
+msgstr ""
+
+#: options.php:140
+msgid "Heading Color"
+msgstr ""
+
+#: options.php:146
+msgid "Link Color"
+msgstr ""
+
+#: options.php:152
+msgid "Link:hover Color"
+msgstr ""
+
+#: options.php:158
+msgid "Link:active Color"
+msgstr ""
+
+#: options.php:164
+msgid "Header"
+msgstr ""
+
+#: options.php:167
+msgid "Top nav background color"
+msgstr ""
+
+#: options.php:168
+msgid "Default used if no color is selected."
+msgstr ""
+
+#: options.php:173
+msgid "Top nav item color"
+msgstr ""
+
+#: options.php:174
+msgid "Link color"
+msgstr ""
+
+#: options.php:179
+msgid "Top nav dropdown background color"
+msgstr ""
+
+#: options.php:180
+msgid "Background of dropdown item hover color"
+msgstr ""
+
+#: options.php:185
+msgid "Top nav dropdown item color"
+msgstr ""
+
+#: options.php:186
+msgid "Dropdown item color"
+msgstr ""
+
+#: options.php:191
+msgid "Footer"
+msgstr ""
+
+#: options.php:194
+msgid "Footer Background Color"
+msgstr ""
+
+#: options.php:199
+msgid "Footer Text Color"
+msgstr ""
+
+#: options.php:204
+msgid "Footer Link Color"
+msgstr ""
+
+#: options.php:209
+msgid "Footer information"
+msgstr ""
+
+#: options.php:210
+msgid "Copyright text in footer"
+msgstr ""
+
+#: options.php:215
+msgid "Social"
+msgstr ""
+
+#: options.php:218
+msgid "Social Icon Color"
+msgstr ""
+
+#: options.php:224
+msgid "Social Icon:hover Color"
+msgstr ""
+
+#: options.php:230
+msgid "Add full URL for your social network profiles"
+msgstr ""
+
+#: options.php:231
+msgid "Facebook"
+msgstr ""
+
+#: options.php:238
+msgid "Twitter"
+msgstr ""
+
+#: options.php:244
+msgid "Google+"
+msgstr ""
+
+#: options.php:250
+msgid "Youtube"
+msgstr ""
+
+#: options.php:256
+msgid "LinkedIn"
+msgstr ""
+
+#: options.php:262
+msgid "Pinterest"
+msgstr ""
+
+#: options.php:268
+msgid "RSS Feed"
+msgstr ""
+
+#: options.php:274
+msgid "Tumblr"
+msgstr ""
+
+#: options.php:280
+msgid "Flickr"
+msgstr ""
+
+#: options.php:286
+msgid "Instagram"
+msgstr ""
+
+#: options.php:292
+msgid "Dribbble"
+msgstr ""
+
+#: options.php:298
+msgid "Skype"
+msgstr ""
+
+#: options.php:303
+msgid "Other"
+msgstr ""
+
+#: options.php:306
+msgid "Custom CSS"
+msgstr ""
+
+#: options.php:307
+msgid "Additional CSS"
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sidebar.php:24
+msgid "Meta"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:164 inc/extras.php:379
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:165 inc/extras.php:380
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:166 inc/extras.php:381
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:178
+#: inc/class-tgm-plugin-activation.php:490 inc/extras.php:393
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:179
+#: inc/class-tgm-plugin-activation.php:1846 inc/extras.php:394
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:517
+#: inc/class-tgm-plugin-activation.php:2059
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1299
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1300
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1956
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1957
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1957
+#: inc/class-tgm-plugin-activation.php:1966
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1957
+#: inc/class-tgm-plugin-activation.php:1966
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1958
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1959
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1963
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1966
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1967
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1968
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/extras.php:63
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/extras.php:125
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+
+#: inc/extras.php:126
+msgid "Password:"
+msgstr ""
+
+#: inc/extras.php:129
+msgid "Submit"
+msgstr ""
+
+#: inc/extras.php:308
+msgid "Support and Documentation"
+msgstr ""
+
+#: inc/extras.php:314
+msgid "Unite Documentation"
+msgstr ""
+
+#: inc/extras.php:315
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+
+#: inc/extras.php:315
+msgid "Colorlib support forum"
+msgstr ""
+
+#: inc/extras.php:316
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+
+#: inc/extras.php:318
+msgid "Rate this Theme"
+msgstr ""
+
+#: inc/extras.php:319
+msgid "Like on Facebook"
+msgstr ""
+
+#: inc/extras.php:320
+msgid "Follow on Twitter"
+msgstr ""
+
+#: inc/extras.php:382
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/extras.php:395
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: inc/popular-posts-widget.php:13
+msgid "Displays tabbed list of popular posts, recent posts & comments"
+msgstr ""
+
+#: inc/popular-posts-widget.php:19
+msgid "Unite: Popular Posts Widget"
+msgstr ""
+
+#: inc/popular-posts-widget.php:105
+msgid "Anonymous"
+msgstr ""
+
+#: inc/popular-posts-widget.php:105
+msgid "on"
+msgstr ""
+
+#: inc/popular-posts-widget.php:149
+msgid "Number of posts to show"
+msgstr ""
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:81
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:91
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/template-tags.php:104
+msgid "Your comment is awaiting moderation."
+msgstr ""
