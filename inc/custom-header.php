@@ -26,14 +26,15 @@
  */
 function unite_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'unite_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'unite_header_style',
-		'admin-head-callback'    => 'unite_admin_header_style',
-		'admin-preview-callback' => 'unite_admin_header_image',
+		'default-image'				=> '',
+		'default-text-color'		=> '000000',
+		'width'						=> 450,
+		'height'					=> 150,
+		'flex-height'				=> true,
+		'flex-width'				=> true,	
+		'wp-head-callback'			=> 'unite_header_style',
+		'admin-head-callback'		=> 'unite_admin_header_style',
+		'admin-preview-callback'	=> 'unite_admin_header_image',
 	) ) );
 }
 add_action( 'after_setup_theme', 'unite_custom_header_setup' );

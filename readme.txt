@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.1
+Version: 1.3.1
 Tested up to: WP 3.8
 
 Author: Aigars Silkalns
@@ -26,9 +26,9 @@ Unite theme uses:
 
 /*========= Description =========*/
 
-Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options.  Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage. This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog. 
+Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options.  Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage. This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog.
 
-For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums). 
+For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
 
 /*========= Installation =========*/
 
@@ -36,8 +36,8 @@ You can install the theme through the WordPress installer under "Themes" > "Inst
 
 Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder of your WordPress installation. You will then be able to activate the theme.
 
-This theme relies on Options Framework by WP Theming to provide customization options. 
-Right after you activate Unite, you'll see message on top of your screen, asking you to install Options Framework (required) and CPT Bootstrap Carousel (optional). Make sure you install and activate those plugins. 
+This theme relies on Options Framework by WP Theming to provide customization options.
+Right after you activate Unite, you'll see message on top of your screen, asking you to install Options Framework (required) and CPT Bootstrap Carousel (optional). Make sure you install and activate those plugins.
 
 If you dismiss this notice, you can install those plugins later via Appearance->Install plugins.
 
@@ -61,20 +61,33 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 /*========= Changelog =========*/
 
+= 1.3.1 - 14.03.2014 =
+
+* Fixed left/right sidebar bug introduced in 1.3.
+
+= 1.3 - 05.03.2014 =
+
+* Added German translation
+* Added logo upload (Custom Header)
+* Added IE8 support (html5shiv.js and respond.js)
+
 = 1.2 - 15.02.2014 =
-* Added options to chose between full-content and excerpt setup via Them Options.
+* Added options to chose between full-content "the_content" and excerpt "the_excerpt" setup via Them Options.
 * Added option to choose between Left and Right sidebar
+* Added option to change image slider title color. Now part of "Element Background Color"
 * Improved "Continue Reading" button
+* Updated translation files
 * Other small CSS tweaks
+* Removed unused layout options and replaced with a simpler Bootstrap alternatives.
 
 = 1.1 - 31.01.2014 =
 * Options Framework  is now part of the theme and is no longer installed as plugin
-* page-homepage.php is now frong-page.php with several tweaks 
+* page-homepage.php is now frong-page.php with several tweaks
 * Removed menu parameter from wp_nav_menu
 * Improved post and page navigation
 * Updated comment form styling
 * Other small CSS tweaks
-* Added filter for Post/Page titles when no title is used. 
+* Added filter for Post/Page titles when no title is used.
 * Updated Bootstrap to 3.1
 * Added minified JavaScript files for better performance. Unminified dev versions are still there.
 

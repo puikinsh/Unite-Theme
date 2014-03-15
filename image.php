@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area image-attachment col-sm-12 col-md-8 <?php echo of_get_option( 'site_layout', 'no entry' ); ?>">
+	<div id="primary" class="content-area image-attachment col-sm-12 col-md-8 <?php echo of_get_option( 'site_layout' ); ?>">
 		<div id="content" class="site-content" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>

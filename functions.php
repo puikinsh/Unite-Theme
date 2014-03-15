@@ -101,7 +101,7 @@ function unite_widgets_init() {
       'after_widget' => '</div>',
       'before_title' => '<h3 class="widgettitle">',
       'after_title' => '</h3>',
-    ));	
+    ));
 
     register_widget( 'unite_popular_posts_widget' );
 }
@@ -121,9 +121,9 @@ add_filter( 'get_search_form', 'unite_wpsearch' );
  */
 function unite_scripts() {
 
-    wp_enqueue_style( 'unite-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.min.css' );
+  wp_enqueue_style( 'unite-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.min.css' );
 
-    wp_enqueue_style( 'unite-icons', get_template_directory_uri().'/inc/css/font-awesome.min.css' );
+  wp_enqueue_style( 'unite-icons', get_template_directory_uri().'/inc/css/font-awesome.min.css' );
 
 	wp_enqueue_style( 'unite-style', get_stylesheet_uri() );
 
@@ -139,6 +139,17 @@ function unite_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'unite_scripts' );
 
+/**
+ * Add HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries
+ */
+function unite_ie_support_header() {
+    echo '<!--[if lt IE 9]>'. "\n";
+    echo '<script src="' . esc_url( get_template_directory_uri() . '/inc/js/html5shiv.min.js' ) . '"></script>'. "\n";
+    echo '<script src="' . esc_url( get_template_directory_uri() . '/inc/js/respond.min.js' ) . '"></script>'. "\n";
+    echo '<![endif]-->'. "\n";
+}
+add_action( 'wp_head', 'unite_ie_support_header', 1 );
+
 /*
  * Loads the Options Panel
  *
@@ -152,7 +163,7 @@ require_once dirname( __FILE__ ) . '/inc/admin/options-framework.php';
 /**
  * Implement the Custom Header feature.
  */
-// require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.

@@ -240,7 +240,7 @@ add_action( 'unite_footer', 'unite_footer_info', 30 );
 /**
  * function to show the footer info, copyright information
  */
-function unite_footer_info() {         
+function unite_footer_info() {
    $output = '<a href="http://colorlib.com/wp/unite" title="Unite Theme" target="_blank">Unite Theme</a> powered by <a href="http://wordpress.org" title="WordPress" target="_blank">WordPress</a>.';
    echo $output;
 }
@@ -262,13 +262,13 @@ if (!function_exists('get_unite_theme_options'))  {
         echo 'a:active {color: '.of_get_option('link_active_color', '#000').';}';
       }
       if ( of_get_option('element_color')) {
-        echo '.btn-primary, .label-primary {background-color: '.of_get_option('element_color', '#000').'; border-color: '.of_get_option('element_color', '#000').';} hr.section-divider:after, .entry-meta .fa { color: '.of_get_option('element_color', '#000').'}';
+        echo '.btn-primary, .label-primary, .carousel-caption h4 {background-color: '.of_get_option('element_color', '#000').'; border-color: '.of_get_option('element_color', '#000').';} hr.section-divider:after, .entry-meta .fa { color: '.of_get_option('element_color', '#000').'}';
       }
       if ( of_get_option('element_color_hover')) {
         echo '.btn-primary:hover, .label-primary[href]:hover, .label-primary[href]:focus, #infinite-handle span:hover, .btn.btn-primary.read-more:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover  { background-color: '.of_get_option('element_color_hover', '#000').'; border-color: '.of_get_option('element_color_hover', '#000').'; }';
       }
       if ( of_get_option('heading_color')) {
-        echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title {color: '.of_get_option('heading_color', '#000').';}';   
+        echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title {color: '.of_get_option('heading_color', '#000').';}';
       }
       if ( of_get_option('top_nav_bg_color')) {
         echo '.navbar.navbar-default {background-color: '.of_get_option('top_nav_bg_color', '#000').';}';
@@ -296,16 +296,16 @@ if (!function_exists('get_unite_theme_options'))  {
       }
       if ( of_get_option('social_hover_color')) {
         echo '.social-profile:hover {color: '.of_get_option('social_hover_color', '#000').';}';
-      }  
+      }
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
         echo '.entry-content {font-family: ' . $typography['face'] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
-      }   
+      }
       if ( of_get_option('custom_css')) {
         echo of_get_option( 'custom_css', 'no entry' );
-      }    
+      }
         echo '</style>';
-    }   
+    }
 }
 add_action('wp_head','get_unite_theme_options',10);
 
@@ -313,10 +313,10 @@ add_action('wp_head','get_unite_theme_options',10);
 add_action( 'optionsframework_after','unite_options_display_sidebar' );
 
 function unite_options_display_sidebar() { ?>
-  <!-- Twitter --> 
+  <!-- Twitter -->
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-  <!-- Facebook --> 
+  <!-- Facebook -->
     <div id="fb-root"></div>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {

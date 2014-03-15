@@ -10,6 +10,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -21,7 +22,7 @@
 <link rel="icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" />
 <?php } ?>
 
-<!--[if IE]><?php if ( of_get_option( 'custom_favicon' ) ) { ?><link rel="shortcut icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" /><?php } ?><![endif]-->	
+<!--[if IE]><?php if ( of_get_option( 'custom_favicon' ) ) { ?><link rel="shortcut icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" /><?php } ?><![endif]-->
 
 <?php wp_head(); ?>
 
@@ -33,10 +34,24 @@
 		<?php do_action( 'before' ); ?>
 		<header id="masthead" class="site-header col-sm-12" role="banner">
 
-			<div class="site-branding col-md-6">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
-			</div>
+				<div class="site-branding col-md-6">
+					<?php if( get_header_image() != '' ) : ?>
+
+						<div id="logo">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+							<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+						</div><!-- end of #logo -->
+
+					<?php endif; // header image was removed ?>
+
+					<?php if( !get_header_image() ) : ?>
+
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+
+					<?php endif; // header image was removed (again) ?>
+				</div>
+
 			<div class="social-header col-md-6">
 				<?php unite_social(); // Social icons in header ?>
 			</div>
@@ -54,7 +69,7 @@
 		            </button>
 
 		        </div>
-		        
+
 				<?php
 		            wp_nav_menu( array(
 		                'theme_location'    => 'primary',
@@ -70,4 +85,3 @@
 		</nav><!-- .site-navigation -->
 
 	<div id="content" class="site-content container">
-	

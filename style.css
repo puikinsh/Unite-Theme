@@ -3,8 +3,8 @@ Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite
 Author: Colorlib
 Author URI: http://colorlib.com/wp/
-Description: Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options.  Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support.  Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. 
-Version: 1.2
+Description: Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options.  Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. It's now available in German. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel.
+Version: 1.3.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: unite
@@ -144,7 +144,7 @@ textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
 	padding-left: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
-	width: 98%;
+	width: 100%;
 }
 
 
@@ -243,7 +243,12 @@ textarea {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-
+@media (max-width: 768px) {
+  .pull-left,
+  .pull-right {
+  	float: none !important;
+  }
+}
 
 /* =Asides
 ----------------------------------------------- */
@@ -320,7 +325,7 @@ object {
 	display: none;
 }
 
-.widget > ul > li, 
+.widget > ul > li,
 li.recentcomments {
 	border-bottom: 1px solid #EEE;
 	position: relative;
@@ -491,7 +496,7 @@ li.recentcomments {
     border-right: 1px solid rgba(0,0,0,.2);
 	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
 }
-.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
  .navbar-default .navbar-nav > .open > a:focus {
 	border-right: 1px solid rgba(0,0,0,.2);
@@ -563,19 +568,19 @@ li.recentcomments {
 	box-shadow: none!important;
 	padding: 0px!important;
 }
-	
+
 #respond > p, #respond p.comment-notes, p.logged-in-as {
 	margin-bottom: 10px;
 }
 
 p.logged-in-as {
-	padding-bottom: 0px;	
+	padding-bottom: 0px;
 }
 
 .comment-list {
 	margin-bottom: 40px!important;
 	margin-left: 0px!important;
-	padding-left: 0;	
+	padding-left: 0;
 }
 
 .comment-list li {
@@ -614,8 +619,8 @@ p.logged-in-as {
     padding-bottom: 10px;
 }
 .vcard .avatar {
-    position: absolute;  
-    left: 29px;  
+    position: absolute;
+    left: 29px;
     top: 29px;
 }
 .comment-metadata {
@@ -681,7 +686,7 @@ hr.section-divider {
   overflow: visible;
   z-index: 100;
   margin-top: 70px;
-  margin-bottom: 70px; 
+  margin-bottom: 70px;
 }
 
 hr.section-divider:after {
@@ -805,6 +810,7 @@ hr.section-divider:after {
 /* =Slider
 ----------------------------------------------- */
 .carousel-caption h4 {
+	background: #54397e;
     background: rgba(84, 57, 126,0.7);
     padding: 15px;
     color: #fff;
@@ -817,7 +823,8 @@ hr.section-divider:after {
     padding-bottom: 20px;
 }
 .carousel-caption p {
-    background: rgba(0, 0, 0,0.4);
+	background: #555;
+    background: rgba(0, 0, 0,0.5);
     padding: 15px;
     max-width: 50%;
 }
