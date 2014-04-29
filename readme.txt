@@ -2,8 +2,8 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.3.1
-Tested up to: WP 3.8
+Version: 1.4
+Tested up to: WP 3.9
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
@@ -26,7 +26,7 @@ Unite theme uses:
 
 /*========= Description =========*/
 
-Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options.  Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage. This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog.
+Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options. Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. It's now available in German. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. Unite theme now supports WooCommerce to create your own eStore.
 
 For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
 
@@ -60,6 +60,12 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 /*========= Changelog =========*/
+
+= 1.4 - 24.04.2014 =
+
+* Added WooCoomerce support
+* Fixed bug with widgets when static page is used as front page.
+* Other small improvements
 
 = 1.3.1 - 14.03.2014 =
 

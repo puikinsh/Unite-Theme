@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
-"POT-Creation-Date: 2014-02-16 12:51+0200\n"
-"PO-Revision-Date: 2014-02-16 12:52+0200\n"
+"POT-Creation-Date: 2014-04-23 23:21+0200\n"
+"PO-Revision-Date: 2014-04-23 23:21+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: en_US\n"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Footer Links"
 msgstr ""
 
-#: functions.php:69
+#: functions.php:73
 msgid "Sidebar"
 msgstr ""
 
@@ -565,6 +565,14 @@ msgstr ""
 #: inc/extras.php:412
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: inc/extras.php:450
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/extras.php:451
+msgid "Start shopping"
 msgstr ""
 
 #: inc/popular-posts-widget.php:13

@@ -57,6 +57,10 @@ function unite_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Add WooCommerce support
+	add_theme_support( 'woocommerce' );
+
 }
 endif; // unite_setup
 add_action( 'after_setup_theme', 'unite_setup' );

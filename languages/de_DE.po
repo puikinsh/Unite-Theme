@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme 0.1\n"
-"POT-Creation-Date: 2014-02-18 14:21+0200\n"
-"PO-Revision-Date: 2014-02-18 14:25+0200\n"
+"POT-Creation-Date: 2014-04-23 23:16+0200\n"
+"PO-Revision-Date: 2014-04-23 23:20+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Beliyah\n"
 "Language: de_DE\n"
@@ -187,7 +187,7 @@ msgstr "Hauptmen&uuml;"
 msgid "Footer Links"
 msgstr "Fu&szlig;men&uuml;-Links"
 
-#: functions.php:69
+#: functions.php:73
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
@@ -598,6 +598,14 @@ msgstr "Etwas ist mit dem Plugin API schief gegangen."
 msgid "All plugins installed and activated successfully. %s"
 msgstr "Alle Plugins erfolgreich installiert und aktiviert. %s"
 
+#: inc/extras.php:450
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/extras.php:451
+msgid "Start shopping"
+msgstr ""
+
 #: inc/popular-posts-widget.php:13
 msgid "Displays tabbed list of popular posts, recent posts & comments"
 msgstr ""
@@ -632,7 +640,7 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Vorherige"
 #: inc/template-tags.php:31
 #, fuzzy
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "N&auml;chste <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Weiterlesen <i class=\"fa fa-chevron-right\"></i>"
 
 #: inc/template-tags.php:56
 msgid "Post navigation"

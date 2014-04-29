@@ -1,5 +1,5 @@
 <?php
-    
+
     if ( get_option( 'show_on_front' ) == 'posts' ) {
         get_template_part( 'index' );
     } elseif ( 'page' == get_option( 'show_on_front' ) ) {
@@ -8,7 +8,7 @@
 
 	<div id="primary" class="content-area col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
-			
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -24,20 +24,20 @@
 					<?php edit_post_link( __( 'Edit', 'unite' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
 				</article><!-- #post-## -->
 
-					<div class="home-widget-area">
+					<div class="home-widget-area row">
 
 						<div class="col-sm-6 col-md-4 home-widget">
-							<?php if( is_active_sidebar('home1') ) dynamic_sidebar( 'home1' ); ?> 
+							<?php if( is_active_sidebar('home1') ) dynamic_sidebar( 'home1' ); ?>
 						</div>
 
-						<div class="col-sm-6 col-md-4 home-widget">	
-							<?php if( is_active_sidebar('home2') ) dynamic_sidebar( 'home2' ); ?> 
-						</div>	
-						
 						<div class="col-sm-6 col-md-4 home-widget">
-							<?php if( is_active_sidebar('home3') ) dynamic_sidebar( 'home3' ); ?> 
-						</div>	
-						
+							<?php if( is_active_sidebar('home2') ) dynamic_sidebar( 'home2' ); ?>
+						</div>
+
+						<div class="col-sm-6 col-md-4 home-widget">
+							<?php if( is_active_sidebar('home3') ) dynamic_sidebar( 'home3' ); ?>
+						</div>
+
 					</div>
 
 				<?php
@@ -52,7 +52,7 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php 
-	get_footer(); 
+<?php
+	get_footer();
 }
 ?>
