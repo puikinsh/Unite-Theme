@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.4
+Version: 1.4.1
 Tested up to: WP 3.9
 
 Author: Aigars Silkalns
@@ -60,6 +60,11 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 /*========= Changelog =========*/
+
+= 1.4.4 - 24.08.2014 =
+
+* Updated Font Awesome icons to 4.1
+* Updated Options Framework to 1.8.0
 
 = 1.4 - 24.04.2014 =
 

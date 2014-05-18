@@ -4,7 +4,7 @@
  * @author    Devin Price <devin@wptheming.com>
  * @license   GPL-2.0+
  * @link      http://wptheming.com
- * @copyright 2013 WP Theming
+ * @copyright 2010-2014 WP Theming
  */
 
 class Options_Framework_Admin {
@@ -66,7 +66,7 @@ class Options_Framework_Admin {
     }
 
 	/*
-	 * Define menu options (still limited to appearance section)
+	 * Define menu options
 	 *
 	 * Examples usage:
 	 *
@@ -82,10 +82,21 @@ class Options_Framework_Admin {
 	static function menu_settings() {
 
 		$menu = array(
-			'page_title' => __( 'Theme Options', 'textdomain' ),
-			'menu_title' => __( 'Theme Options', 'textdomain' ),
+
+			// Modes: submenu, menu
+            'mode' => 'submenu',
+
+            // Submenu default settings
+            'page_title' => __( 'Theme Options', 'unite'),
+			'menu_title' => __('Theme Options', 'unite'),
 			'capability' => 'edit_theme_options',
-			'menu_slug' => 'options-framework'
+			'menu_slug' => 'options-framework',
+            'parent_slug' => 'themes.php',
+
+            // Menu default settings
+            'icon_url' => 'dashicons-admin-generic',
+            'position' => '61'
+
 		);
 
 		return apply_filters( 'optionsframework_menu', $menu );
@@ -108,12 +119,13 @@ class Options_Framework_Admin {
      *
      * @since 1.7.0
      */
+
 	function enqueue_admin_styles( $hook ) {
 
 		if ( $this->options_screen != $hook )
 	        return;
 
-		wp_enqueue_style( 'optionsframework', OPTIONS_FRAMEWORK_DIRECTORY . 'css/optionsframework.css', array(), Options_Framework::VERSION );
+		wp_enqueue_style( 'optionsframework', OPTIONS_FRAMEWORK_DIRECTORY . 'css/optionsframework.css', array(),  Options_Framework::VERSION );
 		wp_enqueue_style( 'wp-color-picker' );
 	}
 
@@ -170,8 +182,8 @@ class Options_Framework_Admin {
 				<?php settings_fields( 'optionsframework' ); ?>
 				<?php Options_Framework_Interface::optionsframework_fields(); /* Settings */ ?>
 				<div id="optionsframework-submit">
-					<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'textdomain' ); ?>" />
-					<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'textdomain' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'textdomain' ) ); ?>' );" />
+					<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'unite' ); ?>" />
+					<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'unite' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'unite' ) ); ?>' );" />
 					<div class="clear"></div>
 				</div>
 				</form>
@@ -202,7 +214,7 @@ class Options_Framework_Admin {
 		 */
 
 		if ( isset( $_POST['reset'] ) ) {
-			add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'textdomain' ), 'updated fade' );
+			add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'unite' ), 'updated fade' );
 			return $this->get_default_values();
 		}
 
@@ -256,7 +268,7 @@ class Options_Framework_Admin {
 	 */
 
 	function save_options_notice() {
-		add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'textdomain' ), 'updated fade' );
+		add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'unite' ), 'updated fade' );
 	}
 
 	/**
@@ -299,14 +311,23 @@ class Options_Framework_Admin {
 	function optionsframework_admin_bar() {
 
 		$menu = $this->menu_settings();
+
 		global $wp_admin_bar;
 
-		$wp_admin_bar->add_menu( array(
+		if ( 'menu' == $menu['mode'] ) {
+			$href = admin_url( 'admin.php?page=' . $menu['menu_slug'] );
+		} else {
+			$href = admin_url( 'themes.php?page=' . $menu['menu_slug'] );
+		}
+
+		$args = array(
 			'parent' => 'appearance',
 			'id' => 'of_theme_options',
-			'title' => __( 'Theme Options', 'textdomain' ),
-			'href' => admin_url( 'themes.php?page=' . $menu['menu_slug'] )
-		) );
+			'title' => $menu['menu_title'],
+			'href' => $href
+		);
+
+		$wp_admin_bar->add_menu( apply_filters( 'optionsframework_admin_bar', $args ) );
 	}
 
 }
