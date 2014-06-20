@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.4.5
+Version: 1.4.6
 Tested up to: WP 3.9
 
 Author: Aigars Silkalns
@@ -26,7 +26,7 @@ Unite theme uses:
 
 /*========= Description =========*/
 
-Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options. Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. It's now available in German. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. Unite theme now supports WooCommerce to create your own eStore.
+Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options. Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. It's now available in German and French. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. Unite theme now supports WooCommerce to create your own eStore.
 
 For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
 
@@ -61,7 +61,11 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 /*========= Changelog =========*/
 
-= 1.4.5 - 24.08.2014 =
+= 1.4.6 - 20.06.2014 =
+
+* Added French translation thanks to Florent GARDENAT
+
+= 1.4.5 - 19.06.2014 =
 
 * Updated Font Awesome icons to 4.1
 * Updated Options Framework to 1.8.0
