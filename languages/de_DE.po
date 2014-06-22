@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme 0.1\n"
-"POT-Creation-Date: 2014-05-18 23:30+0200\n"
-"PO-Revision-Date: 2014-05-18 23:31+0200\n"
+"POT-Creation-Date: 2014-06-22 23:49+0200\n"
+"PO-Revision-Date: 2014-06-22 23:50+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Beliyah\n"
 "Language: de_DE\n"
@@ -214,206 +214,243 @@ msgstr "N&auml;chste <i class=\"fa fa-chevron-right\"></i>"
 #: ../inc/admin/includes/class-options-framework-admin.php:91
 #, fuzzy
 msgid "Theme Options"
-msgstr "Bewerte dieses Design"
+msgstr "Theme Optionen"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:186
+#, fuzzy
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
+"Klicke OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
+"gespeichert!"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:217
 #, fuzzy
 msgid "Default options restored."
-msgstr "Standard wird benutzt, wenn keine Farbe ausgewählt ist"
+msgstr "Voreinstellungen wieder hergestellt."
 
 #: ../inc/admin/includes/class-options-framework-admin.php:271
+#, fuzzy
 msgid "Options saved."
-msgstr ""
+msgstr "Optionen gespeichert."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:63
+#, fuzzy
 msgid "No file chosen"
-msgstr ""
+msgstr "Keine Datei ausgewählt"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:66
 #: ../inc/admin/includes/class-options-media-uploader.php:119
 #, fuzzy
 msgid "Upload"
-msgstr "Lade ein 32px x 32 px PNG/Gif-Bild hoch als Favicon deiner Webseite"
+msgstr "Upload"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:68
 #: ../inc/admin/includes/class-options-media-uploader.php:120
+#, fuzzy
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:71
+#, fuzzy
 msgid "Upgrade your version of WordPress for full media support."
-msgstr ""
+msgstr "Lade die neueste WordPress Version für vollen Media Support."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:95
+#, fuzzy
 msgid "View File"
-msgstr ""
+msgstr "Datei betrachten"
 
 #: ../inc/admin/includes/class-options-sanitization.php:241
+#, fuzzy
 msgid "No Repeat"
-msgstr ""
+msgstr "Ohne Wiederholung"
 
 #: ../inc/admin/includes/class-options-sanitization.php:242
+#, fuzzy
 msgid "Repeat Horizontally"
-msgstr ""
+msgstr "Horizontale Wiederholung"
 
 #: ../inc/admin/includes/class-options-sanitization.php:243
+#, fuzzy
 msgid "Repeat Vertically"
-msgstr ""
+msgstr "Vertikale Wiederholung"
 
 #: ../inc/admin/includes/class-options-sanitization.php:244
+#, fuzzy
 msgid "Repeat All"
-msgstr ""
+msgstr "Wiederholen"
 
 #: ../inc/admin/includes/class-options-sanitization.php:257
 #, fuzzy
 msgid "Top Left"
-msgstr "Hauptmen&uuml;hintergrundfarbe"
+msgstr "Oben links"
 
 #: ../inc/admin/includes/class-options-sanitization.php:258
 #, fuzzy
 msgid "Top Center"
-msgstr "Hauptmen&uuml;hintergrundfarbe"
+msgstr "Oben Zentrum"
 
 #: ../inc/admin/includes/class-options-sanitization.php:259
 #, fuzzy
 msgid "Top Right"
-msgstr "Hauptmen&uuml;hintergrundfarbe"
+msgstr "Oben rechts"
 
 #: ../inc/admin/includes/class-options-sanitization.php:260
+#, fuzzy
 msgid "Middle Left"
-msgstr ""
+msgstr "Mitte links"
 
 #: ../inc/admin/includes/class-options-sanitization.php:261
+#, fuzzy
 msgid "Middle Center"
-msgstr ""
+msgstr "Mitte Zentrum"
 
 #: ../inc/admin/includes/class-options-sanitization.php:262
+#, fuzzy
 msgid "Middle Right"
-msgstr ""
+msgstr "Mitte rechts"
 
 #: ../inc/admin/includes/class-options-sanitization.php:263
+#, fuzzy
 msgid "Bottom Left"
-msgstr ""
+msgstr "Unten links"
 
 #: ../inc/admin/includes/class-options-sanitization.php:264
+#, fuzzy
 msgid "Bottom Center"
-msgstr ""
+msgstr "Unten Zentrum"
 
 #: ../inc/admin/includes/class-options-sanitization.php:265
+#, fuzzy
 msgid "Bottom Right"
-msgstr ""
+msgstr "Unten rechts"
 
 #: ../inc/admin/includes/class-options-sanitization.php:278
+#, fuzzy
 msgid "Scroll Normally"
-msgstr ""
+msgstr "Normal scrollen"
 
 #: ../inc/admin/includes/class-options-sanitization.php:279
+#, fuzzy
 msgid "Fixed in Place"
-msgstr ""
+msgstr "Am Platz fest"
 
 #: ../inc/admin/includes/class-options-sanitization.php:353
+#, fuzzy
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: ../inc/admin/includes/class-options-sanitization.php:354
+#, fuzzy
 msgid "Italic"
-msgstr ""
+msgstr "Italic"
 
 #: ../inc/admin/includes/class-options-sanitization.php:355
+#, fuzzy
 msgid "Bold"
-msgstr ""
+msgstr "Fett"
 
 #: ../inc/admin/includes/class-options-sanitization.php:356
+#, fuzzy
 msgid "Bold Italic"
-msgstr ""
+msgstr "Fett Italic"
 
-#: ../inc/class-tgm-plugin-activation.php:164 ../inc/extras.php:396
+#: ../inc/class-tgm-plugin-activation.php:196 ../inc/extras.php:396
 msgid "Install Required Plugins"
 msgstr "Installiere die erforderlichen Plugins"
 
-#: ../inc/class-tgm-plugin-activation.php:165 ../inc/extras.php:397
+#: ../inc/class-tgm-plugin-activation.php:197 ../inc/extras.php:397
 msgid "Install Plugins"
 msgstr "Installiere Plugins"
 
-#: ../inc/class-tgm-plugin-activation.php:166 ../inc/extras.php:398
+#: ../inc/class-tgm-plugin-activation.php:198 ../inc/extras.php:398
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Installiere Plugin: %s"
 
-#: ../inc/class-tgm-plugin-activation.php:167
+#: ../inc/class-tgm-plugin-activation.php:199
 msgid "Something went wrong."
 msgstr "Etwas ist schiefgegangen."
 
-#: ../inc/class-tgm-plugin-activation.php:178
-#: ../inc/class-tgm-plugin-activation.php:490 ../inc/extras.php:410
+#: ../inc/class-tgm-plugin-activation.php:210 ../inc/extras.php:410
 msgid "Return to Required Plugins Installer"
 msgstr "Zur&uuml;ck zur Installation f&uuml;r erforderliche Plugins"
 
-#: ../inc/class-tgm-plugin-activation.php:179
-#: ../inc/class-tgm-plugin-activation.php:1846 ../inc/extras.php:411
+#: ../inc/class-tgm-plugin-activation.php:211
+#, fuzzy
+msgid "Return to the dashboard"
+msgstr "Zur&uuml;ck zum Dashboard"
+
+#: ../inc/class-tgm-plugin-activation.php:212
+#: ../inc/class-tgm-plugin-activation.php:1962 ../inc/extras.php:411
 msgid "Plugin activated successfully."
 msgstr "Plugin wurde erfolgreich aktiviert."
 
-#: ../inc/class-tgm-plugin-activation.php:180
+#: ../inc/class-tgm-plugin-activation.php:213
+#: ../inc/class-tgm-plugin-activation.php:1649
+#, fuzzy
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Das folgende Plugin wurde erfolgreich aktiviert: %s."
+msgstr[1] "Das folgende Plugin wurde erfolgreich aktiviert: %s."
+
+#: ../inc/class-tgm-plugin-activation.php:214
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr "Alle Plugins wurden erfolgreich isntalliert und aktiviert. %1$s"
 
-#: ../inc/class-tgm-plugin-activation.php:517
-#: ../inc/class-tgm-plugin-activation.php:2059
-msgid "Return to the Dashboard"
-msgstr "Zur&uuml;ck zum Dashboard"
-
-#: ../inc/class-tgm-plugin-activation.php:545
-#, php-format
-msgid "The following plugin was activated successfully: %s."
-msgstr "Das folgende Plugin wurde erfolgreich aktiviert: %s."
-
-#: ../inc/class-tgm-plugin-activation.php:704
+#: ../inc/class-tgm-plugin-activation.php:215
 msgid "Dismiss this notice"
 msgstr "Blende diesen Hinwei&szlig; aus"
 
-#: ../inc/class-tgm-plugin-activation.php:1091
-msgid "External Link"
-msgstr "Externer Link"
+#: ../inc/class-tgm-plugin-activation.php:553
+#: ../inc/class-tgm-plugin-activation.php:2179
+msgid "Return to the Dashboard"
+msgstr "Zur&uuml;ck zum Dashboard"
 
 # Or:
 # Privater Aufbewahrungsort
-#: ../inc/class-tgm-plugin-activation.php:1096
+#: ../inc/class-tgm-plugin-activation.php:1183
 msgid "Private Repository"
 msgstr "Private Sammlung"
 
-#: ../inc/class-tgm-plugin-activation.php:1099
+#: ../inc/class-tgm-plugin-activation.php:1186
 msgid "Pre-Packaged"
 msgstr "Vorgepackt"
 
 # Or:
 # Aufbewahrungsort
-#: ../inc/class-tgm-plugin-activation.php:1103
+#: ../inc/class-tgm-plugin-activation.php:1191
 msgid "WordPress Repository"
 msgstr "WordPress Sammlung"
 
-#: ../inc/class-tgm-plugin-activation.php:1106
+#: ../inc/class-tgm-plugin-activation.php:1194
 msgid "Required"
 msgstr "Erforderlich"
 
-#: ../inc/class-tgm-plugin-activation.php:1106
+#: ../inc/class-tgm-plugin-activation.php:1194
 msgid "Recommended"
 msgstr "Empfohlen"
 
-#: ../inc/class-tgm-plugin-activation.php:1109
+#: ../inc/class-tgm-plugin-activation.php:1197
 msgid "Not Installed"
 msgstr "Nicht installiert"
 
-#: ../inc/class-tgm-plugin-activation.php:1111
+#: ../inc/class-tgm-plugin-activation.php:1199
 msgid "Installed But Not Activated"
 msgstr "Installiert aber nicht aktiviert"
 
-#: ../inc/class-tgm-plugin-activation.php:1281
+#: ../inc/class-tgm-plugin-activation.php:1301
+#: ../inc/class-tgm-plugin-activation.php:1409
+msgid "Install"
+msgstr "Installieren"
+
+#: ../inc/class-tgm-plugin-activation.php:1323
+#: ../inc/class-tgm-plugin-activation.php:1410
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: ../inc/class-tgm-plugin-activation.php:1372
 #, php-format
 msgid ""
 "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
@@ -422,68 +459,61 @@ msgstr ""
 "Keine Plugins zum Installieren oder Aktivieren. <a href=\"%1$s\" title="
 "\"Zur&uuml;ck zum Dashboard\">Zur&uuml;ck zum Dashboard</a>"
 
-#: ../inc/class-tgm-plugin-activation.php:1297
+#: ../inc/class-tgm-plugin-activation.php:1388
 msgid "Plugin"
 msgstr "Plugin"
 
-#: ../inc/class-tgm-plugin-activation.php:1298
+#: ../inc/class-tgm-plugin-activation.php:1389
 msgid "Source"
 msgstr "Quelle"
 
-#: ../inc/class-tgm-plugin-activation.php:1299
+#: ../inc/class-tgm-plugin-activation.php:1390
 msgid "Type"
 msgstr "Typ"
 
-#: ../inc/class-tgm-plugin-activation.php:1300
+#: ../inc/class-tgm-plugin-activation.php:1391
 msgid "Status"
 msgstr "Status"
 
-#: ../inc/class-tgm-plugin-activation.php:1318
-msgid "Install"
-msgstr "Installieren"
+#: ../inc/class-tgm-plugin-activation.php:1519
+msgid "No plugins are available to be installed at this time."
+msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:1319
-msgid "Activate"
-msgstr "Aktivieren"
+#: ../inc/class-tgm-plugin-activation.php:1627
+msgid "No plugins are available to be activated at this time."
+msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:1544
-#, fuzzy
-msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "Das folgende Plugin wurde erfolgreich aktiviert: %s."
-msgstr[1] "Das folgende Plugin wurde erfolgreich aktiviert: %s."
-
-#: ../inc/class-tgm-plugin-activation.php:1829
+#: ../inc/class-tgm-plugin-activation.php:1945
 msgid "Install package not available."
 msgstr "Installationspaket ist nicht verf&uuml;gbar."
 
-#: ../inc/class-tgm-plugin-activation.php:1830
+#: ../inc/class-tgm-plugin-activation.php:1946
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
 "Lade Installationspaket von <span class=\"code\">%s</span>&#8230; runter"
 
-#: ../inc/class-tgm-plugin-activation.php:1831
+#: ../inc/class-tgm-plugin-activation.php:1947
 msgid "Unpacking the package&#8230;"
 msgstr "Entpacke das Paket&#8230;"
 
-#: ../inc/class-tgm-plugin-activation.php:1832
+#: ../inc/class-tgm-plugin-activation.php:1948
 msgid "Installing the plugin&#8230;"
 msgstr "Installiere das Plugin&#8230;"
 
-#: ../inc/class-tgm-plugin-activation.php:1833
+#: ../inc/class-tgm-plugin-activation.php:1949
 msgid "Plugin install failed."
 msgstr "Plugininstallation fehlgeschlagen."
 
-#: ../inc/class-tgm-plugin-activation.php:1834
+#: ../inc/class-tgm-plugin-activation.php:1950
 msgid "Plugin installed successfully."
 msgstr "Plugin erfolgreich installiert."
 
-#: ../inc/class-tgm-plugin-activation.php:1845
+#: ../inc/class-tgm-plugin-activation.php:1961
 msgid "Plugin activation failed."
 msgstr "Pluginaktivieriung fehlgeschlagen."
 
-#: ../inc/class-tgm-plugin-activation.php:1956
+#: ../inc/class-tgm-plugin-activation.php:2075
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
@@ -491,31 +521,31 @@ msgstr ""
 "Der Installations- und Aktivierungsprozess startet. Dieser Prozess kann auf "
 "manchen Hostern eine Weile dauern, bitte sei geduldig."
 
-#: ../inc/class-tgm-plugin-activation.php:1957
+#: ../inc/class-tgm-plugin-activation.php:2076
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr "%1$s erfolgreich installiert und aktiviert."
 
-#: ../inc/class-tgm-plugin-activation.php:1957
-#: ../inc/class-tgm-plugin-activation.php:1966
+#: ../inc/class-tgm-plugin-activation.php:2076
+#: ../inc/class-tgm-plugin-activation.php:2085
 msgid "Show Details"
 msgstr "Zeige Details"
 
-#: ../inc/class-tgm-plugin-activation.php:1957
-#: ../inc/class-tgm-plugin-activation.php:1966
+#: ../inc/class-tgm-plugin-activation.php:2076
+#: ../inc/class-tgm-plugin-activation.php:2085
 msgid "Hide Details"
 msgstr "Verstecke Details"
 
-#: ../inc/class-tgm-plugin-activation.php:1958
+#: ../inc/class-tgm-plugin-activation.php:2077
 msgid "All installations and activations have been completed."
 msgstr "Alle Installationen und Aktivierungen wurden abgeschlossen."
 
-#: ../inc/class-tgm-plugin-activation.php:1959
+#: ../inc/class-tgm-plugin-activation.php:2078
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr "Installiere und aktiviere Plugin %1$s (%2$d/%3$d)"
 
-#: ../inc/class-tgm-plugin-activation.php:1963
+#: ../inc/class-tgm-plugin-activation.php:2082
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
@@ -523,26 +553,26 @@ msgstr ""
 "Der Installationsprozess startet. Dieser Prozess kann auf manchen Hostern "
 "eine Weile dauern, bitte sei geduldig."
 
-#: ../inc/class-tgm-plugin-activation.php:1964
+#: ../inc/class-tgm-plugin-activation.php:2083
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr "Ein Fehler trat auf beim Installieren von %1$s: <strong>%2$s</strong>."
 
-#: ../inc/class-tgm-plugin-activation.php:1965
+#: ../inc/class-tgm-plugin-activation.php:2084
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr "Die Installation von %1$s ist fehlgeschlagen."
 
-#: ../inc/class-tgm-plugin-activation.php:1966
+#: ../inc/class-tgm-plugin-activation.php:2085
 #, php-format
 msgid "%1$s installed successfully."
 msgstr "%1$s erfolgreich isntalliert."
 
-#: ../inc/class-tgm-plugin-activation.php:1967
+#: ../inc/class-tgm-plugin-activation.php:2086
 msgid "All installations have been completed."
 msgstr "Alle Installationen wurden abgeschlossen."
 
-#: ../inc/class-tgm-plugin-activation.php:1968
+#: ../inc/class-tgm-plugin-activation.php:2087
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Installiere Plugin %1$s (%2$d/%3$d)"
@@ -555,7 +585,7 @@ msgstr "Seite %s"
 #: ../inc/extras.php:128
 #, fuzzy
 msgid "Search..."
-msgstr "Suchergebnisse f&uuml;r: %s"
+msgstr "Suche..."
 
 #: ../inc/extras.php:149
 msgid ""
@@ -664,12 +694,12 @@ msgstr "Beitr&auml;ge-Navigation"
 #: ../inc/template-tags.php:27
 #, fuzzy
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Vorherige"
+msgstr "<i class=\"fa fa-chevron-left\"></i> ältere Artikel"
 
 #: ../inc/template-tags.php:31
 #, fuzzy
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Weiterlesen <i class=\"fa fa-chevron-right\"></i>"
+msgstr "neuere Artikel <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
@@ -700,12 +730,12 @@ msgstr ""
 #: ../options.php:32
 #, fuzzy
 msgid "Right Sidebar"
-msgstr "Seitenleiste"
+msgstr "Rechte Sidebar"
 
 #: ../options.php:32
 #, fuzzy
 msgid "Left Sidebar"
-msgstr "Seitenleiste"
+msgstr "Linke Sidebar"
 
 #: ../options.php:36
 msgid "One"
@@ -756,15 +786,17 @@ msgstr "Haupterscheinungsbild"
 #: ../options.php:118
 #, fuzzy
 msgid "Home Page Settings"
-msgstr "Seite %s"
+msgstr "Zeigt die Home Page an"
 
 #: ../options.php:124
+#, fuzzy
 msgid "Website Layout Options"
-msgstr ""
+msgstr "Website Layout Optionen"
 
 #: ../options.php:125
+#, fuzzy
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr ""
+msgstr "Wähle Rechte oder Linke Sidebar Optionen als voreingestellt"
 
 #: ../options.php:132
 msgid "Element color"
@@ -960,6 +992,12 @@ msgstr "Suchergebnisse f&uuml;r: %s"
 #: ../sidebar.php:24
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "The following plugin was activated successfully: %s."
+#~ msgstr "Das folgende Plugin wurde erfolgreich aktiviert: %s."
+
+#~ msgid "External Link"
+#~ msgstr "Externer Link"
 
 #~ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 #~ msgstr "Weiterlesen <span class=\"meta-nav\">&rarr;</span>"

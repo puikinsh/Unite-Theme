@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
-"POT-Creation-Date: 2014-06-20 10:38+0200\n"
-"PO-Revision-Date: 2014-06-20 10:39+0200\n"
+"POT-Creation-Date: 2014-06-22 23:50+0200\n"
+"PO-Revision-Date: 2014-06-22 23:50+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
@@ -328,155 +328,161 @@ msgstr "Gras"
 msgid "Bold Italic"
 msgstr "Gras Italique"
 
-#: ../inc/class-tgm-plugin-activation.php:164 ../inc/extras.php:396
+#: ../inc/class-tgm-plugin-activation.php:196 ../inc/extras.php:396
 msgid "Install Required Plugins"
 msgstr "Installation d'une extension n&eacute;cessaire"
 
-#: ../inc/class-tgm-plugin-activation.php:165 ../inc/extras.php:397
+#: ../inc/class-tgm-plugin-activation.php:197 ../inc/extras.php:397
 msgid "Install Plugins"
 msgstr "Installation d'une extension"
 
-#: ../inc/class-tgm-plugin-activation.php:166 ../inc/extras.php:398
+#: ../inc/class-tgm-plugin-activation.php:198 ../inc/extras.php:398
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Installation de l'extension : %s"
 
-#: ../inc/class-tgm-plugin-activation.php:167
+#: ../inc/class-tgm-plugin-activation.php:199
 msgid "Something went wrong."
 msgstr "Quelque chose ne va pas."
 
-#: ../inc/class-tgm-plugin-activation.php:178
-#: ../inc/class-tgm-plugin-activation.php:490 ../inc/extras.php:410
+#: ../inc/class-tgm-plugin-activation.php:210 ../inc/extras.php:410
 #, fuzzy
 msgid "Return to Required Plugins Installer"
 msgstr "Installation d'une extension n&eacute;cessaire"
 
-#: ../inc/class-tgm-plugin-activation.php:179
-#: ../inc/class-tgm-plugin-activation.php:1846 ../inc/extras.php:411
+#: ../inc/class-tgm-plugin-activation.php:211
+#, fuzzy
+msgid "Return to the dashboard"
+msgstr "Retour au Tableau de Bord"
+
+#: ../inc/class-tgm-plugin-activation.php:212
+#: ../inc/class-tgm-plugin-activation.php:1962 ../inc/extras.php:411
 msgid "Plugin activated successfully."
 msgstr "L'extension est activ&eacute; avec succ&eacute;s."
 
-#: ../inc/class-tgm-plugin-activation.php:180
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr "Toutes les extensions sont install&eacute;es et activ&eacute;es. %1$s"
-
-#: ../inc/class-tgm-plugin-activation.php:517
-#: ../inc/class-tgm-plugin-activation.php:2059
-msgid "Return to the Dashboard"
-msgstr "Retour au Tableau de Bord"
-
-#: ../inc/class-tgm-plugin-activation.php:545
-#, fuzzy, php-format
-msgid "The following plugin was activated successfully: %s."
-msgstr "L'extension est activ&eacute; avec succ&eacute;s."
-
-#: ../inc/class-tgm-plugin-activation.php:704
-msgid "Dismiss this notice"
-msgstr "Fermer cette notice"
-
-#: ../inc/class-tgm-plugin-activation.php:1091
-msgid "External Link"
-msgstr "Lien Externe"
-
-#: ../inc/class-tgm-plugin-activation.php:1096
-msgid "Private Repository"
-msgstr ""
-
-#: ../inc/class-tgm-plugin-activation.php:1099
-msgid "Pre-Packaged"
-msgstr ""
-
-#: ../inc/class-tgm-plugin-activation.php:1103
-msgid "WordPress Repository"
-msgstr ""
-
-#: ../inc/class-tgm-plugin-activation.php:1106
-msgid "Required"
-msgstr "(obligatoire)"
-
-#: ../inc/class-tgm-plugin-activation.php:1106
-msgid "Recommended"
-msgstr "Recommand&eacute;"
-
-#: ../inc/class-tgm-plugin-activation.php:1109
-msgid "Not Installed"
-msgstr "Non Install&eacute;"
-
-#: ../inc/class-tgm-plugin-activation.php:1111
-msgid "Installed But Not Activated"
-msgstr "Install&eacute; Mais Pas Activ&eacute;"
-
-#: ../inc/class-tgm-plugin-activation.php:1281
-#, php-format
-msgid ""
-"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
-"Dashboard\">Return to the Dashboard</a>"
-msgstr ""
-
-#: ../inc/class-tgm-plugin-activation.php:1297
-msgid "Plugin"
-msgstr "Extension"
-
-#: ../inc/class-tgm-plugin-activation.php:1298
-msgid "Source"
-msgstr "R&eacute;pertoire d'Origine"
-
-#: ../inc/class-tgm-plugin-activation.php:1299
-msgid "Type"
-msgstr "Type"
-
-#: ../inc/class-tgm-plugin-activation.php:1300
-msgid "Status"
-msgstr "&Eacute;tat"
-
-#: ../inc/class-tgm-plugin-activation.php:1318
-msgid "Install"
-msgstr "Installation"
-
-#: ../inc/class-tgm-plugin-activation.php:1319
-msgid "Activate"
-msgstr "Activer"
-
-#: ../inc/class-tgm-plugin-activation.php:1544
+#: ../inc/class-tgm-plugin-activation.php:213
+#: ../inc/class-tgm-plugin-activation.php:1649
 #, fuzzy
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] "L'extension est activ&eacute; avec succ&eacute;s."
 msgstr[1] "L'extension est activ&eacute; avec succ&eacute;s."
 
-#: ../inc/class-tgm-plugin-activation.php:1829
+#: ../inc/class-tgm-plugin-activation.php:214
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Toutes les extensions sont install&eacute;es et activ&eacute;es. %1$s"
+
+#: ../inc/class-tgm-plugin-activation.php:215
+msgid "Dismiss this notice"
+msgstr "Fermer cette notice"
+
+#: ../inc/class-tgm-plugin-activation.php:553
+#: ../inc/class-tgm-plugin-activation.php:2179
+msgid "Return to the Dashboard"
+msgstr "Retour au Tableau de Bord"
+
+#: ../inc/class-tgm-plugin-activation.php:1183
+msgid "Private Repository"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1186
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1191
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1194
+msgid "Required"
+msgstr "(obligatoire)"
+
+#: ../inc/class-tgm-plugin-activation.php:1194
+msgid "Recommended"
+msgstr "Recommand&eacute;"
+
+#: ../inc/class-tgm-plugin-activation.php:1197
+msgid "Not Installed"
+msgstr "Non Install&eacute;"
+
+#: ../inc/class-tgm-plugin-activation.php:1199
+msgid "Installed But Not Activated"
+msgstr "Install&eacute; Mais Pas Activ&eacute;"
+
+#: ../inc/class-tgm-plugin-activation.php:1301
+#: ../inc/class-tgm-plugin-activation.php:1409
+msgid "Install"
+msgstr "Installation"
+
+#: ../inc/class-tgm-plugin-activation.php:1323
+#: ../inc/class-tgm-plugin-activation.php:1410
+msgid "Activate"
+msgstr "Activer"
+
+#: ../inc/class-tgm-plugin-activation.php:1372
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1388
+msgid "Plugin"
+msgstr "Extension"
+
+#: ../inc/class-tgm-plugin-activation.php:1389
+msgid "Source"
+msgstr "R&eacute;pertoire d'Origine"
+
+#: ../inc/class-tgm-plugin-activation.php:1390
+msgid "Type"
+msgstr "Type"
+
+#: ../inc/class-tgm-plugin-activation.php:1391
+msgid "Status"
+msgstr "&Eacute;tat"
+
+#: ../inc/class-tgm-plugin-activation.php:1519
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1627
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1945
 #, fuzzy
 msgid "Install package not available."
 msgstr "Installation"
 
-#: ../inc/class-tgm-plugin-activation.php:1830
+#: ../inc/class-tgm-plugin-activation.php:1946
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:1831
+#: ../inc/class-tgm-plugin-activation.php:1947
 #, fuzzy
 msgid "Unpacking the package&#8230;"
 msgstr "Installation de l'extension&#8230;"
 
-#: ../inc/class-tgm-plugin-activation.php:1832
+#: ../inc/class-tgm-plugin-activation.php:1948
 msgid "Installing the plugin&#8230;"
 msgstr "Installation de l'extension&#8230;"
 
-#: ../inc/class-tgm-plugin-activation.php:1833
+#: ../inc/class-tgm-plugin-activation.php:1949
 msgid "Plugin install failed."
 msgstr "Echec de l'installation de l'extension."
 
-#: ../inc/class-tgm-plugin-activation.php:1834
+#: ../inc/class-tgm-plugin-activation.php:1950
 msgid "Plugin installed successfully."
 msgstr "Installation de l'extension r&eacute;ussie."
 
-#: ../inc/class-tgm-plugin-activation.php:1845
+#: ../inc/class-tgm-plugin-activation.php:1961
 msgid "Plugin activation failed."
 msgstr "Echec de l'activation de l'extension."
 
-#: ../inc/class-tgm-plugin-activation.php:1956
+#: ../inc/class-tgm-plugin-activation.php:2075
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
@@ -484,31 +490,31 @@ msgstr ""
 "L'installation est l'activation sont en cours. Cela devrait prendre un "
 "certain temps, soyez patient."
 
-#: ../inc/class-tgm-plugin-activation.php:1957
+#: ../inc/class-tgm-plugin-activation.php:2076
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr "%1$s installation et activation r&eacute;ussies."
 
-#: ../inc/class-tgm-plugin-activation.php:1957
-#: ../inc/class-tgm-plugin-activation.php:1966
+#: ../inc/class-tgm-plugin-activation.php:2076
+#: ../inc/class-tgm-plugin-activation.php:2085
 msgid "Show Details"
 msgstr "D&eacute;tails affich&eacute;s"
 
-#: ../inc/class-tgm-plugin-activation.php:1957
-#: ../inc/class-tgm-plugin-activation.php:1966
+#: ../inc/class-tgm-plugin-activation.php:2076
+#: ../inc/class-tgm-plugin-activation.php:2085
 msgid "Hide Details"
 msgstr "D&eacute;tails masqu&eacute;s"
 
-#: ../inc/class-tgm-plugin-activation.php:1958
+#: ../inc/class-tgm-plugin-activation.php:2077
 msgid "All installations and activations have been completed."
 msgstr "Toutes les installations et activations sont achev&eacute;es."
 
-#: ../inc/class-tgm-plugin-activation.php:1959
+#: ../inc/class-tgm-plugin-activation.php:2078
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr "Installation et activation de l'extension %1$s (%2$d/%3$d)"
 
-#: ../inc/class-tgm-plugin-activation.php:1963
+#: ../inc/class-tgm-plugin-activation.php:2082
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
@@ -516,26 +522,26 @@ msgstr ""
 "L'installation est l'activation sont en cours. Cela devrait prendre un "
 "certain temps, soyez patient."
 
-#: ../inc/class-tgm-plugin-activation.php:1964
+#: ../inc/class-tgm-plugin-activation.php:2083
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:1965
+#: ../inc/class-tgm-plugin-activation.php:2084
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr "L'installation de %1$s a &eacute;chou&eacute;e."
 
-#: ../inc/class-tgm-plugin-activation.php:1966
+#: ../inc/class-tgm-plugin-activation.php:2085
 #, php-format
 msgid "%1$s installed successfully."
 msgstr "%1$s installation r&eacute;ussie."
 
-#: ../inc/class-tgm-plugin-activation.php:1967
+#: ../inc/class-tgm-plugin-activation.php:2086
 msgid "All installations have been completed."
 msgstr "Toutes les installations sont achev&eacute;es."
 
-#: ../inc/class-tgm-plugin-activation.php:1968
+#: ../inc/class-tgm-plugin-activation.php:2087
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Installation de l'extension %1$s (%2$d/%3$d)"
@@ -952,6 +958,13 @@ msgstr "R&eacute;sultats de recherche pour : %s"
 #: ../sidebar.php:24
 msgid "Meta"
 msgstr "M&eacute;ta"
+
+#, fuzzy
+#~ msgid "The following plugin was activated successfully: %s."
+#~ msgstr "L'extension est activ&eacute; avec succ&eacute;s."
+
+#~ msgid "External Link"
+#~ msgstr "Lien Externe"
 
 #, fuzzy
 #~ msgid "<i class=\"fa fa-chevron-left\"></i> %title"
