@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme 0.1\n"
-"POT-Creation-Date: 2014-06-22 23:49+0200\n"
-"PO-Revision-Date: 2014-06-22 23:50+0200\n"
+"POT-Creation-Date: 2014-08-03 16:01+0200\n"
+"PO-Revision-Date: 2014-08-03 16:02+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Beliyah\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.6.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -190,15 +190,15 @@ msgstr "1 Kommentar"
 msgid "% Comments"
 msgstr "% Kommentare"
 
-#: ../functions.php:48
+#: ../functions.php:60
 msgid "Primary Menu"
 msgstr "Hauptmen&uuml;"
 
-#: ../functions.php:49 ../inc/extras.php:202
+#: ../functions.php:61 ../inc/extras.php:185
 msgid "Footer Links"
 msgstr "Fu&szlig;men&uuml;-Links"
 
-#: ../functions.php:73
+#: ../functions.php:85
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
@@ -220,7 +220,7 @@ msgstr "Theme Optionen"
 #, fuzzy
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
-"Klicke OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
+"Klicken Sie OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
 "gespeichert!"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:217
@@ -355,15 +355,15 @@ msgstr "Fett"
 msgid "Bold Italic"
 msgstr "Fett Italic"
 
-#: ../inc/class-tgm-plugin-activation.php:196 ../inc/extras.php:396
+#: ../inc/class-tgm-plugin-activation.php:196 ../inc/extras.php:379
 msgid "Install Required Plugins"
 msgstr "Installiere die erforderlichen Plugins"
 
-#: ../inc/class-tgm-plugin-activation.php:197 ../inc/extras.php:397
+#: ../inc/class-tgm-plugin-activation.php:197 ../inc/extras.php:380
 msgid "Install Plugins"
 msgstr "Installiere Plugins"
 
-#: ../inc/class-tgm-plugin-activation.php:198 ../inc/extras.php:398
+#: ../inc/class-tgm-plugin-activation.php:198 ../inc/extras.php:381
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Installiere Plugin: %s"
@@ -372,7 +372,7 @@ msgstr "Installiere Plugin: %s"
 msgid "Something went wrong."
 msgstr "Etwas ist schiefgegangen."
 
-#: ../inc/class-tgm-plugin-activation.php:210 ../inc/extras.php:410
+#: ../inc/class-tgm-plugin-activation.php:210 ../inc/extras.php:393
 msgid "Return to Required Plugins Installer"
 msgstr "Zur&uuml;ck zur Installation f&uuml;r erforderliche Plugins"
 
@@ -382,7 +382,7 @@ msgid "Return to the dashboard"
 msgstr "Zur&uuml;ck zum Dashboard"
 
 #: ../inc/class-tgm-plugin-activation.php:212
-#: ../inc/class-tgm-plugin-activation.php:1962 ../inc/extras.php:411
+#: ../inc/class-tgm-plugin-activation.php:1962 ../inc/extras.php:394
 msgid "Plugin activated successfully."
 msgstr "Plugin wurde erfolgreich aktiviert."
 
@@ -582,12 +582,7 @@ msgstr "Installiere Plugin %1$s (%2$d/%3$d)"
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: ../inc/extras.php:128
-#, fuzzy
-msgid "Search..."
-msgstr "Suche..."
-
-#: ../inc/extras.php:149
+#: ../inc/extras.php:131
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -595,23 +590,23 @@ msgstr ""
 "<p>Dieser Beitrag ist passwortgesch&uuml;tzt. Um ihn anzusehen gib bitte "
 "dein Passwort unten ein:</p>"
 
-#: ../inc/extras.php:150
+#: ../inc/extras.php:132
 msgid "Password:"
 msgstr "Passwort:"
 
-#: ../inc/extras.php:153
+#: ../inc/extras.php:135
 msgid "Submit"
 msgstr "Abschicken"
 
-#: ../inc/extras.php:332
+#: ../inc/extras.php:315
 msgid "Support and Documentation"
 msgstr "Support und Dokumentation"
 
-#: ../inc/extras.php:338
+#: ../inc/extras.php:321
 msgid "Unite Documentation"
 msgstr "Unite-Dokumentation"
 
-#: ../inc/extras.php:339
+#: ../inc/extras.php:322
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -619,46 +614,46 @@ msgstr ""
 "Der beste Weg uns mit <b>Supportanfragen</b> und <b>Fehlermeldungen</b> zu "
 "kontaktieren ist via"
 
-#: ../inc/extras.php:339
+#: ../inc/extras.php:322
 msgid "Colorlib support forum"
 msgstr "Colorlib-Supportforum"
 
-#: ../inc/extras.php:340
+#: ../inc/extras.php:323
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Wenn dir dieses Design gef&auml;llt, w&uuml;rde ich mich sehr &uuml;ber eins "
 "oder mehrere der folgenden Dinge freuen:"
 
-#: ../inc/extras.php:342
+#: ../inc/extras.php:325
 msgid "Rate this Theme"
 msgstr "Bewerte dieses Design"
 
-#: ../inc/extras.php:343
+#: ../inc/extras.php:326
 msgid "Like on Facebook"
 msgstr "Gef&auml;llt mir auf Facebook"
 
-#: ../inc/extras.php:344
+#: ../inc/extras.php:327
 msgid "Follow on Twitter"
 msgstr "Folgen auf Twitter"
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:382
 msgid "Something went wrong with the plugin API."
 msgstr "Etwas ist mit dem Plugin API schief gegangen."
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:395
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr "Alle Plugins erfolgreich installiert und aktiviert. %s"
 
-#: ../inc/extras.php:450
+#: ../inc/extras.php:433
 msgid "View your shopping cart"
 msgstr ""
 
-#: ../inc/extras.php:451
+#: ../inc/extras.php:434
 msgid "Start shopping"
 msgstr ""
 
-#: ../inc/extras.php:455
+#: ../inc/extras.php:438
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
@@ -972,15 +967,20 @@ msgstr "Dribbble"
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:323
+#: ../options.php:324
+#, fuzzy
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:329
 msgid "Other"
 msgstr "Sonstiges"
 
-#: ../options.php:326
+#: ../options.php:332
 msgid "Custom CSS"
 msgstr "Benutzerdefiniertes CSS"
 
-#: ../options.php:327
+#: ../options.php:333
 msgid "Additional CSS"
 msgstr "Zusätzliches CSS"
 
@@ -988,6 +988,16 @@ msgstr "Zusätzliches CSS"
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse f&uuml;r: %s"
+
+#: ../searchform.php:9
+#, fuzzy
+msgid "Search for:"
+msgstr "Suche nach"
+
+#: ../searchform.php:11
+#, fuzzy
+msgid "Search..."
+msgstr "Suche nach"
 
 #: ../sidebar.php:24
 msgid "Meta"
