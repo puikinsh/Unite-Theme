@@ -397,6 +397,9 @@ li.recentcomments {
 	background-color: #4b3371;
 	border-color: #4b3371;
 }
+.widget .input-group {
+    width: 110%;
+}
 /* =Infinite Scroll
 ----------------------------------------------- */
 
