@@ -671,6 +671,9 @@ p.logged-in-as {
 	color: #FFF;
   background-color: #54397E;
 }
+.search .more-link {
+    display: none;
+}
 hr.section-divider {
   height: 1px;
   background: #EEE;
