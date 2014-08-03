@@ -243,7 +243,7 @@ textarea {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .pull-left,
   .pull-right {
   	float: none !important;
@@ -760,7 +760,7 @@ hr.section-divider:after {
   background-color: transparent;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.site-info, .copyright {
 	  text-align: center;
 	}
