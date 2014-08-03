@@ -3,7 +3,7 @@
  * A unique identifier is defined to store the options in the database and reference them from the theme.
  * By default it uses the theme name, in lowercase and without spaces, but this can be changed if needed.
  * If the identifier changes, it'll appear as if the options have been reset.
- * 
+ *
  */
 
 function optionsframework_option_name() {
@@ -20,14 +20,14 @@ function optionsframework_option_name() {
 /**
  * Defines an array of options that will be used to generate the settings page and be saved in the database.
  * When creating the 'id' fields, make sure to use all lowercase and no spaces.
- *  
+ *
  */
 
 function optionsframework_options() {
 
-	    // Option to switch between the_excerpt and the_content 
+	    // Option to switch between the_excerpt and the_content
 		$blog_layout = array('1' => __('Display full content for each post', 'unite'),'2' => __('Display excerpt for each post', 'unite'));
-       	
+
 		// Color schemes
 		$site_layout = array('pull-left' => __('Right Sidebar', 'unite'),'pull-right' => __('Left Sidebar', 'unite'));
 
@@ -109,17 +109,17 @@ function optionsframework_options() {
 
 		// fixed or scroll position
 		$fixed_scroll = array('scroll' => 'Scroll', 'fixed' => 'Fixed');
-			
+
 		$options = array();
 
 		$options[] = array( 'name' => __('Main', 'unite'),
 							'type' => 'heading');
-		
+
 		$options[] = array( 'name' => __('Home Page Settings', 'unite'),
 							'id' => 'blog_settings',
 							'std' => '1',
 							'type' => 'select',
-							'options' => $blog_layout);	
+							'options' => $blog_layout);
 
 		$options[] = array( "name" => __('Website Layout Options', 'unite'),
 							"desc" => __('Choose between Left and Right sidebar options to be used as default', 'unite'),
@@ -149,7 +149,7 @@ function optionsframework_options() {
 
 		$options[] = array( 'name' => __('Typography', 'unite'),
 							'type' => 'heading');
-							
+
 		$options[] = array( 'name' => __('Main Body Text', 'unite'),
 							'desc' => __('Used in P tags', 'unite'),
 							'id' => 'main_body_typography',
@@ -162,34 +162,34 @@ function optionsframework_options() {
 							'id' => 'heading_color',
 							'std' => '',
 							'type' => 'color');
-							
+
 		$options[] = array( 'name' => __('Link Color', 'unite'),
 							'desc' => __('Default used if no color is selected', 'unite'),
 							'id' => 'link_color',
 							'std' => '',
 							'type' => 'color');
-						
+
 		$options[] = array( 'name' => __('Link:hover Color', 'unite'),
 							'desc' => __('Default used if no color is selected', 'unite'),
 							'id' => 'link_hover_color',
 							'std' => '',
 							'type' => 'color');
-							
+
 		$options[] = array( 'name' => __('Link:active Color', 'unite'),
 							'desc' => __('Default used if no color is selected', 'unite'),
 							'id' => 'link_active_color',
 							'std' => '',
 							'type' => 'color');
-							
+
 		$options[] = array( 'name' => __('Header', 'unite'),
 							'type' => 'heading');
-							
+
 		$options[] = array( 'name' => __('Top nav background color', 'unite'),
 							'desc' => __('Default used if no color is selected.', 'unite'),
 							'id' => 'top_nav_bg_color',
 							'std' => '',
 							'type' => 'color');
-							
+
 		$options[] = array( 'name' => __('Top nav item color', 'unite'),
 							'desc' => __('Link color', 'unite'),
 							'id' => 'top_nav_link_color',
@@ -201,7 +201,7 @@ function optionsframework_options() {
 							'id' => 'top_nav_dropdown_bg',
 							'std' => '',
 							'type' => 'color');
-							
+
 		$options[] = array( 'name' => __('Top nav dropdown item color', 'unite'),
 							'desc' => __('Dropdown item color', 'unite'),
 							'id' => 'top_nav_dropdown_item',
@@ -210,12 +210,12 @@ function optionsframework_options() {
 
 		$options[] = array( 'name' => __('Footer', 'unite'),
 							'type' => 'heading');
-							
+
 		$options[] = array( 'name' => __('Footer Background Color', 'unite'),
 							'id' => 'footer_bg_color',
 							'std' => '',
 							'type' => 'color');
-							
+
 		$options[] = array( 'name' => __('Footer Text Color', 'unite'),
 							'id' => 'footer_text_color',
 							'std' => '',
@@ -224,13 +224,13 @@ function optionsframework_options() {
 		$options[] = array( 'name' => __('Footer Link Color', 'unite'),
 							'id' => 'footer_link_color',
 							'std' => '',
-							'type' => 'color');	
-								
+							'type' => 'color');
+
 		$options[] = array(	'name' => __('Footer information', 'unite'),
-                			'desc' => __('Copyright text in footer', 'unite'),
-                			'id' => 'custom_footer_text',
-                			'std' => '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" >' . get_bloginfo( 'name', 'display' ) . '</a>.  All rights reserved.',
-                			'type' => 'textarea');
+              'desc' => __('Copyright text in footer', 'unite'),
+        			'id' => 'custom_footer_text',
+        			'std' => '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" >' . get_bloginfo( 'name', 'display' ) . '</a>.  All rights reserved.',
+        			'type' => 'textarea');
 
 		$options[] = array( 'name' => __('Social', 'unite'),
 							'type' => 'heading');
@@ -240,89 +240,95 @@ function optionsframework_options() {
 							'id' => 'social_color',
 							'std' => '',
 							'type' => 'color');
-						
+
 		$options[] = array( 'name' => __('Social Icon:hover Color', 'unite'),
 							'desc' => __('Default used if no color is selected', 'unite'),
 							'id' => 'social_hover_color',
 							'std' => '',
-							'type' => 'color');	 	
+							'type' => 'color');
 
 		$options[] = array(	'name' => __('Add full URL for your social network profiles', 'unite'),
-                			'desc' => __('Facebook', 'unite'),
-                			'id' => 'social_facebook',
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');
+        			'desc' => __('Facebook', 'unite'),
+        			'id' => 'social_facebook',
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array(	'id' => 'social_twitter',
 							'desc' => __('Twitter', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array(	'id' => 'social_google',
 							'desc' => __('Google+', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array(	'id' => 'social_youtube',
 							'desc' => __('Youtube', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');	                 				    
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array(	'id' => 'social_linkedin',
 							'desc' => __('LinkedIn', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');	 
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array(	'id' => 'social_pinterest',
 							'desc' => __('Pinterest', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array(	'id' => 'social_feed',
 							'desc' => __('RSS Feed', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array(	'id' => 'social_tumblr',
 							'desc' => __('Tumblr', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');	
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
         $options[] = array(	'id' => 'social_flickr',
 							'desc' => __('Flickr', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');	
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
         $options[] = array(	'id' => 'social_instagram',
 							'desc' => __('Instagram', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');	
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
         $options[] = array(	'id' => 'social_dribbble',
 							'desc' => __('Dribbble', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');	
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
         $options[] = array(	'id' => 'social_skype',
 							'desc' => __('Skype', 'unite'),
-                			'std' => '',
-                			'class' => 'mini',
-                			'type' => 'text');	    
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
+
+        $options[] = array(	'id' => 'social_vimeo',
+							'desc' => __('Vimeo', 'unite'),
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
 
 		$options[] = array( 'name' => __('Other', 'unite'),
 							'type' => 'heading');
-		
+
 		$options[] = array( 'name' => __('Custom CSS', 'unite'),
 							'desc' => __('Additional CSS', 'unite'),
 							'id' => 'custom_css',

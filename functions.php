@@ -12,6 +12,18 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 730; /* pixels */
 }
 
+/**
+ * Set the content width for full width pages with no sidebar.
+ */
+function unite_content_width() {
+  if ( is_page_template( 'page-fullwidth.php' ) || is_page_template( 'front-page.php' ) ) {
+    global $content_width;
+    $content_width = 1110; /* pixels */
+  }
+}
+add_action( 'template_redirect', 'unite_content_width' );
+
+
 if ( ! function_exists( 'unite_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -113,12 +125,6 @@ add_action( 'widgets_init', 'unite_widgets_init' );
 
 include(get_template_directory() . "/inc/popular-posts-widget.php");
 
-/**
- * adding the unite search form (created in extra.php)
- */
-
-add_filter( 'get_search_form', 'unite_wpsearch' );
-
 
 /**
  * Enqueue scripts and styles.
@@ -134,8 +140,6 @@ function unite_scripts() {
 	wp_enqueue_script('unite-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
 	wp_enqueue_script( 'unite-functions', get_template_directory_uri() . '/inc/js/main.min.js', array('jquery') );
-
-	wp_enqueue_script( 'unite-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

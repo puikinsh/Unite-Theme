@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.4.6
+Version: 1.5.0
 Tested up to: WP 3.9
 
 Author: Aigars Silkalns
@@ -60,6 +60,15 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 /*========= Changelog =========*/
+
+= 1.5.0 - 03.08.2014 =
+
+* Updated Bootstrap to 3.2
+* Improved default WordPress search box styling
+* Fixed issues with responsive layout for iPad in portrait mode
+* Updated JavaScript files to avoid conflicts with plugins
+* Fixed problems with Jetpack Tiled gallery
+* Improved full-width template
 
 = 1.4.6 - 20.06.2014 =
 

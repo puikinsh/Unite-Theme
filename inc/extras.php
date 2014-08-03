@@ -117,24 +117,6 @@ function unite_setup_author() {
 }
 add_action( 'wp', 'unite_setup_author' );
 
-/************* search form *****************/
-
-// Search Form
-function unite_wpsearch($form) {
-    $form = '<form method="get" class="form-search" action="' . home_url( '/' ) . '">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="input-group">
-        <input type="text" class="form-control search-query" value="' . get_search_query() . '" name="s" id="s" placeholder="'. esc_attr__('Search...','unite') .'">
-        <span class="input-group-btn">
-          <button type="submit" class="btn btn-primary" name="submit" id="searchsubmit" value="Go"><span class="glyphicon glyphicon-search"></span></button>
-        </span>
-      </div>
-    </div>
-  </div>
-</form>';
-    return $form;
-} // don't remove this bracket!
 
 /****************** password protected post form *****/
 
@@ -180,13 +162,14 @@ function unite_social(){
   $output .= unite_social_item(of_get_option('social_instagram'), 'Instagram', 'instagram');
   $output .= unite_social_item(of_get_option('social_dribbble'), 'Dribbble', 'dribbble');
   $output .= unite_social_item(of_get_option('social_skype'), 'Skype', 'skype');
+  $output .= unite_social_item(of_get_option('social_vimeo'), 'Vimeo', 'vimeo-square');
   $output .= '</div>';
   echo $output;
 }
 
 function unite_social_item($url, $title = '', $icon = ''){
   if($url != ''):
-    $output = '<a class="social-profile" href="'.$url.'" target="_blank" title="'.$title.'">';
+    $output = '<a class="social-profile" href="'.esc_url($url).'" target="_blank" title="'.$title.'">';
     if($icon != '') $output .= '<span class="social_icon fa fa-'.$icon.'"></span>';
     $output .= '</a>';
     return $output;

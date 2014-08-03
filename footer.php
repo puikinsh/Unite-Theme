@@ -11,14 +11,16 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<nav role="navigation" class="col-md-6">
-				<?php unite_footer_links(); ?>
-			</nav>
+			<div class="row">
+				<nav role="navigation" class="col-md-6">
+					<?php unite_footer_links(); ?>
+				</nav>
 
-			<div class="copyright col-md-6">
-				<?php do_action( 'unite_credits' ); ?>
-				<?php echo of_get_option( 'custom_footer_text', 'unite' ); ?>
-				<?php do_action( 'unite_footer' ); ?>
+				<div class="copyright col-md-6">
+					<?php do_action( 'unite_credits' ); ?>
+					<?php echo of_get_option( 'custom_footer_text', 'unite' ); ?>
+					<?php do_action( 'unite_footer' ); ?>
+				</div>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
