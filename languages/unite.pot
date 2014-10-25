@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
-"POT-Creation-Date: 2014-08-03 16:03+0200\n"
-"PO-Revision-Date: 2014-08-03 16:03+0200\n"
+"POT-Creation-Date: 2014-10-25 12:54+0200\n"
+"PO-Revision-Date: 2014-10-25 12:54+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -608,6 +608,14 @@ msgstr ""
 
 #: ../inc/popular-posts-widget.php:19
 msgid "Unite: Popular Posts Widget"
+msgstr ""
+
+#: ../inc/popular-posts-widget.php:37
+msgid "Popular"
+msgstr ""
+
+#: ../inc/popular-posts-widget.php:38
+msgid "Recent"
 msgstr ""
 
 #: ../inc/popular-posts-widget.php:105

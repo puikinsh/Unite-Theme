@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme 0.1\n"
-"POT-Creation-Date: 2014-08-03 16:01+0200\n"
-"PO-Revision-Date: 2014-08-03 16:02+0200\n"
+"POT-Creation-Date: 2014-10-25 12:51+0200\n"
+"PO-Revision-Date: 2014-10-25 12:51+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Beliyah\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -670,6 +670,18 @@ msgstr ""
 msgid "Unite: Popular Posts Widget"
 msgstr "Unite: Beliebte Posts-Widget"
 
+#: ../inc/popular-posts-widget.php:37
+#, fuzzy
+msgid "Popular"
+msgstr "Populäre Beiträge"
+
+#: ../inc/popular-posts-widget.php:38
+#, fuzzy
+msgid "Recent"
+msgstr ""
+"Zeigt eine gekennzeichnite Liste mit beliebten Beitr&auml;gen, neuesten "
+"Beitr&auml;gen und Kommentaren an"
+
 #: ../inc/popular-posts-widget.php:105
 msgid "Anonymous"
 msgstr "Anonym"
@@ -791,7 +803,7 @@ msgstr "Website Layout Optionen"
 #: ../options.php:125
 #, fuzzy
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wähle Rechte oder Linke Sidebar Optionen als voreingestellt"
+msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
 
 #: ../options.php:132
 msgid "Element color"
