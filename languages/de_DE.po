@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme 0.1\n"
-"POT-Creation-Date: 2014-10-25 12:51+0200\n"
-"PO-Revision-Date: 2014-10-25 12:51+0200\n"
+"POT-Creation-Date: 2014-10-26 11:53+0200\n"
+"PO-Revision-Date: 2014-10-26 11:53+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Beliyah\n"
 "Language: de_DE\n"
@@ -803,7 +803,7 @@ msgstr "Website Layout Optionen"
 #: ../options.php:125
 #, fuzzy
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
+msgstr "Wähle Rechte oder Linke Sidebar Optionen als voreingestellt"
 
 #: ../options.php:132
 msgid "Element color"

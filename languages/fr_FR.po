@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
-"POT-Creation-Date: 2014-10-25 12:51+0200\n"
-"PO-Revision-Date: 2014-10-25 12:51+0200\n"
+"POT-Creation-Date: 2014-10-26 11:53+0200\n"
+"PO-Revision-Date: 2014-10-26 11:56+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
@@ -640,9 +640,8 @@ msgid "Unite: Popular Posts Widget"
 msgstr "Widget Unite&nbsp;: Articles Populaires"
 
 #: ../inc/popular-posts-widget.php:37
-#, fuzzy
 msgid "Popular"
-msgstr "Articles populaires"
+msgstr "Populaires"
 
 #: ../inc/popular-posts-widget.php:38
 #, fuzzy
