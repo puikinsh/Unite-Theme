@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.5.5
+Version: 1.5.4
 Tested up to: WP 4.0
 
 Author: Aigars Silkalns
@@ -60,6 +60,11 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 /*========= Changelog =========*/
+
+= 1.5.4 - 07.11.2014 =
+
+* Tiny HTML improvements
+* Fixed problems with Jetpack Infinite scroll after plugin update. 
 
 = 1.5.3 - 02.11.2014 =
 
