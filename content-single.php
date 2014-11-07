@@ -62,6 +62,6 @@
 
 		<?php edit_post_link( __( 'Edit', 'unite' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
 		<?php unite_setPostViews(get_the_ID()); ?>
-		<hr class="section-divider"></hr>
+		<hr class="section-divider">
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
