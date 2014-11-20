@@ -1,4 +1,4 @@
-/*========= About Theme =========*/
+#About Theme#
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
@@ -15,7 +15,7 @@ Unite WordPress theme is distributed under the terms of the GNU GPL
 Unite is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 -------------------------------------------------------
 
-/*========= Credits =========*/
+#Credits#
 
 Unite theme uses:
 
@@ -24,13 +24,13 @@ Unite theme uses:
 * TGM Plugin Activation library (https://github.com/thomasgriffin/TGM-Plugin-Activation) licensed under GNU General Public License v2.0 or later
 * WP-Bootstrap-NavWalker licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 
-/*========= Description =========*/
+#Description#
 
 Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options. Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. It's now available in German and French. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. Unite theme now supports WooCommerce to create your own eStore.
 
 For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
 
-/*========= Installation =========*/
+#Installation#
 
 You can install the theme through the WordPress installer under "Themes" > "Install themes" by searching for "Unite".
 
@@ -41,7 +41,7 @@ Right after you activate Unite, you'll see message on top of your screen, asking
 
 If you dismiss this notice, you can install those plugins later via Appearance->Install plugins.
 
-/*========= Theme Features =========*/
+#Theme Features#
 
 * Bootstrap 3 integration
 * Responsive design
@@ -55,11 +55,11 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 * Threaded Comments
 * Gravatar ready
 
-/*========= Documentation =========*/
+#Documentation#
 
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
-/*========= Changelog =========*/
+#Changelog#
 
 = 1.5.5 - 15.11.2014 =
 
