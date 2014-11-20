@@ -169,7 +169,7 @@ function unite_social(){
 
 function unite_social_item($url, $title = '', $icon = ''){
   if($url != ''):
-    $output = '<a class="social-profile" href="'.esc_url($url).'" target="_blank" title="'.$title.'">';
+    $output = '<a class="social-profile '.$icon.'" href="'.esc_url($url).'" target="_blank" title="'.$title.'">';
     if($icon != '') $output .= '<span class="social_icon fa fa-'.$icon.'"></span>';
     $output .= '</a>';
     return $output;

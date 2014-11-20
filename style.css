@@ -831,3 +831,38 @@ hr.section-divider:after {
     bottom: 5px;
   }
 }
+/* Social styles colors  */
+.social-profile.facebook:hover{color: #3b5998 ;}
+.social-profile.twitter:hover{color: #00aced ;}
+.social-profile.google-plus:hover{color: #dd4b39 ;}
+.social-profile.youtube:hover{color: #bb0000 ;}
+.social-profile.linkedin:hover{color: #007bb6 ;}
+.social-profile.pinterest:hover{color: #cb2027 ;}
+.social-profile.rss:hover{color: #F0AD4E ;}
+.social-profile.tumblr:hover{color: #32506d ;}
+.social-profile.flickr:hover{color: #ff0084 ;}
+.social-profile.instagram:hover{color: #517fa4 ;}
+.social-profile.dribbble:hover{color: #E56193 ;}
+.social-profile.skype:hover{color: #00AFF0 ;}
+.social-profile.square:hover{color: #6D7177 ;}
+
+/* woocommerce updates */
+.woocommerce .woocommerce-message, 
+.woocommerce-page .woocommerce-message {
+  border-top: 3px solid #54397E;
+}
+.woocommerce .woocommerce-message:before, 
+.woocommerce-page .woocommerce-message:before {
+  background-color: #54397E;
+  padding-top: 1px;
+}
+.woocommerce .woocommerce-info:before, 
+.woocommerce-page .woocommerce-info:before {
+  padding-top: 1px;
+}
+.woocommerce #content div.product div.images img, 
+.woocommerce div.product div.images img, 
+.woocommerce-page #content div.product div.images img, 
+.woocommerce-page div.product div.images img {
+  border-radius: 5px;
+}
