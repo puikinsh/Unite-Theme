@@ -5,13 +5,15 @@ Theme URI: http://colorlib.com/wp/unite/
 Version: 1.5.5
 Tested up to: WP 4.0
 
-Author: Aigars Silkalns
-Author URI: http://colorlib.com/wp/
-License: GNU General Public License v3.0
-License URI: http://www.gnu.org/licenses/gpl.html
-Unite theme, Copyright 2014 colorlib.com
-Unite WordPress theme is distributed under the terms of the GNU GPL
-Unite is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+#Copyright notice#
+
+* Author: Aigars Silkalns
+* Author URI: http://colorlib.com/wp/
+* License: GNU General Public License v3.0
+* License URI: http://www.gnu.org/licenses/gpl.html
+* Unite theme, Copyright 2014 http://colorlib.com
+* Unite WordPress theme is distributed under the terms of the GNU GPL
+* Unite is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
 #Credits#
 
