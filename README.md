@@ -61,29 +61,29 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
 
-= 1.5.5 - 15.11.2014 =
+####1.5.5 - 15.11.2014 ####
 
 * Updated Bootstrap to v3.3.1
 
-= 1.5.4 - 07.11.2014 =
+####1.5.4 - 07.11.2014 ####
 
 * Tiny HTML improvements
 * Fixed problems with Jetpack Infinite scroll after plugin update. 
 
-= 1.5.3 - 02.11.2014 =
+####1.5.3 - 02.11.2014 ####
 
 * Updated Bootstrap to 3.3
 * Fixed bug in TGM Plugin Activation
 
-= 1.5.2 - 25.10.2014 =
+####1.5.2 - 25.10.2014 ####
 
 * Updated Font Awesome icons to 4.2.0
 
-= 1.5.1 - 25.10.2014 =
+####1.5.1 - 25.10.2014 ####
 
 * Added missing translations
 
-= 1.5.0 - 03.08.2014 =
+####1.5.0 - 03.08.2014 ####
 
 * Updated Bootstrap to 3.2
 * Improved default WordPress search box styling
@@ -92,32 +92,32 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 * Fixed problems with Jetpack Tiled gallery
 * Improved full-width template
 
-= 1.4.6 - 20.06.2014 =
+####1.4.6 - 20.06.2014 ####
 
 * Added French translation thanks to Florent GARDENAT
 
-= 1.4.5 - 19.06.2014 =
+####1.4.5 - 19.06.2014 ####
 
 * Updated Font Awesome icons to 4.1
 * Updated Options Framework to 1.8.0
 
-= 1.4 - 24.04.2014 =
+####1.4 - 24.04.2014 ####
 
 * Added WooCoomerce support
 * Fixed bug with widgets when static page is used as front page.
 * Other small improvements
 
-= 1.3.1 - 14.03.2014 =
+####1.3.1 - 14.03.2014 ####
 
 * Fixed left/right sidebar bug introduced in 1.3.
 
-= 1.3 - 05.03.2014 =
+####1.3 - 05.03.2014 ####
 
 * Added German translation
 * Added logo upload (Custom Header)
 * Added IE8 support (html5shiv.js and respond.js)
 
-= 1.2 - 15.02.2014 =
+####1.2 - 15.02.2014 ####
 * Added options to chose between full-content "the_content" and excerpt "the_excerpt" setup via Them Options.
 * Added option to choose between Left and Right sidebar
 * Added option to change image slider title color. Now part of "Element Background Color"
@@ -126,7 +126,7 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 * Other small CSS tweaks
 * Removed unused layout options and replaced with a simpler Bootstrap alternatives.
 
-= 1.1 - 31.01.2014 =
+####1.1 - 31.01.2014 ####
 * Options Framework  is now part of the theme and is no longer installed as plugin
 * page-homepage.php is now frong-page.php with several tweaks
 * Removed menu parameter from wp_nav_menu
@@ -137,8 +137,8 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 * Updated Bootstrap to 3.1
 * Added minified JavaScript files for better performance. Unminified dev versions are still there.
 
-= 1.0.1 - 20.01.2014 =
+####1.0.1 - 20.01.2014 ####
 * Moved translation files to the right folder
 
-= 1.0 - 20.01.2014 =
+####1.0 - 20.01.2014 ####
 Initial release
