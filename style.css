@@ -4,7 +4,7 @@ Theme URI: http://colorlib.com/wp/unite
 Author: Colorlib
 Author URI: http://colorlib.com/wp/
 Description: Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable eCommerce theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options. Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. It's now available in German and French. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. Unite theme now supports WooCommerce to create your own eStore.
-Version: 1.5.5
+Version: 1.5.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: unite
@@ -783,6 +783,20 @@ hr.section-divider:after {
   position: relative;
 }
 
+.social-profile.facebook:hover {color: #3b5998;}
+.social-profile.twitter:hover {color: #00aced ;}
+.social-profile.google-plus:hover {color: #dd4b39;}
+.social-profile.youtube:hover {color: #bb0000;}
+.social-profile.linkedin:hover {color: #007bb6;}
+.social-profile.pinterest:hover {color: #cb2027;}
+.social-profile.rss:hover {color: #F0AD4E;}
+.social-profile.tumblr:hover {color: #32506d;}
+.social-profile.flickr:hover {color: #ff0084;}
+.social-profile.instagram:hover {color: #517fa4;}
+.social-profile.dribbble:hover {color: #E56193;}
+.social-profile.skype:hover {color: #00AFF0;}
+.social-profile.square:hover {color: #6D7177;}
+
 @media (min-width: 992px) {
 	#social {
 		float: right;
@@ -830,4 +844,26 @@ hr.section-divider:after {
   .carousel-indicators {
     bottom: 5px;
   }
+}
+
+/* =WooCommerce styling
+----------------------------------------------- */
+.woocommerce .woocommerce-message,
+.woocommerce-page .woocommerce-message {
+  border-top: 3px solid #54397E;
+}
+.woocommerce .woocommerce-message:before,
+.woocommerce-page .woocommerce-message:before {
+  background-color: #54397E;
+  padding-top: 1px;
+}
+.woocommerce .woocommerce-info:before,
+.woocommerce-page .woocommerce-info:before {
+  padding-top: 1px;
+}
+.woocommerce #content div.product div.images img,
+.woocommerce div.product div.images img,
+.woocommerce-page #content div.product div.images img,
+.woocommerce-page div.product div.images img {
+  border-radius: 5px;
 }

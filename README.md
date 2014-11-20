@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.5.5
+Version: 1.5.6
 Tested up to: WP 4.0
 
 #Copyright notice#
@@ -60,6 +60,13 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
+
+####1.5.6 - 20.11.2014 ####
+
+* Styling improvements for WooCommerce
+* Improved social icons on hover
+* Updated readme file for Github.
+* All updated made possible thanks to [@amiyasahu](https://github.com/amiyasahu) 
 
 ####1.5.5 - 15.11.2014 ####
 
