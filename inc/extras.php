@@ -275,10 +275,10 @@ if (!function_exists('get_unite_theme_options'))  {
         echo '.site-info a {color: '.of_get_option('footer_link_color', '#000').';}';
       }
       if ( of_get_option('social_color')) {
-        echo '.social-profile {color: '.of_get_option('social_color', '#000').' !important;}';
+        echo '.social-profile {color: '.of_get_option('social_color', '#000').';}';
       }
       if ( of_get_option('social_hover_color')) {
-        echo '.social-profile.facebook:hover, .social-profile.twitter:hover, .social-profile.google-plus:hover, .social-profile.youtube:hover, .social-profile.linkedin:hover, .social-profile.pinterest:hover, .social-profile.rss:hover, .social-profile.tumblr:hover, .social-profile.flickr:hover, .social-profile.instagram:hover, .social-profile.dribbble:hover, .social-profile.skype:hover, .social-profile.square:hover {color: '.of_get_option('social_hover_color', '#000').';}';
+        echo '.social-profile:hover {color: '.of_get_option('social_hover_color', '#000').' !important;}';
       }
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
