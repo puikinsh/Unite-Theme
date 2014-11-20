@@ -141,4 +141,4 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 * Moved translation files to the right folder
 
 ####1.0 - 20.01.2014 ####
-Initial release
+* Initial release
