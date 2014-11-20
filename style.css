@@ -856,9 +856,13 @@ hr.section-divider:after {
   background-color: #54397E;
   padding-top: 1px;
 }
-.woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-info:before {
+.woocommerce .woocommerce-info:before, 
+.woocommerce-page .woocommerce-info:before {
   padding-top: 1px;
 }
-.woocommerce #content div.product div.images img, .woocommerce div.product div.images img, .woocommerce-page #content div.product div.images img, .woocommerce-page div.product div.images img {
+.woocommerce #content div.product div.images img, 
+.woocommerce div.product div.images img, 
+.woocommerce-page #content div.product div.images img, 
+.woocommerce-page div.product div.images img {
   border-radius: 5px;
 }
