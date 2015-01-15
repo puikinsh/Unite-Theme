@@ -45,7 +45,7 @@ function unite_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	/*
+	/**
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
@@ -90,33 +90,33 @@ function unite_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
-    	'id' => 'home1',
-    	'name' => 'Homepage Widget 1',
-    	'description' => 'Used only on the homepage page template.',
-    	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</div>',
-    	'before_title' => '<h3 class="widgettitle">',
-    	'after_title' => '</h3>',
+			'id'            => 'home1',
+			'name'          => 'Homepage Widget 1',
+			'description'   => 'Used only on the homepage page template.',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widgettitle">',
+			'after_title'   => '</h3>',
     ));
 
     register_sidebar(array(
-      'id' => 'home2',
-      'name' => 'Homepage Widget 2',
-      'description' => 'Used only on the homepage page template.',
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget' => '</div>',
-      'before_title' => '<h3 class="widgettitle">',
-      'after_title' => '</h3>',
+			'id'            => 'home2',
+			'name'          => 'Homepage Widget 2',
+			'description'   => 'Used only on the homepage page template.',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widgettitle">',
+			'after_title'   => '</h3>',
     ));
 
     register_sidebar(array(
-      'id' => 'home3',
-      'name' => 'Homepage Widget 3',
-      'description' => 'Used only on the homepage page template.',
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget' => '</div>',
-      'before_title' => '<h3 class="widgettitle">',
-      'after_title' => '</h3>',
+			'id'            => 'home3',
+			'name'          => 'Homepage Widget 3',
+			'description'   => 'Used only on the homepage page template.',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widgettitle">',
+			'after_title'   => '</h3>',
     ));
 
     register_widget( 'unite_popular_posts_widget' );

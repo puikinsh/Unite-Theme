@@ -2,8 +2,8 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.5.6
-Tested up to: WP 4.0
+Version: 1.5.7
+Tested up to: WP 4.1
 
 #Copyright notice#
 
@@ -11,9 +11,9 @@ Tested up to: WP 4.0
 * Author URI: http://colorlib.com/wp/
 * License: GNU General Public License v3.0
 * License URI: http://www.gnu.org/licenses/gpl.html
-* Unite theme, Copyright 2014 http://colorlib.com
+* Unite theme, Copyright 2014-2015 http://colorlib.com
 * Unite WordPress theme is distributed under the terms of the GNU GPL
-* Unite is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+* Unite is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
 #Credits#
 
@@ -60,6 +60,10 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
+
+####1.5.7 - 15.01.2015 ####
+
+* Fixed error in main JavaScript file. 
 
 ####1.5.6 - 20.11.2014 ####
 
