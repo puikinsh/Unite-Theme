@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.5.7
+Version: 1.5.8
 Tested up to: WP 4.1
 
 #Copyright notice#
@@ -60,6 +60,12 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
+
+####1.5.8 - 26.01.2015 ####
+
+* Added support for tittle-tag
+* Updated Bootstrap to 3.3.2
+* Other minor code cleanups
 
 ####1.5.7 - 15.01.2015 ####
 

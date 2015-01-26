@@ -35,37 +35,47 @@ function unite_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'unite_body_classes' );
 
-/**
- * Filters wp_title to print a neat <title> tag based on what is being viewed.
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string The filtered title.
- */
-function unite_wp_title( $title, $sep ) {
-	global $page, $paged;
 
-	if ( is_feed() ) {
-		return $title;
-	}
-
-	// Add the blog name
-	$title .= get_bloginfo( 'name' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		$title .= " $sep $site_description";
-	}
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 ) {
-		$title .= " $sep " . sprintf( __( 'Page %s', 'unite' ), max( $paged, $page ) );
-	}
-
-	return $title;
-}
-add_filter( 'wp_title', 'unite_wp_title', 10, 2 );
+if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
+  /**
+   * Filters wp_title to print a neat <title> tag based on what is being viewed.
+   *
+   * @param string $title Default title text for current view.
+   * @param string $sep Optional separator.
+   * @return string The filtered title.
+   */
+  function dazzling_wp_title( $title, $sep ) {
+    if ( is_feed() ) {
+      return $title;
+    }
+    global $page, $paged;
+    // Add the blog name
+    $title .= get_bloginfo( 'name', 'display' );
+    // Add the blog description for the home/front page.
+    $site_description = get_bloginfo( 'description', 'display' );
+    if ( $site_description && ( is_home() || is_front_page() ) ) {
+      $title .= " $sep $site_description";
+    }
+    // Add a page number if necessary:
+    if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
+      $title .= " $sep " . sprintf( __( 'Page %s', 'dazzling' ), max( $paged, $page ) );
+    }
+    return $title;
+  }
+  add_filter( 'wp_title', 'dazzling_wp_title', 10, 2 );
+  /**
+   * Title shim for sites older than WordPress 4.1.
+   *
+   * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
+   * @todo Remove this function when WordPress 4.3 is released.
+   */
+  function dazzling_render_title() {
+    ?>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <?php
+  }
+  add_action( 'wp_head', 'dazzling_render_title' );
+endif;
 
 
 // Mark Posts/Pages as Untiled when no title is used
@@ -80,7 +90,6 @@ function unite_title( $title ) {
 }
 
 // Add Filters
-
 add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
 
 // Prevent page scroll when clicking the more link
@@ -178,20 +187,20 @@ function unite_social_item($url, $title = '', $icon = ''){
 
 // footer menu (should you choose to use one)
 function unite_footer_links() {
-        // display the WordPress Custom Menu if available
-        wp_nav_menu(array(
-                'container' => '',                              // remove nav container
-                'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
-                'menu' => __( 'Footer Links', 'unite' ),   // nav name
-                'menu_class' => 'nav footer-nav clearfix',      // adding custom nav class
-                'theme_location' => 'footer-links',             // where it's located in the theme
-                'before' => '',                                 // before the menu
-                'after' => '',                                  // after the menu
-                'link_before' => '',                            // before each link
-                'link_after' => '',                             // after each link
-                'depth' => 0,                                   // limit the depth of the nav
-                'fallback_cb' => 'unite_footer_links_fallback'  // fallback function
-        ));
+  // display the WordPress Custom Menu if available
+  wp_nav_menu(array(
+    'container'       => '',                              // remove nav container
+    'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
+    'menu'            => __( 'Footer Links', 'unite' ),   // nav name
+    'menu_class'      => 'nav footer-nav clearfix',      // adding custom nav class
+    'theme_location'  => 'footer-links',             // where it's located in the theme
+    'before'          => '',                                 // before the menu
+    'after'           => '',                                  // after the menu
+    'link_before'     => '',                            // before each link
+    'link_after'      => '',                             // after each link
+    'depth'           => 0,                                   // limit the depth of the nav
+    'fallback_cb'     => 'unite_footer_links_fallback'  // fallback function
+  ));
 } /* end unite footer link */
 
 // Get Post Views - for Popular Posts widget
@@ -360,42 +369,42 @@ function unite_register_required_plugins() {
   );
 
 /**
-     * Array of configuration settings. Amend each line as needed.
-     * If you want the default strings to be available under your own theme domain,
-     * leave the strings uncommented.
-     * Some of the strings are added into a sprintf, so see the comments at the
-     * end of each line for what each argument will be.
-     */
-    $config = array(
-        'id'           => 'unite',                 // Unique ID for hashing notices for multiple instances of unite.
-        'default_path' => '',                      // Default absolute path to pre-packaged plugins.
-        'menu'         => 'unite-install-plugins', // Menu slug.
-        'has_notices'  => true,                    // Show admin notices or not.
-        'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-        'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-        'is_automatic' => false,                   // Automatically activate plugins after installation or not.
-        'message'      => '',                      // Message to output right before the plugins table.
-        'strings'      => array(
-            'page_title'                      => __( 'Install Required Plugins', 'unite' ),
-            'menu_title'                      => __( 'Install Plugins', 'unite' ),
-            'installing'                      => __( 'Installing Plugin: %s', 'unite' ), // %s = plugin name.
-            'oops'                            => __( 'Something went wrong with the plugin API.', 'unite' ),
-            'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
-            'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
-            'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'unite' ), // %1$s = plugin name(s).
-            'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
-            'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
-            'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'unite' ), // %1$s = plugin name(s).
-            'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'unite' ), // %1$s = plugin name(s).
-            'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'unite' ), // %1$s = plugin name(s).
-            'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'unite' ),
-            'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins', 'unite' ),
-            'return'                          => __( 'Return to Required Plugins Installer', 'unite' ),
-            'plugin_activated'                => __( 'Plugin activated successfully.', 'unite' ),
-            'complete'                        => __( 'All plugins installed and activated successfully. %s', 'unite' ), // %s = dashboard link.
-            'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
-        )
-    );
+ * Array of configuration settings. Amend each line as needed.
+ * If you want the default strings to be available under your own theme domain,
+ * leave the strings uncommented.
+ * Some of the strings are added into a sprintf, so see the comments at the
+ * end of each line for what each argument will be.
+ */
+$config = array(
+    'id'           => 'unite',                 // Unique ID for hashing notices for multiple instances of unite.
+    'default_path' => '',                      // Default absolute path to pre-packaged plugins.
+    'menu'         => 'unite-install-plugins', // Menu slug.
+    'has_notices'  => true,                    // Show admin notices or not.
+    'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+    'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+    'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+    'message'      => '',                      // Message to output right before the plugins table.
+    'strings'      => array(
+        'page_title'                      => __( 'Install Required Plugins', 'unite' ),
+        'menu_title'                      => __( 'Install Plugins', 'unite' ),
+        'installing'                      => __( 'Installing Plugin: %s', 'unite' ), // %s = plugin name.
+        'oops'                            => __( 'Something went wrong with the plugin API.', 'unite' ),
+        'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
+        'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
+        'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'unite' ), // %1$s = plugin name(s).
+        'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
+        'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
+        'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'unite' ), // %1$s = plugin name(s).
+        'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'unite' ), // %1$s = plugin name(s).
+        'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'unite' ), // %1$s = plugin name(s).
+        'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'unite' ),
+        'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins', 'unite' ),
+        'return'                          => __( 'Return to Required Plugins Installer', 'unite' ),
+        'plugin_activated'                => __( 'Plugin activated successfully.', 'unite' ),
+        'complete'                        => __( 'All plugins installed and activated successfully. %s', 'unite' ), // %s = dashboard link.
+        'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
+    )
+);
 
   tgmpa( $plugins, $config );
 
