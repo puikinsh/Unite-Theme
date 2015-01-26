@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme 0.1\n"
-"POT-Creation-Date: 2014-11-02 14:56+0200\n"
-"PO-Revision-Date: 2014-11-02 14:56+0200\n"
+"POT-Creation-Date: 2015-01-26 14:05+0200\n"
+"PO-Revision-Date: 2015-01-26 14:05+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Beliyah\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -194,11 +194,11 @@ msgstr "% Kommentare"
 msgid "Primary Menu"
 msgstr "Hauptmen&uuml;"
 
-#: ../functions.php:61 ../inc/extras.php:185
+#: ../functions.php:61 ../inc/extras.php:194
 msgid "Footer Links"
 msgstr "Fu&szlig;men&uuml;-Links"
 
-#: ../functions.php:85
+#: ../functions.php:92
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
@@ -220,18 +220,18 @@ msgstr "Theme Optionen"
 #, fuzzy
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
-"Klicken Sie OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
+"Klicke OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
 "gespeichert!"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:217
 #, fuzzy
 msgid "Default options restored."
-msgstr "Voreinstellungen wieder hergestellt."
+msgstr "Standardeinstellungen wieder hergestellt."
 
 #: ../inc/admin/includes/class-options-framework-admin.php:271
 #, fuzzy
 msgid "Options saved."
-msgstr "Optionen gespeichert."
+msgstr "Einstellungen gespeichert."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:63
 #, fuzzy
@@ -253,12 +253,12 @@ msgstr "Entfernen"
 #: ../inc/admin/includes/class-options-media-uploader.php:71
 #, fuzzy
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "Lade die neueste WordPress Version für vollen Media Support."
+msgstr "Lade die neueste WordPress Version für vollständigen Mediensupport."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:95
 #, fuzzy
 msgid "View File"
-msgstr "Datei betrachten"
+msgstr "Datei anzeigen"
 
 #: ../inc/admin/includes/class-options-sanitization.php:241
 #, fuzzy
@@ -333,7 +333,7 @@ msgstr "Normal scrollen"
 #: ../inc/admin/includes/class-options-sanitization.php:279
 #, fuzzy
 msgid "Fixed in Place"
-msgstr "Am Platz fest"
+msgstr "Am Platz fixiert"
 
 #: ../inc/admin/includes/class-options-sanitization.php:353
 #, fuzzy
@@ -343,7 +343,7 @@ msgstr "Normal"
 #: ../inc/admin/includes/class-options-sanitization.php:354
 #, fuzzy
 msgid "Italic"
-msgstr "Italic"
+msgstr "Kursiv"
 
 #: ../inc/admin/includes/class-options-sanitization.php:355
 #, fuzzy
@@ -353,17 +353,17 @@ msgstr "Fett"
 #: ../inc/admin/includes/class-options-sanitization.php:356
 #, fuzzy
 msgid "Bold Italic"
-msgstr "Fett Italic"
+msgstr "Fett Kursiv"
 
-#: ../inc/class-tgm-plugin-activation.php:196 ../inc/extras.php:379
+#: ../inc/class-tgm-plugin-activation.php:196 ../inc/extras.php:388
 msgid "Install Required Plugins"
 msgstr "Installiere die erforderlichen Plugins"
 
-#: ../inc/class-tgm-plugin-activation.php:197 ../inc/extras.php:380
+#: ../inc/class-tgm-plugin-activation.php:197 ../inc/extras.php:389
 msgid "Install Plugins"
 msgstr "Installiere Plugins"
 
-#: ../inc/class-tgm-plugin-activation.php:198 ../inc/extras.php:381
+#: ../inc/class-tgm-plugin-activation.php:198 ../inc/extras.php:390
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Installiere Plugin: %s"
@@ -372,7 +372,7 @@ msgstr "Installiere Plugin: %s"
 msgid "Something went wrong."
 msgstr "Etwas ist schiefgegangen."
 
-#: ../inc/class-tgm-plugin-activation.php:210 ../inc/extras.php:393
+#: ../inc/class-tgm-plugin-activation.php:210 ../inc/extras.php:402
 msgid "Return to Required Plugins Installer"
 msgstr "Zur&uuml;ck zur Installation f&uuml;r erforderliche Plugins"
 
@@ -382,7 +382,7 @@ msgid "Return to the dashboard"
 msgstr "Zur&uuml;ck zum Dashboard"
 
 #: ../inc/class-tgm-plugin-activation.php:212
-#: ../inc/class-tgm-plugin-activation.php:1956 ../inc/extras.php:394
+#: ../inc/class-tgm-plugin-activation.php:1956 ../inc/extras.php:403
 msgid "Plugin activated successfully."
 msgstr "Plugin wurde erfolgreich aktiviert."
 
@@ -577,12 +577,12 @@ msgstr "Alle Installationen wurden abgeschlossen."
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Installiere Plugin %1$s (%2$d/%3$d)"
 
-#: ../inc/extras.php:63
+#: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: ../inc/extras.php:131
+#: ../inc/extras.php:140
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -590,23 +590,23 @@ msgstr ""
 "<p>Dieser Beitrag ist passwortgesch&uuml;tzt. Um ihn anzusehen gib bitte "
 "dein Passwort unten ein:</p>"
 
-#: ../inc/extras.php:132
+#: ../inc/extras.php:141
 msgid "Password:"
 msgstr "Passwort:"
 
-#: ../inc/extras.php:135
+#: ../inc/extras.php:144
 msgid "Submit"
 msgstr "Abschicken"
 
-#: ../inc/extras.php:315
+#: ../inc/extras.php:324
 msgid "Support and Documentation"
 msgstr "Support und Dokumentation"
 
-#: ../inc/extras.php:321
+#: ../inc/extras.php:330
 msgid "Unite Documentation"
 msgstr "Unite-Dokumentation"
 
-#: ../inc/extras.php:322
+#: ../inc/extras.php:331
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -614,46 +614,46 @@ msgstr ""
 "Der beste Weg uns mit <b>Supportanfragen</b> und <b>Fehlermeldungen</b> zu "
 "kontaktieren ist via"
 
-#: ../inc/extras.php:322
+#: ../inc/extras.php:331
 msgid "Colorlib support forum"
 msgstr "Colorlib-Supportforum"
 
-#: ../inc/extras.php:323
+#: ../inc/extras.php:332
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Wenn dir dieses Design gef&auml;llt, w&uuml;rde ich mich sehr &uuml;ber eins "
 "oder mehrere der folgenden Dinge freuen:"
 
-#: ../inc/extras.php:325
+#: ../inc/extras.php:334
 msgid "Rate this Theme"
 msgstr "Bewerte dieses Design"
 
-#: ../inc/extras.php:326
+#: ../inc/extras.php:335
 msgid "Like on Facebook"
 msgstr "Gef&auml;llt mir auf Facebook"
 
-#: ../inc/extras.php:327
+#: ../inc/extras.php:336
 msgid "Follow on Twitter"
 msgstr "Folgen auf Twitter"
 
-#: ../inc/extras.php:382
+#: ../inc/extras.php:391
 msgid "Something went wrong with the plugin API."
 msgstr "Etwas ist mit dem Plugin API schief gegangen."
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:404
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr "Alle Plugins erfolgreich installiert und aktiviert. %s"
 
-#: ../inc/extras.php:433
+#: ../inc/extras.php:442
 msgid "View your shopping cart"
 msgstr ""
 
-#: ../inc/extras.php:434
+#: ../inc/extras.php:443
 msgid "Start shopping"
 msgstr ""
 
-#: ../inc/extras.php:438
+#: ../inc/extras.php:447
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
@@ -673,7 +673,7 @@ msgstr "Unite: Beliebte Posts-Widget"
 #: ../inc/popular-posts-widget.php:37
 #, fuzzy
 msgid "Popular"
-msgstr "Populäre Beiträge"
+msgstr "Sparkling Beliebte Beiträge Widget"
 
 #: ../inc/popular-posts-widget.php:38
 #, fuzzy
@@ -798,12 +798,12 @@ msgstr "Zeigt die Home Page an"
 #: ../options.php:124
 #, fuzzy
 msgid "Website Layout Options"
-msgstr "Website Layout Optionen"
+msgstr "Website Layout Einstellungen"
 
 #: ../options.php:125
 #, fuzzy
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wähle Rechte oder Linke Sidebar Optionen als voreingestellt"
+msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
 
 #: ../options.php:132
 msgid "Element color"
@@ -1004,12 +1004,12 @@ msgstr "Suchergebnisse f&uuml;r: %s"
 #: ../searchform.php:9
 #, fuzzy
 msgid "Search for:"
-msgstr "Suche nach"
+msgstr "Suche nach:"
 
 #: ../searchform.php:11
 #, fuzzy
 msgid "Search..."
-msgstr "Suche nach"
+msgstr "Suche..."
 
 #: ../sidebar.php:24
 msgid "Meta"
