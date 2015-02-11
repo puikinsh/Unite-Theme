@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.5.8
+Version: 1.5.9
 Tested up to: WP 4.1
 
 #Copyright notice#
@@ -60,6 +60,10 @@ If you dismiss this notice, you can install those plugins later via Appearance->
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
+
+####1.5.9 - 11.02.2015 ####
+
+* Improved favicon support and now loaded in frontend and backend. 
 
 ####1.5.8 - 26.01.2015 ####
 

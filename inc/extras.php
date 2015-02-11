@@ -466,3 +466,14 @@ function unite_woocommerce_menucart($menu, $args) {
 
 }
 add_filter('wp_nav_menu_items','unite_woocommerce_menucart', 10, 2);
+
+/**
+ * Add custom favicon displayed in WordPress dashboard and frontend
+ */
+function unite_custom_favicon() {
+  if ( of_get_option( 'custom_favicon' ) ) {
+    echo '<link rel="shortcut icon" type="image/x-icon" href="' . of_get_option( 'custom_favicon' ) . '" />'. "\n";
+  }
+}
+add_action( 'wp_head', 'unite_custom_favicon', 0 );
+add_action( 'admin_head', 'unite_custom_favicon', 0 );
