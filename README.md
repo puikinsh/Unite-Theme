@@ -36,10 +36,9 @@ You can install the theme through the WordPress installer under "Themes" > "Inst
 
 Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder of your WordPress installation. You will then be able to activate the theme.
 
-This theme relies on Options Framework by WP Theming to provide customization options.
-Right after you activate Unite, you'll see message on top of your screen, asking you to install Options Framework (required) and CPT Bootstrap Carousel (optional). Make sure you install and activate those plugins.
+Right after you activate Unite, you'll see message on top of your screen, asking you to install CPT Bootstrap Carousel (optional). Make sure you install and activate it if you want to setup image slider just like on theme demo
 
-If you dismiss this notice, you can install those plugins later via Appearance->Install plugins.
+If you dismiss this notice, you can install this plugin later via Appearance->Install plugins.
 
 #Theme Features#
 
