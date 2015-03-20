@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.5.9
+Version: 1.5.10
 Tested up to: WP 4.1
 
 #Copyright notice#
@@ -59,6 +59,10 @@ If you dismiss this notice, you can install this plugin later via Appearance->In
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
+
+####1.5.10 - 20.03.2015 ####
+
+Updated Bootstrap framework to 3.3.4
 
 ####1.5.9 - 11.02.2015 ####
 
