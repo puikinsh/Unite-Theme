@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme 0.1\n"
-"POT-Creation-Date: 2015-01-26 14:05+0200\n"
-"PO-Revision-Date: 2015-01-26 14:05+0200\n"
+"POT-Creation-Date: 2015-03-20 16:38+0200\n"
+"PO-Revision-Date: 2015-03-20 16:38+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Beliyah\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -214,19 +214,19 @@ msgstr "N&auml;chste <i class=\"fa fa-chevron-right\"></i>"
 #: ../inc/admin/includes/class-options-framework-admin.php:91
 #, fuzzy
 msgid "Theme Options"
-msgstr "Theme Optionen"
+msgstr "Einstellungen"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:186
 #, fuzzy
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
-"Klicke OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
-"gespeichert!"
+"Klicken Sie auf OK, um die Einstellungen zurückzusetzen. Alle Design-"
+"Änderungen gehen verloren!"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:217
 #, fuzzy
 msgid "Default options restored."
-msgstr "Standardeinstellungen wieder hergestellt."
+msgstr "Standardeinstellungen wiederhergestellt."
 
 #: ../inc/admin/includes/class-options-framework-admin.php:271
 #, fuzzy
@@ -242,7 +242,7 @@ msgstr "Keine Datei ausgewählt"
 #: ../inc/admin/includes/class-options-media-uploader.php:119
 #, fuzzy
 msgid "Upload"
-msgstr "Upload"
+msgstr "Hochladen"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:68
 #: ../inc/admin/includes/class-options-media-uploader.php:120
@@ -253,7 +253,9 @@ msgstr "Entfernen"
 #: ../inc/admin/includes/class-options-media-uploader.php:71
 #, fuzzy
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "Lade die neueste WordPress Version für vollständigen Mediensupport."
+msgstr ""
+"Aktualisieren Sie Ihre Version von Wordpress zur vollständige Medien-"
+"Unterstützung."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:95
 #, fuzzy
@@ -263,22 +265,22 @@ msgstr "Datei anzeigen"
 #: ../inc/admin/includes/class-options-sanitization.php:241
 #, fuzzy
 msgid "No Repeat"
-msgstr "Ohne Wiederholung"
+msgstr "Keine Wiederholung"
 
 #: ../inc/admin/includes/class-options-sanitization.php:242
 #, fuzzy
 msgid "Repeat Horizontally"
-msgstr "Horizontale Wiederholung"
+msgstr "Horizontal wiederholen"
 
 #: ../inc/admin/includes/class-options-sanitization.php:243
 #, fuzzy
 msgid "Repeat Vertically"
-msgstr "Vertikale Wiederholung"
+msgstr "Vertikal wiederholen"
 
 #: ../inc/admin/includes/class-options-sanitization.php:244
 #, fuzzy
 msgid "Repeat All"
-msgstr "Wiederholen"
+msgstr "Alles wiederholen"
 
 #: ../inc/admin/includes/class-options-sanitization.php:257
 #, fuzzy
@@ -288,7 +290,7 @@ msgstr "Oben links"
 #: ../inc/admin/includes/class-options-sanitization.php:258
 #, fuzzy
 msgid "Top Center"
-msgstr "Oben Zentrum"
+msgstr "Oben mitte"
 
 #: ../inc/admin/includes/class-options-sanitization.php:259
 #, fuzzy
@@ -303,7 +305,7 @@ msgstr "Mitte links"
 #: ../inc/admin/includes/class-options-sanitization.php:261
 #, fuzzy
 msgid "Middle Center"
-msgstr "Mitte Zentrum"
+msgstr "Mitte zentrum"
 
 #: ../inc/admin/includes/class-options-sanitization.php:262
 #, fuzzy
@@ -318,7 +320,7 @@ msgstr "Unten links"
 #: ../inc/admin/includes/class-options-sanitization.php:264
 #, fuzzy
 msgid "Bottom Center"
-msgstr "Unten Zentrum"
+msgstr "Unten mitte"
 
 #: ../inc/admin/includes/class-options-sanitization.php:265
 #, fuzzy
@@ -333,7 +335,7 @@ msgstr "Normal scrollen"
 #: ../inc/admin/includes/class-options-sanitization.php:279
 #, fuzzy
 msgid "Fixed in Place"
-msgstr "Am Platz fixiert"
+msgstr "Fixiert"
 
 #: ../inc/admin/includes/class-options-sanitization.php:353
 #, fuzzy
@@ -646,12 +648,14 @@ msgid "All plugins installed and activated successfully. %s"
 msgstr "Alle Plugins erfolgreich installiert und aktiviert. %s"
 
 #: ../inc/extras.php:442
+#, fuzzy
 msgid "View your shopping cart"
-msgstr ""
+msgstr "Zum Warenkorb"
 
 #: ../inc/extras.php:443
+#, fuzzy
 msgid "Start shopping"
-msgstr ""
+msgstr "Jetzt einkaufen"
 
 #: ../inc/extras.php:447
 #, php-format
@@ -673,14 +677,12 @@ msgstr "Unite: Beliebte Posts-Widget"
 #: ../inc/popular-posts-widget.php:37
 #, fuzzy
 msgid "Popular"
-msgstr "Sparkling Beliebte Beiträge Widget"
+msgstr "Beliebt"
 
 #: ../inc/popular-posts-widget.php:38
 #, fuzzy
 msgid "Recent"
-msgstr ""
-"Zeigt eine gekennzeichnite Liste mit beliebten Beitr&auml;gen, neuesten "
-"Beitr&auml;gen und Kommentaren an"
+msgstr "Kürzlich"
 
 #: ../inc/popular-posts-widget.php:105
 msgid "Anonymous"
@@ -701,12 +703,12 @@ msgstr "Beitr&auml;ge-Navigation"
 #: ../inc/template-tags.php:27
 #, fuzzy
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> ältere Artikel"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Ältere Beiträge"
 
 #: ../inc/template-tags.php:31
 #, fuzzy
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "neuere Artikel <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Neuere Beiträge <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
@@ -737,12 +739,12 @@ msgstr ""
 #: ../options.php:32
 #, fuzzy
 msgid "Right Sidebar"
-msgstr "Rechte Sidebar"
+msgstr "Rechte Seitenleiste"
 
 #: ../options.php:32
 #, fuzzy
 msgid "Left Sidebar"
-msgstr "Linke Sidebar"
+msgstr "Linke Seitenleiste"
 
 #: ../options.php:36
 msgid "One"
@@ -798,12 +800,14 @@ msgstr "Zeigt die Home Page an"
 #: ../options.php:124
 #, fuzzy
 msgid "Website Layout Options"
-msgstr "Website Layout Einstellungen"
+msgstr "Webseiten Layout Einstellungen"
 
 #: ../options.php:125
 #, fuzzy
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
+msgstr ""
+"Wähle zwischen linker und rechter Seitenleiste, welche als "
+"Standardeinstellung genutzt wird"
 
 #: ../options.php:132
 msgid "Element color"
@@ -1004,12 +1008,12 @@ msgstr "Suchergebnisse f&uuml;r: %s"
 #: ../searchform.php:9
 #, fuzzy
 msgid "Search for:"
-msgstr "Suche nach:"
+msgstr "Suchen nach:"
 
 #: ../searchform.php:11
 #, fuzzy
 msgid "Search..."
-msgstr "Suche..."
+msgstr "Suchen..."
 
 #: ../sidebar.php:24
 msgid "Meta"
