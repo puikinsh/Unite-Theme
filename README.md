@@ -60,9 +60,10 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
 
-####1.5.10 - 20.03.2015 ####
+####1.5.10 - 25.03.2015 ####
 
-Updated Bootstrap framework to 3.3.4
+* Updated Bootstrap framework to 3.3.4
+* Added extra class name "header-area" to provide more flexibility when customizing this theme.
 
 ####1.5.9 - 11.02.2015 ####
 

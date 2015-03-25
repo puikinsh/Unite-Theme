@@ -21,7 +21,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<div class="container">
+	<div class="container header-area">
 		<?php do_action( 'before' ); ?>
 		<header id="masthead" class="site-header col-sm-12" role="banner">
 
