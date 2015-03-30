@@ -64,6 +64,7 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 * Updated Bootstrap framework to 3.3.4
 * Added extra class name "header-area" to provide more flexibility when customizing this theme.
+* Fixed problem with invisible label for color variations in WooCommerce
 
 ####1.5.9 - 11.02.2015 ####
 

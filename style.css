@@ -867,3 +867,6 @@ hr.section-divider:after {
 .woocommerce-page div.product div.images img {
   border-radius: 5px;
 }
+.woocommerce div.product form.cart .variations label {
+  color: #6B6B6B;
+}
