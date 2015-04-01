@@ -848,25 +848,9 @@ hr.section-divider:after {
 
 /* =WooCommerce styling
 ----------------------------------------------- */
-.woocommerce .woocommerce-message,
-.woocommerce-page .woocommerce-message {
-  border-top: 3px solid #54397E;
-}
-.woocommerce .woocommerce-message:before,
-.woocommerce-page .woocommerce-message:before {
-  background-color: #54397E;
-  padding-top: 1px;
-}
-.woocommerce .woocommerce-info:before,
-.woocommerce-page .woocommerce-info:before {
-  padding-top: 1px;
-}
-.woocommerce #content div.product div.images img,
-.woocommerce div.product div.images img,
-.woocommerce-page #content div.product div.images img,
-.woocommerce-page div.product div.images img {
-  border-radius: 5px;
-}
-.woocommerce div.product form.cart .variations label {
-  color: #6B6B6B;
+
+#shipping_method_0_free_shipping,
+#shipping_method_0_international_delivery,
+#shipping_method_0_flat_rate {
+    margin-right: 30px;
 }
