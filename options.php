@@ -18,47 +18,47 @@ function optionsframework_option_name() {
 
 function optionsframework_options() {
 
-  // Option to switch between the_excerpt and the_content
+	// Option to switch between the_excerpt and the_content
 	$blog_layout = array('1' => __('Display full content for each post', 'unite'),'2' => __('Display excerpt for each post', 'unite'));
 
 	// Color schemes
 	$site_layout = array('pull-left' => __('Right Sidebar', 'unite'),'pull-right' => __('Left Sidebar', 'unite'));
 
- 	// Test data
-  $test_array = array(
+		// Test data
+	$test_array = array(
 		'one'   => __('One', 'options_framework_theme'),
 		'two'   => __('Two', 'options_framework_theme'),
 		'three' => __('Three', 'options_framework_theme'),
 		'four'  => __('Four', 'options_framework_theme'),
 		'five'  => __('Five', 'options_framework_theme')
-  );
+	);
 
-  // Multicheck Array
-  $multicheck_array = array(
+	// Multicheck Array
+	$multicheck_array = array(
 		'one'   => __('French Toast', 'options_framework_theme'),
 		'two'   => __('Pancake', 'options_framework_theme'),
 		'three' => __('Omelette', 'options_framework_theme'),
 		'four'  => __('Crepe', 'options_framework_theme'),
 		'five'  => __('Waffle', 'options_framework_theme')
-  );
+	);
 
-  // Multicheck Defaults
-  $multicheck_defaults = array(
+	// Multicheck Defaults
+	$multicheck_defaults = array(
 		'one'  => '1',
 		'five' => '1'
-  );
+	);
 
-  // Typography Defaults
-  $typography_defaults = array(
+	// Typography Defaults
+	$typography_defaults = array(
 		'size'  => '15px',
 		'face'  => 'Helvetica Neue',
 		'style' => 'normal',
 		'color' => '#6B6B6B' );
 
-  // Typography Options
-  $typography_options = array(
-    'sizes' => array( '6','10','12','14','15','16','18','20','24','28','32','36','42','48' ),
-    'faces' => array(
+	// Typography Options
+	$typography_options = array(
+	  'sizes' => array( '6','10','12','14','15','16','18','20','24','28','32','36','42','48' ),
+	  'faces' => array(
 			'arial'          => 'Arial',
 			'verdana'        => 'Verdana, Geneva',
 			'trebuchet'      => 'Trebuchet',
@@ -69,35 +69,35 @@ function optionsframework_options() {
 			'helvetica'      => 'Helvetica',
 			'Helvetica Neue' => 'Helvetica Neue'
 	),
-    'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
-    'color' => true
-  );
+	  'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
+	  'color' => true
+	);
 
-// Pull all the categories into an array
-  $options_categories = array();
-  $options_categories_obj = get_categories();
-  foreach ($options_categories_obj as $category) {
-    $options_categories[$category->cat_ID] = $category->cat_name;
-  }
+	// Pull all the categories into an array
+	$options_categories = array();
+	$options_categories_obj = get_categories();
+	foreach ($options_categories_obj as $category) {
+	  $options_categories[$category->cat_ID] = $category->cat_name;
+	}
 
-  // Pull all tags into an array
-  $options_tags = array();
-  $options_tags_obj = get_tags();
-  foreach ( $options_tags_obj as $tag ) {
-    $options_tags[$tag->term_id] = $tag->name;
-  }
+	// Pull all tags into an array
+	$options_tags = array();
+	$options_tags_obj = get_tags();
+	foreach ( $options_tags_obj as $tag ) {
+	  $options_tags[$tag->term_id] = $tag->name;
+	}
 
 
-  // Pull all the pages into an array
-  $options_pages = array();
-  $options_pages_obj = get_pages('sort_column=post_parent,menu_order');
-  $options_pages[''] = 'Select a page:';
-  foreach ($options_pages_obj as $page) {
-    $options_pages[$page->ID] = $page->post_title;
-  }
+	// Pull all the pages into an array
+	$options_pages = array();
+	$options_pages_obj = get_pages('sort_column=post_parent,menu_order');
+	$options_pages[''] = 'Select a page:';
+	foreach ($options_pages_obj as $page) {
+	  $options_pages[$page->ID] = $page->post_title;
+	}
 
-  // If using image radio buttons, define a directory path
-  $imagepath =  get_template_directory_uri() . '/images/';
+	// If using image radio buttons, define a directory path
+	$imagepath =  get_template_directory_uri() . '/images/';
 
 
 	// fixed or scroll position
@@ -355,7 +355,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_flickr',
 		'desc'  => __('Flickr', 'unite'),
 		'std'   => '',
@@ -363,7 +363,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_instagram',
 		'desc'  => __('Instagram', 'unite'),
 		'std'   => '',
@@ -371,7 +371,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_dribbble',
 		'desc'  => __('Dribbble', 'unite'),
 		'std'   => '',
@@ -379,7 +379,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_skype',
 		'desc'  => __('Skype', 'unite'),
 		'std'   => '',
@@ -387,7 +387,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_vimeo',
 		'desc'  => __('Vimeo', 'unite'),
 		'std'   => '',
