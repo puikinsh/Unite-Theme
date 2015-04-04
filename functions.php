@@ -97,36 +97,36 @@ function unite_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
-			'id'            => 'home1',
-			'name'          => 'Homepage Widget 1',
-			'description'   => 'Used only on the homepage page template.',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widgettitle">',
-			'after_title'   => '</h3>',
-    ));
+		'id'            => 'home1',
+		'name'          => 'Homepage Widget 1',
+		'description'   => 'Used only on the homepage page template.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>',
+  ));
 
-    register_sidebar(array(
-			'id'            => 'home2',
-			'name'          => 'Homepage Widget 2',
-			'description'   => 'Used only on the homepage page template.',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widgettitle">',
-			'after_title'   => '</h3>',
-    ));
+  register_sidebar(array(
+		'id'            => 'home2',
+		'name'          => 'Homepage Widget 2',
+		'description'   => 'Used only on the homepage page template.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>',
+  ));
 
-    register_sidebar(array(
-			'id'            => 'home3',
-			'name'          => 'Homepage Widget 3',
-			'description'   => 'Used only on the homepage page template.',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widgettitle">',
-			'after_title'   => '</h3>',
-    ));
+  register_sidebar(array(
+		'id'            => 'home3',
+		'name'          => 'Homepage Widget 3',
+		'description'   => 'Used only on the homepage page template.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>',
+  ));
 
-    register_widget( 'unite_popular_posts_widget' );
+  register_widget( 'unite_popular_posts_widget' );
 }
 add_action( 'widgets_init', 'unite_widgets_init' );
 
@@ -174,6 +174,9 @@ add_action( 'wp_head', 'unite_ie_support_header', 1 );
 
 define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/' );
 require_once dirname( __FILE__ ) . '/inc/admin/options-framework.php';
+// Loads options.php from child or parent theme
+$optionsfile = locate_template( 'options.php' );
+load_template( $optionsfile );
 
 /**
  * Implement the Custom Header feature.
