@@ -2,8 +2,8 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.6.0
-Tested up to: WP 4.1
+Version: 1.6.1
+Tested up to: WP 4.2
 
 #Copyright notice#
 
@@ -59,6 +59,10 @@ If you dismiss this notice, you can install this plugin later via Appearance->In
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
+
+####1.6.1 - 24.04.2015 ####
+
+Fixed potential security vulnerability for TGM-Plugin-Activation
 
 ####1.6.0 - 04.04.2015 ####
 

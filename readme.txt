@@ -2,8 +2,8 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.6.0
-Tested up to: WP 4.1
+Version: 1.6.1
+Tested up to: WP 4.2
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
