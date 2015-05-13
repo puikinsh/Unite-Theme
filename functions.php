@@ -45,7 +45,7 @@ function unite_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	/**
+	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
@@ -80,10 +80,13 @@ function unite_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
+
 }
 endif; // unite_setup
 add_action( 'after_setup_theme', 'unite_setup' );
 
+
+if ( ! function_exists( 'unite_widgets_init' ) ) :
 /**
  * Register widgetized area and update sidebar with default widgets.
  */
@@ -104,9 +107,9 @@ function unite_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widgettitle">',
 		'after_title'   => '</h3>',
-  ));
+    ));
 
-  register_sidebar(array(
+    register_sidebar(array(
 		'id'            => 'home2',
 		'name'          => 'Homepage Widget 2',
 		'description'   => 'Used only on the homepage page template.',
@@ -114,9 +117,9 @@ function unite_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widgettitle">',
 		'after_title'   => '</h3>',
-  ));
+    ));
 
-  register_sidebar(array(
+    register_sidebar(array(
 		'id'            => 'home3',
 		'name'          => 'Homepage Widget 3',
 		'description'   => 'Used only on the homepage page template.',
@@ -124,15 +127,20 @@ function unite_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widgettitle">',
 		'after_title'   => '</h3>',
-  ));
+    ));
 
-  register_widget( 'unite_popular_posts_widget' );
+    register_widget( 'unite_popular_posts_widget' );
 }
+endif;
 add_action( 'widgets_init', 'unite_widgets_init' );
 
+/**
+ * Include popular posts widget for Unite theme
+ */
 include(get_template_directory() . "/inc/popular-posts-widget.php");
 
 
+if ( ! function_exists( 'unite_scripts' ) ) :
 /**
  * Enqueue scripts and styles.
  */
@@ -152,17 +160,21 @@ function unite_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+endif;
 add_action( 'wp_enqueue_scripts', 'unite_scripts' );
 
+
+if ( ! function_exists( 'unite_ie_support_header' ) ) :
 /**
  * Add HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries
  */
 function unite_ie_support_header() {
-	echo '<!--[if lt IE 9]>'. "\n";
-	echo '<script src="' . esc_url( get_template_directory_uri() . '/inc/js/html5shiv.min.js' ) . '"></script>'. "\n";
-	echo '<script src="' . esc_url( get_template_directory_uri() . '/inc/js/respond.min.js' ) . '"></script>'. "\n";
-	echo '<![endif]-->'. "\n";
+    echo '<!--[if lt IE 9]>'. "\n";
+    echo '<script src="' . esc_url( get_template_directory_uri() . '/inc/js/html5shiv.min.js' ) . '"></script>'. "\n";
+    echo '<script src="' . esc_url( get_template_directory_uri() . '/inc/js/respond.min.js' ) . '"></script>'. "\n";
+    echo '<![endif]-->'. "\n";
 }
+endif;
 add_action( 'wp_head', 'unite_ie_support_header', 1 );
 
 /*

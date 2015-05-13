@@ -14,8 +14,8 @@
  * @return array
  */
 function unite_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
+  $args['show_home'] = true;
+  return $args;
 }
 add_filter( 'wp_page_menu_args', 'unite_page_menu_args' );
 
@@ -26,15 +26,14 @@ add_filter( 'wp_page_menu_args', 'unite_page_menu_args' );
  * @return array
  */
 function unite_body_classes( $classes ) {
-	// Adds a class of group-blog to blogs with more than 1 published author.
-	if ( is_multi_author() ) {
-		$classes[] = 'group-blog';
-	}
+  // Adds a class of group-blog to blogs with more than 1 published author.
+  if ( is_multi_author() ) {
+    $classes[] = 'group-blog';
+  }
 
-	return $classes;
+  return $classes;
 }
 add_filter( 'body_class', 'unite_body_classes' );
-
 
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
   /**
@@ -89,21 +88,35 @@ function unite_title( $title ) {
   }
 }
 
-// Add Filters
-add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
+/**
+ * Allow shortcodes in Dynamic Sidebar
+ */
+add_filter('widget_text', 'do_shortcode');
 
-// Prevent page scroll when clicking the more link
+/**
+ * Prevent page scroll when clicking the more link
+ */
 function unite_remove_more_link_scroll( $link ) {
   $link = preg_replace( '|#more-[0-9]+|', '', $link );
   return $link;
 }
 add_filter( 'the_content_more_link', 'unite_remove_more_link_scroll' );
 
-// Change default "Read More" button when using the_excerpt
+/**
+ * Change default "Read More" button when using the_excerpt
+ */
 function unite_excerpt_more( $more ) {
   return ' <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">Continue reading <i class="fa fa-chevron-right"></i></a>';
 }
 add_filter( 'excerpt_more', 'unite_excerpt_more' );
+
+/**
+ * Add Bootstrap classes for table
+ */
+function unite_add_custom_table_class( $content ) {
+    return str_replace( '<table>', '<table class="table table-hover">', $content );
+}
+add_filter( 'the_content', 'unite_add_custom_table_class' );
 
 /**
  * Sets the authordata global when viewing an author archive.
@@ -118,45 +131,45 @@ add_filter( 'excerpt_more', 'unite_excerpt_more' );
  * @return void
  */
 function unite_setup_author() {
-	global $wp_query;
+  global $wp_query;
 
-	if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
-		$GLOBALS['authordata'] = get_userdata( $wp_query->post->post_author );
-	}
+  if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
+    $GLOBALS['authordata'] = get_userdata( $wp_query->post->post_author );
+  }
 }
 add_action( 'wp', 'unite_setup_author' );
 
 
-/****************** password protected post form *****/
-
+if ( ! function_exists( 'custom_password_form' ) ) :
+/**
+ * password protected post form
+ */
+function custom_password_form() {
+  global $post;
+  $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+  $o = '<form class="protected-post-form" action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post">
+        <div class="row">
+          <div class="col-lg-10">
+              ' . __( "<p>This post is password protected. To view it please enter your password below:</p>" ,'unite') . '
+              <label for="' . $label . '">' . __( "Password:" ,'unite') . ' </label>
+            <div class="input-group">
+              <input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
+              <span class="input-group-btn"><button type="submit" class="btn btn-primary" name="submit" id="searchsubmit" vvalue="' . esc_attr__( "Submit",'unite' ) . '">' . __( "Submit" ,'unite') . '</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>';
+  return $o;
+}
+endif;
 add_filter( 'the_password_form', 'custom_password_form' );
 
-function custom_password_form() {
-	global $post;
-	$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
-	$o = '<form class="protected-post-form" action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post">
-  <div class="row">
-    <div class="col-lg-10">
-        ' . __( "<p>This post is password protected. To view it please enter your password below:</p>" ,'unite') . '
-        <label for="' . $label . '">' . __( "Password:" ,'unite') . ' </label>
-      <div class="input-group">
-        <input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
-        <span class="input-group-btn"><button type="submit" class="btn btn-primary" name="submit" id="searchsubmit" vvalue="' . esc_attr__( "Submit",'unite' ) . '">' . __( "Submit" ,'unite') . '</button>
-        </span>
-      </div>
-    </div>
-  </div>
-</form>';
-	return $o;
-}
 
-// Add Bootstrap classes for table
-add_filter( 'the_content', 'unite_add_custom_table_class' );
-function unite_add_custom_table_class( $content ) {
-    return str_replace( '<table>', '<table class="table table-hover">', $content );
-}
-
-//Display social links
+if ( ! function_exists( 'unite_social' ) ) :
+/**
+ * Process social links from Theme Options
+ */
 function unite_social(){
   $output = '<div id="social" class="social">';
   $output .= unite_social_item(of_get_option('social_facebook'), 'Facebook', 'facebook');
@@ -175,7 +188,13 @@ function unite_social(){
   $output .= '</div>';
   echo $output;
 }
+endif;
 
+
+if ( ! function_exists( 'unite_social_item' ) ) :
+/**
+ * Output social links on frontend.
+ */
 function unite_social_item($url, $title = '', $icon = ''){
   if($url != ''):
     $output = '<a class="social-profile '.$icon.'" href="'.esc_url($url).'" target="_blank" title="'.$title.'">';
@@ -184,8 +203,13 @@ function unite_social_item($url, $title = '', $icon = ''){
     return $output;
   endif;
 }
+endif;
 
-// footer menu (should you choose to use one)
+
+if ( ! function_exists( 'unite_footer_links' ) ) :
+/**
+ * footer menu (should you choose to use one)
+ */
 function unite_footer_links() {
   // display the WordPress Custom Menu if available
   wp_nav_menu(array(
@@ -202,8 +226,11 @@ function unite_footer_links() {
     'fallback_cb'     => 'unite_footer_links_fallback'  // fallback function
   ));
 } /* end unite footer link */
+endif;
 
-// Get Post Views - for Popular Posts widget
+/**
+ * Get Post Views - for Popular Posts widget
+ */
 function unite_getPostViews($postID){
     $count_key = 'post_views_count';
     $count = get_post_meta($postID, $count_key, true);
@@ -228,7 +255,6 @@ function unite_setPostViews($postID) {
 }
 
 
-add_action( 'unite_footer', 'unite_footer_info', 30 );
 /**
  * function to show the footer info, copyright information
  */
@@ -236,10 +262,13 @@ function unite_footer_info() {
    $output = '<a href="http://colorlib.com/wp/unite" title="Unite Theme" target="_blank">Unite Theme</a> powered by <a href="http://wordpress.org" title="WordPress" target="_blank">WordPress</a>.';
    echo $output;
 }
+add_action( 'unite_footer', 'unite_footer_info', 30 );
 
-// Get theme options
 
-if (!function_exists('get_unite_theme_options'))  {
+if ( ! function_exists( 'get_unite_theme_options' ) )  {
+/**
+ * Generate custom CSS output in website source from Theme Options.
+ */
     function get_unite_theme_options(){
 
       echo '<style type="text/css">';
@@ -284,10 +313,10 @@ if (!function_exists('get_unite_theme_options'))  {
         echo '.site-info a {color: '.of_get_option('footer_link_color', '#000').';}';
       }
       if ( of_get_option('social_color')) {
-        echo '.social-profile {color: '.of_get_option('social_color', '#000').';}';
+        echo '.social-profile {color: '.of_get_option('social_color', '#000').' !important;}';
       }
       if ( of_get_option('social_hover_color')) {
-        echo '.social-profile:hover {color: '.of_get_option('social_hover_color', '#000').' !important;}';
+        echo '.social-profile.facebook:hover, .social-profile.twitter:hover, .social-profile.google-plus:hover, .social-profile.youtube:hover, .social-profile.linkedin:hover, .social-profile.pinterest:hover, .social-profile.rss:hover, .social-profile.tumblr:hover, .social-profile.flickr:hover, .social-profile.instagram:hover, .social-profile.dribbble:hover, .social-profile.skype:hover, .social-profile.square:hover {color: '.of_get_option('social_hover_color', '#000').';}';
       }
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
@@ -301,7 +330,9 @@ if (!function_exists('get_unite_theme_options'))  {
 }
 add_action('wp_head','get_unite_theme_options',10);
 
-// Theme Options sidebar
+/**
+ *  Theme Options sidebar
+ */
 add_action( 'optionsframework_after','unite_options_display_sidebar' );
 
 function unite_options_display_sidebar() { ?>
@@ -346,7 +377,6 @@ function unite_options_display_sidebar() { ?>
 /**
  * Include the TGM_Plugin_Activation class.
  */
-
 require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'unite_register_required_plugins' );
@@ -369,42 +399,42 @@ function unite_register_required_plugins() {
   );
 
 /**
- * Array of configuration settings. Amend each line as needed.
- * If you want the default strings to be available under your own theme domain,
- * leave the strings uncommented.
- * Some of the strings are added into a sprintf, so see the comments at the
- * end of each line for what each argument will be.
- */
-$config = array(
-    'id'           => 'unite',                 // Unique ID for hashing notices for multiple instances of unite.
-    'default_path' => '',                      // Default absolute path to pre-packaged plugins.
-    'menu'         => 'unite-install-plugins', // Menu slug.
-    'has_notices'  => true,                    // Show admin notices or not.
-    'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-    'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-    'is_automatic' => false,                   // Automatically activate plugins after installation or not.
-    'message'      => '',                      // Message to output right before the plugins table.
-    'strings'      => array(
-        'page_title'                      => __( 'Install Required Plugins', 'unite' ),
-        'menu_title'                      => __( 'Install Plugins', 'unite' ),
-        'installing'                      => __( 'Installing Plugin: %s', 'unite' ), // %s = plugin name.
-        'oops'                            => __( 'Something went wrong with the plugin API.', 'unite' ),
-        'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
-        'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
-        'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'unite' ), // %1$s = plugin name(s).
-        'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
-        'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
-        'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'unite' ), // %1$s = plugin name(s).
-        'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'unite' ), // %1$s = plugin name(s).
-        'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'unite' ), // %1$s = plugin name(s).
-        'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'unite' ),
-        'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins', 'unite' ),
-        'return'                          => __( 'Return to Required Plugins Installer', 'unite' ),
-        'plugin_activated'                => __( 'Plugin activated successfully.', 'unite' ),
-        'complete'                        => __( 'All plugins installed and activated successfully. %s', 'unite' ), // %s = dashboard link.
-        'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
-    )
-);
+     * Array of configuration settings. Amend each line as needed.
+     * If you want the default strings to be available under your own theme domain,
+     * leave the strings uncommented.
+     * Some of the strings are added into a sprintf, so see the comments at the
+     * end of each line for what each argument will be.
+     */
+    $config = array(
+        'id'           => 'unite',                 // Unique ID for hashing notices for multiple instances of unite.
+        'default_path' => '',                      // Default absolute path to pre-packaged plugins.
+        'menu'         => 'unite-install-plugins', // Menu slug.
+        'has_notices'  => true,                    // Show admin notices or not.
+        'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+        'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+        'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+        'message'      => '',                      // Message to output right before the plugins table.
+        'strings'      => array(
+            'page_title'                      => __( 'Install Required Plugins', 'unite' ),
+            'menu_title'                      => __( 'Install Plugins', 'unite' ),
+            'installing'                      => __( 'Installing Plugin: %s', 'unite' ), // %s = plugin name.
+            'oops'                            => __( 'Something went wrong with the plugin API.', 'unite' ),
+            'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
+            'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'unite' ), // %1$s = plugin name(s).
+            'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'unite' ), // %1$s = plugin name(s).
+            'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
+            'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'unite' ), // %1$s = plugin name(s).
+            'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'unite' ), // %1$s = plugin name(s).
+            'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'unite' ), // %1$s = plugin name(s).
+            'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'unite' ), // %1$s = plugin name(s).
+            'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'unite' ),
+            'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins', 'unite' ),
+            'return'                          => __( 'Return to Required Plugins Installer', 'unite' ),
+            'plugin_activated'                => __( 'Plugin activated successfully.', 'unite' ),
+            'complete'                        => __( 'All plugins installed and activated successfully. %s', 'unite' ), // %s = dashboard link.
+            'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
+        )
+    );
 
   tgmpa( $plugins, $config );
 
@@ -413,7 +443,6 @@ $config = array(
 /*
  * Basic WooCommerce setup.
  */
-
 add_action('woocommerce_before_main_content', 'unite_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'unite_wrapper_end', 10);
 
@@ -425,12 +454,13 @@ function unite_wrapper_end() {
   echo '</div>';
 }
 
+
+if ( ! function_exists( 'unite_woocommerce_menucart' ) ) :
 /**
  * Place a cart icon with number of items and total cost in the menu bar.
  *
  * https://gist.github.com/srikat/8264387#file-functions-php
  */
-
 function unite_woocommerce_menucart($menu, $args) {
 
   // Check if WooCommerce is active and add a new item to a menu assigned to Primary Navigation Menu location
@@ -465,8 +495,11 @@ function unite_woocommerce_menucart($menu, $args) {
   return $menu . $social;
 
 }
+endif;
 add_filter('wp_nav_menu_items','unite_woocommerce_menucart', 10, 2);
 
+
+if ( ! function_exists( 'unite_custom_favicon' ) ) :
 /**
  * Add custom favicon displayed in WordPress dashboard and frontend
  */
@@ -475,5 +508,6 @@ function unite_custom_favicon() {
     echo '<link rel="shortcut icon" type="image/x-icon" href="' . of_get_option( 'custom_favicon' ) . '" />'. "\n";
   }
 }
+endif;
 add_action( 'wp_head', 'unite_custom_favicon', 0 );
 add_action( 'admin_head', 'unite_custom_favicon', 0 );
