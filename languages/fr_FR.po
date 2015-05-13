@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
-"POT-Creation-Date: 2015-04-24 11:30+0200\n"
-"PO-Revision-Date: 2015-04-24 11:31+0200\n"
+"POT-Creation-Date: 2015-05-13 20:50+0200\n"
+"PO-Revision-Date: 2015-05-13 20:50+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
@@ -194,11 +194,11 @@ msgstr "% Commentaires"
 msgid "Primary Menu"
 msgstr "Menu principal"
 
-#: ../functions.php:61 ../inc/extras.php:194
+#: ../functions.php:61 ../inc/extras.php:218
 msgid "Footer Links"
 msgstr "Liens du pied de page"
 
-#: ../functions.php:92
+#: ../functions.php:95
 msgid "Sidebar"
 msgstr "Colonne lat&eacute;rale"
 
@@ -328,15 +328,15 @@ msgstr "Gras"
 msgid "Bold Italic"
 msgstr "Gras Italique"
 
-#: ../inc/class-tgm-plugin-activation.php:226 ../inc/extras.php:388
+#: ../inc/class-tgm-plugin-activation.php:226 ../inc/extras.php:418
 msgid "Install Required Plugins"
 msgstr "Installation d'une extension n&eacute;cessaire"
 
-#: ../inc/class-tgm-plugin-activation.php:227 ../inc/extras.php:389
+#: ../inc/class-tgm-plugin-activation.php:227 ../inc/extras.php:419
 msgid "Install Plugins"
 msgstr "Installation d'une extension"
 
-#: ../inc/class-tgm-plugin-activation.php:228 ../inc/extras.php:390
+#: ../inc/class-tgm-plugin-activation.php:228 ../inc/extras.php:420
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Installation de l'extension : %s"
@@ -345,17 +345,17 @@ msgstr "Installation de l'extension : %s"
 msgid "Something went wrong."
 msgstr "Quelque chose ne va pas."
 
-#: ../inc/class-tgm-plugin-activation.php:230 ../inc/extras.php:392
+#: ../inc/class-tgm-plugin-activation.php:230 ../inc/extras.php:422
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:231 ../inc/extras.php:393
+#: ../inc/class-tgm-plugin-activation.php:231 ../inc/extras.php:423
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:232 ../inc/extras.php:394
+#: ../inc/class-tgm-plugin-activation.php:232 ../inc/extras.php:424
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -363,17 +363,17 @@ msgid ""
 "installed."
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:233 ../inc/extras.php:395
+#: ../inc/class-tgm-plugin-activation.php:233 ../inc/extras.php:425
 #, fuzzy, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgstr "L'extension est activ&eacute; avec succ&eacute;s."
 
-#: ../inc/class-tgm-plugin-activation.php:234 ../inc/extras.php:396
+#: ../inc/class-tgm-plugin-activation.php:234 ../inc/extras.php:426
 #, fuzzy, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgstr "L'extension est activ&eacute; avec succ&eacute;s."
 
-#: ../inc/class-tgm-plugin-activation.php:235 ../inc/extras.php:397
+#: ../inc/class-tgm-plugin-activation.php:235 ../inc/extras.php:427
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -381,14 +381,14 @@ msgid ""
 "plugin activated."
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:236 ../inc/extras.php:398
+#: ../inc/class-tgm-plugin-activation.php:236 ../inc/extras.php:428
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
 "maximum compatibility with this theme: %1$s."
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:237 ../inc/extras.php:399
+#: ../inc/class-tgm-plugin-activation.php:237 ../inc/extras.php:429
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -396,17 +396,17 @@ msgid ""
 "updated."
 msgstr ""
 
-#: ../inc/class-tgm-plugin-activation.php:238 ../inc/extras.php:400
+#: ../inc/class-tgm-plugin-activation.php:238 ../inc/extras.php:430
 #, fuzzy
 msgid "Begin installing plugin"
 msgstr "Installation de l'extension : %s"
 
-#: ../inc/class-tgm-plugin-activation.php:239 ../inc/extras.php:401
+#: ../inc/class-tgm-plugin-activation.php:239 ../inc/extras.php:431
 #, fuzzy
 msgid "Begin activating plugin"
 msgstr "Echec de l'activation de l'extension."
 
-#: ../inc/class-tgm-plugin-activation.php:240 ../inc/extras.php:402
+#: ../inc/class-tgm-plugin-activation.php:240 ../inc/extras.php:432
 #, fuzzy
 msgid "Return to Required Plugins Installer"
 msgstr "Installation d'une extension n&eacute;cessaire"
@@ -417,7 +417,7 @@ msgid "Return to the dashboard"
 msgstr "Retour au Tableau de Bord"
 
 #: ../inc/class-tgm-plugin-activation.php:242
-#: ../inc/class-tgm-plugin-activation.php:2116 ../inc/extras.php:403
+#: ../inc/class-tgm-plugin-activation.php:2116 ../inc/extras.php:433
 msgid "Plugin activated successfully."
 msgstr "L'extension est activ&eacute; avec succ&eacute;s."
 
@@ -587,12 +587,12 @@ msgstr "Toutes les installations sont achev&eacute;es."
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Installation de l'extension %1$s (%2$d/%3$d)"
 
-#: ../inc/extras.php:61
+#: ../inc/extras.php:60
 #, php-format
 msgid "Page %s"
 msgstr "Page %s"
 
-#: ../inc/extras.php:140
+#: ../inc/extras.php:153
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -600,23 +600,23 @@ msgstr ""
 "<p>Cet article est prot&eacute;g&eacute; par un mot de passe. Entrez "
 "maintenant un mot de passe pour le visualiser :</p>"
 
-#: ../inc/extras.php:141
+#: ../inc/extras.php:154
 msgid "Password:"
 msgstr "Mot de passe&nbsp;:"
 
-#: ../inc/extras.php:144
+#: ../inc/extras.php:157
 msgid "Submit"
 msgstr "Soumettre"
 
-#: ../inc/extras.php:324
+#: ../inc/extras.php:355
 msgid "Support and Documentation"
 msgstr "Documentation et Support"
 
-#: ../inc/extras.php:330
+#: ../inc/extras.php:361
 msgid "Unite Documentation"
 msgstr "Documentation du th&egrave;me Unite"
 
-#: ../inc/extras.php:331
+#: ../inc/extras.php:362
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -624,47 +624,47 @@ msgstr ""
 "N'h&eacute;sitez pas &agrave; nous contacter pour <b>une question technique</"
 "b> et pour <b>remonter une anomalie</b> via"
 
-#: ../inc/extras.php:331
+#: ../inc/extras.php:362
 msgid "Colorlib support forum"
 msgstr "Forum du Support Colorlib"
 
-#: ../inc/extras.php:332
+#: ../inc/extras.php:363
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Si vous aimez ce th&egrave;me, je pourrai appr&eacute;cier votre "
 "participation :"
 
-#: ../inc/extras.php:334
+#: ../inc/extras.php:365
 msgid "Rate this Theme"
 msgstr "Notez ce th&egrave;me"
 
-#: ../inc/extras.php:335
+#: ../inc/extras.php:366
 msgid "Like on Facebook"
 msgstr "Cliquez 'J'aime' sur Facebook"
 
-#: ../inc/extras.php:336
+#: ../inc/extras.php:367
 msgid "Follow on Twitter"
 msgstr "Suivez-nous sur Twitter"
 
-#: ../inc/extras.php:391
+#: ../inc/extras.php:421
 #, fuzzy
 msgid "Something went wrong with the plugin API."
 msgstr "Quelque chose ne va pas."
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:434
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr "Toutes les extensions sont install&eacute;es et activ&eacute;es. %s"
 
-#: ../inc/extras.php:442
+#: ../inc/extras.php:472
 msgid "View your shopping cart"
 msgstr ""
 
-#: ../inc/extras.php:443
+#: ../inc/extras.php:473
 msgid "Start shopping"
 msgstr ""
 
-#: ../inc/extras.php:447
+#: ../inc/extras.php:477
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
