@@ -10,7 +10,7 @@ Author URI: http://colorlib.com/wp/
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Unite theme, Copyright 2014-2105 colorlib.com
+Unite theme, Copyright 2014-2015 colorlib.com
 Unite WordPress theme is distributed under the terms of the GNU GPL
 Unite is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 -------------------------------------------------------
