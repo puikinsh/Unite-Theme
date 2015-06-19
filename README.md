@@ -60,6 +60,10 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
 
+####1.6.6 - 19.06.2015 ####
+
+* Replaced h1 tags with h2 on blog and archive pages for better SEO
+
 ####1.6.5 - 24.04.2015 ####
 
 * Theme is now much more Child Theme friendly.
