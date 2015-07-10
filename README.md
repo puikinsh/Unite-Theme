@@ -3,7 +3,7 @@
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
 Version: 1.6.6
-Tested up to: WP 4.2
+Tested up to: WP 4.3
 
 #Copyright notice#
 
@@ -60,9 +60,10 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
 
-####1.6.6 - 19.06.2015 ####
+####1.6.6 - 10.07.2015 ####
 
 * Replaced h1 tags with h2 on blog and archive pages for better SEO
+* Improved Custom CSS forum output
 
 ####1.6.5 - 24.04.2015 ####
 
