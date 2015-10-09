@@ -1,0 +1,995 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Unite Theme\n"
+"POT-Creation-Date: 2015-10-09 21:47+0300\n"
+"PO-Revision-Date: 2015-10-09 21:47+0300\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_n_noop;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Página não encontrada."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Nada foi encontrado. Tente utilizar os links abaixo ou fazer uma nova busca."
+
+#: ../404.php:27
+msgid "Most Used Categories"
+msgstr "Categorias Mais Utilizadas"
+
+#: ../404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Tente procurar nos arquivos mensais. %1$s"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Um comentário sobre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentários sobre &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:35 ../comments.php:59
+msgid "Comment navigation"
+msgstr "Navegação de Comentários"
+
+#: ../comments.php:36 ../comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentários Antigos"
+
+#: ../comments.php:37 ../comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Comentários Recentes &rarr;"
+
+#: ../comments.php:71
+msgid "Comments are closed."
+msgstr "Os comentários estão encerrados."
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto para publicar sua primeira postagem? <a href=\"%1$s\">Comece aqui</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Desculpe, mas nada corresponde com seus termos de busca. Por favor tente "
+"novamente com outras palavras."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Não conseguimos encontrar o que você está procurando. Talvez uma busca possa "
+"ajudar."
+
+#: ../content-page.php:18 ../content-single.php:23 ../content.php:37
+#: ../front-page.php:19 ../image.php:82
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: ../content-page.php:23 ../content-single.php:63 ../content.php:71
+#: ../front-page.php:24 ../inc/template-tags.php:81
+#: ../inc/template-tags.php:100
+msgid "Edit"
+msgstr "Editar"
+
+#: ../content-single.php:32 ../content-single.php:35 ../content.php:48
+#: ../content.php:58
+msgid ", "
+msgstr ", "
+
+#: ../content.php:24
+msgid "Continue reading"
+msgstr "Continuar lendo"
+
+#: ../content.php:30
+msgid "Continue reading <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Continuar lendo <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../content.php:52 ../content.php:62
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:68
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+#: ../content.php:68
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+#: ../content.php:68
+msgid "% Comments"
+msgstr "% Comentários"
+
+#: ../functions.php:60
+msgid "Primary Menu"
+msgstr "Menu Principal"
+
+#: ../functions.php:61 ../inc/extras.php:218
+msgid "Footer Links"
+msgstr "Links do Rodapé"
+
+#: ../functions.php:95
+msgid "Sidebar"
+msgstr "Barra Lateral"
+
+#: ../image.php:25
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Anterior"
+
+#: ../image.php:26
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Próximo <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+#: ../inc/admin/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr "Opções do tema"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+"Clique em OK para reiniciar. Todas as configurações modificadas serão "
+"perdidas!"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr "Opções padrões restauradas."
+
+#: ../inc/admin/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr "Opções Salvas"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr "Nenhum arquivo selecionado"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:65
+#: ../inc/admin/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr "Enviar"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:67
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "Remover"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+"Atualize sua versão do Wordpress para obter o suporte de mídia completo."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr "Ver arquivo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr "Não Repetir"
+
+#: ../inc/admin/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr "Repetir Horizontalmente"
+
+#: ../inc/admin/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr "Repetir Verticalmente"
+
+#: ../inc/admin/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr "Repetir Tudo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr "Superior Esquerdo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr "Centro Superior"
+
+#: ../inc/admin/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr "Superior Direito"
+
+#: ../inc/admin/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr "Meio Esquerdo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr "Centrado"
+
+#: ../inc/admin/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr "Meio Direito"
+
+#: ../inc/admin/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr "Inferior Esquerdo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr "Centro Inferior"
+
+#: ../inc/admin/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr "Inferior Direito"
+
+#: ../inc/admin/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr "Rolar Normalmente"
+
+#: ../inc/admin/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr "Fixo no Local"
+
+#: ../inc/admin/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr "Normal"
+
+#: ../inc/admin/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr "Itálico"
+
+#: ../inc/admin/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr "Negrito"
+
+#: ../inc/admin/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr "Negrito Itálico"
+
+#: ../inc/class-tgm-plugin-activation.php:226 ../inc/extras.php:418
+msgid "Install Required Plugins"
+msgstr "Instalação Requer Plugins"
+
+#: ../inc/class-tgm-plugin-activation.php:227 ../inc/extras.php:419
+msgid "Install Plugins"
+msgstr "Instalar Plugins"
+
+#: ../inc/class-tgm-plugin-activation.php:228 ../inc/extras.php:420
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Instalando o Plugin: %s"
+
+#: ../inc/class-tgm-plugin-activation.php:229
+msgid "Something went wrong."
+msgstr "Ocorreu um erro."
+
+#: ../inc/class-tgm-plugin-activation.php:230 ../inc/extras.php:422
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "Este tema requer o seguinte plugin: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:231 ../inc/extras.php:423
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr "Este tema recomenda o seguinte plugin: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:232 ../inc/extras.php:424
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+"Desculpe, mas você não tem as permissões corretas para instalar o plugin "
+"%s . Entre em contato com o administrador do site para instalar o plugin."
+
+#: ../inc/class-tgm-plugin-activation.php:233 ../inc/extras.php:425
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "O seguinte plugin necessário está inativo: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:234 ../inc/extras.php:426
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "O seguinte plugin recomendado está inativo: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:235 ../inc/extras.php:427
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+"Desculpe, mas você não tem as permissões corretas para ativar o plugin %s . "
+"Entre em contato com o administrador do site para ativar o plugin."
+
+#: ../inc/class-tgm-plugin-activation.php:236 ../inc/extras.php:428
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+"O seguinte plugin precisa ser atualizado para sua versão mais recente para "
+"assegurar máxima compatibilidade com este tema: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:237 ../inc/extras.php:429
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgstr ""
+"Desculpe, mas você não tem as permissões corretas para atualizar o plugin "
+"%s. Entre em contato com o administrador do site para atualizar o plug-in."
+
+#: ../inc/class-tgm-plugin-activation.php:238 ../inc/extras.php:430
+msgid "Begin installing plugin"
+msgstr "Comece a instalação do plugin"
+
+#: ../inc/class-tgm-plugin-activation.php:239 ../inc/extras.php:431
+msgid "Begin activating plugin"
+msgstr "Comece ativando plugin"
+
+#: ../inc/class-tgm-plugin-activation.php:240 ../inc/extras.php:432
+msgid "Return to Required Plugins Installer"
+msgstr "Voltar para a Instalação dos Plugins Requeridos"
+
+#: ../inc/class-tgm-plugin-activation.php:241
+msgid "Return to the dashboard"
+msgstr "Voltar para o Painel de Controle"
+
+#: ../inc/class-tgm-plugin-activation.php:242
+#: ../inc/class-tgm-plugin-activation.php:2116 ../inc/extras.php:433
+msgid "Plugin activated successfully."
+msgstr "Plugin ativado com sucesso."
+
+#: ../inc/class-tgm-plugin-activation.php:243
+#: ../inc/class-tgm-plugin-activation.php:1778
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "O seguinte plug-in foi ativado com sucesso:"
+msgstr[1] "Os seguintes plugins foram ativados com sucesso:"
+
+#: ../inc/class-tgm-plugin-activation.php:244
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Todos os plugins instalados e ativados com sucesso. %1$s"
+
+#: ../inc/class-tgm-plugin-activation.php:245
+msgid "Dismiss this notice"
+msgstr "Ignorar esta notificação"
+
+#: ../inc/class-tgm-plugin-activation.php:1281
+#: ../inc/class-tgm-plugin-activation.php:1465
+msgid "Private Repository"
+msgstr "Repositório privado"
+
+#: ../inc/class-tgm-plugin-activation.php:1285
+#: ../inc/class-tgm-plugin-activation.php:1469
+msgid "Pre-Packaged"
+msgstr "Pré-Pacote"
+
+#: ../inc/class-tgm-plugin-activation.php:1290
+msgid "WordPress Repository"
+msgstr "WordPress Repositório"
+
+#: ../inc/class-tgm-plugin-activation.php:1293
+msgid "Required"
+msgstr "Requerido"
+
+#: ../inc/class-tgm-plugin-activation.php:1293
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: ../inc/class-tgm-plugin-activation.php:1296
+msgid "Not Installed"
+msgstr "Não instalado"
+
+#: ../inc/class-tgm-plugin-activation.php:1299
+msgid "Installed But Not Activated"
+msgstr "Instalado mas não ativado"
+
+#: ../inc/class-tgm-plugin-activation.php:1490
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\">Return to the Dashboard</"
+"a>"
+msgstr ""
+"Sem plugins para instalar ou ativar. <a href=\"%1$s\">Voltar para o Painel "
+"de Controle</a>"
+
+#: ../inc/class-tgm-plugin-activation.php:1506
+msgid "Plugin"
+msgstr "Plugin"
+
+#: ../inc/class-tgm-plugin-activation.php:1507
+msgid "Source"
+msgstr "Fonte"
+
+#: ../inc/class-tgm-plugin-activation.php:1508
+msgid "Type"
+msgstr "Tipo"
+
+#: ../inc/class-tgm-plugin-activation.php:1509
+msgid "Status"
+msgstr "Status"
+
+#: ../inc/class-tgm-plugin-activation.php:1527
+msgid "Install"
+msgstr "Instalar"
+
+#: ../inc/class-tgm-plugin-activation.php:1528
+msgid "Activate"
+msgstr "Ativar"
+
+#: ../inc/class-tgm-plugin-activation.php:2099
+msgid "Install package not available."
+msgstr "Instalação do pacote não disponível."
+
+#: ../inc/class-tgm-plugin-activation.php:2100
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "Baixar e instalar o pacote <span class=\"code\">%s</span>&#8230;"
+
+#: ../inc/class-tgm-plugin-activation.php:2101
+msgid "Unpacking the package&#8230;"
+msgstr "Descompactar o pacote &#8230;"
+
+#: ../inc/class-tgm-plugin-activation.php:2102
+msgid "Installing the plugin&#8230;"
+msgstr "Instalando o plugin &#8230;"
+
+#: ../inc/class-tgm-plugin-activation.php:2103
+msgid "Plugin install failed."
+msgstr "Falha na instalação do plugin."
+
+#: ../inc/class-tgm-plugin-activation.php:2104
+msgid "Plugin installed successfully."
+msgstr "Plugin instalado com sucesso."
+
+#: ../inc/class-tgm-plugin-activation.php:2115
+msgid "Plugin activation failed."
+msgstr "Falha na ativação do plugin."
+
+#: ../inc/class-tgm-plugin-activation.php:2238
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Ocorreu um erro durante a instalação %1$s: <strong>%2$s</strong>."
+
+#: ../inc/class-tgm-plugin-activation.php:2239
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "A instalação de %1$s falhou."
+
+#: ../inc/class-tgm-plugin-activation.php:2243
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"O processo de instalação e ativação está iniciando. Dependendo do servidor,  "
+"este processo pode demorar, por favor seja paciente."
+
+#: ../inc/class-tgm-plugin-activation.php:2244
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s instalado e ativado co sucesso."
+
+#: ../inc/class-tgm-plugin-activation.php:2244
+msgid "Show Details"
+msgstr "Mostrar Detalhes"
+
+#: ../inc/class-tgm-plugin-activation.php:2244
+msgid "Hide Details"
+msgstr "Ocultar Detalhes"
+
+#: ../inc/class-tgm-plugin-activation.php:2245
+msgid "All installations and activations have been completed."
+msgstr "Todas as instalações e ativações foram concluídos."
+
+#: ../inc/class-tgm-plugin-activation.php:2246
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalar e ativar Plugin %1$s (%2$d/%3$d)"
+
+#: ../inc/class-tgm-plugin-activation.php:2250
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"O processo de instalação está iniciando. Dependendo do servidor,  este "
+"processo pode demorar, por favor seja paciente."
+
+#: ../inc/class-tgm-plugin-activation.php:2252
+msgid "All installations have been completed."
+msgstr "Todas as instalações foram concluídas."
+
+#: ../inc/class-tgm-plugin-activation.php:2253
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalando o Plugin %1$s (%2$d/%3$d)"
+
+#: ../inc/extras.php:60
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: ../inc/extras.php:153
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p> Esta postagem é protegido por senha. Para vê-lo, digite sua senha "
+"abaixo: </p>"
+
+#: ../inc/extras.php:154
+msgid "Password:"
+msgstr "Senha:"
+
+#: ../inc/extras.php:157
+msgid "Submit"
+msgstr "Enviar"
+
+#: ../inc/extras.php:355
+msgid "Support and Documentation"
+msgstr "Suporte e Documentação"
+
+#: ../inc/extras.php:361
+msgid "Unite Documentation"
+msgstr "Documentação Unite"
+
+#: ../inc/extras.php:362
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"A melhor maneira de contactar-nos com <b>dúvidas</b> e <b>relatórios de "
+"erros</b> é via"
+
+#: ../inc/extras.php:362
+msgid "Colorlib support forum"
+msgstr "Fórum de suporte Colorlib"
+
+#: ../inc/extras.php:363
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Se você gostou deste tema, agradeceria por escolher uma das seguintes opções:"
+
+#: ../inc/extras.php:365
+msgid "Rate this Theme"
+msgstr "Avalie este Tema"
+
+#: ../inc/extras.php:366
+msgid "Like on Facebook"
+msgstr "Curta no Facebook"
+
+#: ../inc/extras.php:367
+msgid "Follow on Twitter"
+msgstr "Siga no Twitter"
+
+#: ../inc/extras.php:421
+msgid "Something went wrong with the plugin API."
+msgstr "Algo deu errado com a API de plugin."
+
+#: ../inc/extras.php:434
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Todos os plugins instalado e ativado com sucesso. %s"
+
+#: ../inc/extras.php:472
+msgid "View your shopping cart"
+msgstr "Veja o seu carrinho de compras"
+
+#: ../inc/extras.php:473
+msgid "Start shopping"
+msgstr "Iniciar compras"
+
+#: ../inc/extras.php:477
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d item"
+msgstr[1] "%d itens"
+
+#: ../inc/popular-posts-widget.php:13
+msgid "Displays tabbed list of popular posts, recent posts & comments"
+msgstr "Exibir lista de Postagens Populares, Postagens Recentes & Comentários"
+
+#: ../inc/popular-posts-widget.php:19
+msgid "Unite: Popular Posts Widget"
+msgstr "Unite: Widget (Ferramentas) de Postagens Populares"
+
+#: ../inc/popular-posts-widget.php:37
+msgid "Popular"
+msgstr "Popular"
+
+#: ../inc/popular-posts-widget.php:38
+msgid "Recent"
+msgstr "Recente"
+
+#: ../inc/popular-posts-widget.php:105
+msgid "Anonymous"
+msgstr "Anônimo"
+
+#: ../inc/popular-posts-widget.php:105
+msgid "on"
+msgstr "Ligado"
+
+#: ../inc/popular-posts-widget.php:149
+msgid "Number of posts to show"
+msgstr "Número de postagens à exibir"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navegação das Postagens"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Postagens Antigas"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Postagens Recentes <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navegação da Postagem"
+
+#: ../inc/template-tags.php:81
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../inc/template-tags.php:91
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">diz:</span>"
+
+#: ../inc/template-tags.php:104
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando aprovação."
+
+#: ../options.php:22
+msgid "Display full content for each post"
+msgstr "Exibir o conteúdo completo de cada postagem"
+
+#: ../options.php:22
+msgid "Display excerpt for each post"
+msgstr "Exibir trecho de cada postagem"
+
+#: ../options.php:25
+msgid "Right Sidebar"
+msgstr "Barra Lateral à Direita"
+
+#: ../options.php:25
+msgid "Left Sidebar"
+msgstr "Barra Lateral à Esquerda"
+
+#: ../options.php:29
+msgid "One"
+msgstr "Um"
+
+#: ../options.php:30
+msgid "Two"
+msgstr "Dois"
+
+#: ../options.php:31
+msgid "Three"
+msgstr "Três"
+
+#: ../options.php:32
+msgid "Four"
+msgstr "Quatro"
+
+#: ../options.php:33
+msgid "Five"
+msgstr "Cinco"
+
+#: ../options.php:38
+msgid "French Toast"
+msgstr "Torrada Francesa"
+
+#: ../options.php:39
+msgid "Pancake"
+msgstr "Panqueca"
+
+#: ../options.php:40
+msgid "Omelette"
+msgstr "Omelete"
+
+#: ../options.php:41
+msgid "Crepe"
+msgstr "Crepe"
+
+#: ../options.php:42
+msgid "Waffle"
+msgstr "Waffles"
+
+#: ../options.php:109
+msgid "Main"
+msgstr "Principal"
+
+#: ../options.php:114
+msgid "Home Page Settings"
+msgstr "Configurações da Página Inicial"
+
+#: ../options.php:122
+msgid "Website Layout Options"
+msgstr "Opções de Layout do Site"
+
+#: ../options.php:123
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr ""
+"Escolha a posição da Barra Lateral entre Esquerda e Direita para ser usada  "
+"como padrão"
+
+#: ../options.php:132
+msgid "Element color"
+msgstr "Cor do Elemento"
+
+#: ../options.php:133 ../options.php:141 ../options.php:171 ../options.php:179
+#: ../options.php:187 ../options.php:195 ../options.php:279 ../options.php:287
+msgid "Default used if no color is selected"
+msgstr "A cor padrão será usada se nenhuma cor for selecionada"
+
+#: ../options.php:140
+msgid "Element color on hover"
+msgstr ""
+"Cor do elemento em foco (Quando o ponteiro do mouse está sobre um link)"
+
+#: ../options.php:148
+msgid "Custom Favicon"
+msgstr "Favicon Personalizado"
+
+#: ../options.php:149
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr ""
+"Faça o upload de uma imagem com 32x32 pixels nos formatos PNG ou GIF para "
+"ser o ícone que represente seu site"
+
+#: ../options.php:156
+msgid "Typography"
+msgstr "Tipografia"
+
+#: ../options.php:161
+msgid "Main Body Text"
+msgstr "Texto da Página Principal"
+
+#: ../options.php:162
+msgid "Used in P tags"
+msgstr "Usado em tags P (Parágrafo)"
+
+#: ../options.php:170
+msgid "Heading Color"
+msgstr "Cor do Título"
+
+#: ../options.php:178
+msgid "Link Color"
+msgstr "Cor do Link"
+
+#: ../options.php:186
+msgid "Link:hover Color"
+msgstr "Cor do Link em Foco (Quando o ponteiro do mouse está sobre um link)"
+
+#: ../options.php:194
+msgid "Link:active Color"
+msgstr "Cor do link ativo (Quando o link é clicado)"
+
+#: ../options.php:202
+msgid "Header"
+msgstr "Cabeçalho"
+
+#: ../options.php:207
+msgid "Top nav background color"
+msgstr "Cor de fundo do Menu Superior"
+
+#: ../options.php:208
+msgid "Default used if no color is selected."
+msgstr "A cor padrão será usada se nenhuma cor for selecionada"
+
+#: ../options.php:215
+msgid "Top nav item color"
+msgstr "Cor dos Itens do Menu Superior"
+
+#: ../options.php:216
+msgid "Link color"
+msgstr "Cor do Link"
+
+#: ../options.php:223
+msgid "Top nav dropdown background color"
+msgstr "Cor de fundo dos submenus da lista suspensa do menu superior"
+
+#: ../options.php:224
+msgid "Background of dropdown item hover color"
+msgstr "Cor de fundo do item do submenu da lista suspensa quando em foco"
+
+#: ../options.php:231
+msgid "Top nav dropdown item color"
+msgstr "Cor dos itens dos submenus da lista suspensa do menu superior"
+
+#: ../options.php:232
+msgid "Dropdown item color"
+msgstr "Cor dos itens dos submenus da lista suspensa"
+
+#: ../options.php:239
+msgid "Footer"
+msgstr "Rodapé"
+
+#: ../options.php:244
+msgid "Footer Background Color"
+msgstr "Cor de fundo do Rodapé"
+
+#: ../options.php:251
+msgid "Footer Text Color"
+msgstr "Cor do texto do Rodapé"
+
+#: ../options.php:258
+msgid "Footer Link Color"
+msgstr "Cor do link do Rodapé"
+
+#: ../options.php:265
+msgid "Footer information"
+msgstr "Informações do Rodapé"
+
+#: ../options.php:266
+msgid "Copyright text in footer"
+msgstr "Texto de Direitos Autorais no Rodapé"
+
+#: ../options.php:273
+msgid "Social"
+msgstr "Rede Social"
+
+#: ../options.php:278
+msgid "Social Icon Color"
+msgstr "Cor do ícone da Rede Social"
+
+#: ../options.php:286
+msgid "Social Icon:hover Color"
+msgstr "Cor do ícone da Rede Social em foco"
+
+#: ../options.php:294
+msgid "Add full URL for your social network profiles"
+msgstr "Adicione a URL completa para seus perfis das Redes Sociais"
+
+#: ../options.php:295
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:304
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:312
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:320
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:328
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:336
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:344
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+#: ../options.php:352
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:360
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:368
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:376
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../options.php:384
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:392
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:399
+msgid "Other"
+msgstr "Outros"
+
+#: ../options.php:404
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: ../options.php:405
+msgid "Additional CSS"
+msgstr "CSS adicional"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Buscar Resultados para: %s"
+
+#: ../searchform.php:9
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: ../searchform.php:11
+msgid "Search..."
+msgstr "Buscar..."
+
+#: ../sidebar.php:17
+msgid "Archives"
+msgstr "Arquivos"
+
+#: ../sidebar.php:24
+msgid "Meta"
+msgstr "Meta"
+
+#~ msgid "Author: %s"
+#~ msgstr "Autor: %s"
+
+#~ msgid "Day: %s"
+#~ msgstr "Dia: %s"
+
+#~ msgid "Month: %s"
+#~ msgstr "Mês: %s"
+
+#~ msgid "Year: %s"
+#~ msgstr "Ano: %s"
+
+#~ msgid "Asides"
+#~ msgstr "Laterais"
+
+#~ msgid "Galleries"
+#~ msgstr "Galerias"
+
+#~ msgid "Images"
+#~ msgstr "Imagens"
+
+#~ msgid "Videos"
+#~ msgstr "Vídeos"
+
+#~ msgid "Quotes"
+#~ msgstr "Citações"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid "Statuses"
+#~ msgstr "Status"
+
+#~ msgid "Audios"
+#~ msgstr "Áudios"
+
+#~ msgid "Chats"
+#~ msgstr "Chats"

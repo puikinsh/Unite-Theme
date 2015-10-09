@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 1.6.6
+Version: 1.6.7
 Tested up to: WP 4.3
 
 #Copyright notice#
@@ -59,6 +59,10 @@ If you dismiss this notice, you can install this plugin later via Appearance->In
 Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
+
+####1.6.7 - 09.10.2015 ####
+
+* Added Brazilian Portuguese translation thanks to Paulo Eishima
 
 ####1.6.6 - 10.07.2015 ####
 
