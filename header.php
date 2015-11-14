@@ -44,7 +44,7 @@
 				</div>
 
 			<div class="social-header col-md-6">
-				<?php unite_social(); // Social icons in header ?>
+				<?php unite_social_icons(); // Social icons in header ?>
 			</div>
 
 		</header><!-- #masthead -->
@@ -75,4 +75,16 @@
 		    </div>
 		</nav><!-- .site-navigation -->
 
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content container"><?php
+            global $post;
+                if( get_post_meta($post->ID, 'site_layout', true) ){
+                        $layout_class = get_post_meta($post->ID, 'site_layout', true);
+                }
+                else{
+                        $layout_class = of_get_option( 'site_layout' );
+                }
+                if( is_home() && is_sticky( $post->ID ) ){
+                        $layout_class = of_get_option( 'site_layout' );
+                }
+                ?>
+                <div class="row <?php echo $layout_class; ?>">

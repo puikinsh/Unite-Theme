@@ -130,14 +130,22 @@ function unite_widgets_init() {
     ));
 
     register_widget( 'unite_popular_posts_widget' );
+    register_widget( 'unite_social_widget' );
 }
 endif;
 add_action( 'widgets_init', 'unite_widgets_init' );
 
 /**
- * Include popular posts widget for Unite theme
+ * Include widgets for Unite theme
  */
-include(get_template_directory() . "/inc/popular-posts-widget.php");
+include(get_template_directory() . "/inc/widgets/popular-posts-widget.php");
+include(get_template_directory() . "/inc/widgets/widget-social.php");
+
+/**
+ * Include Metabox for Unite theme
+ */
+include(get_template_directory() . "/inc/metaboxes.php");
+
 
 
 if ( ! function_exists( 'unite_scripts' ) ) :
@@ -184,11 +192,11 @@ add_action( 'wp_head', 'unite_ie_support_header', 1 );
  * instead of template_directory
  */
 
-define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/' );
+/*define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/' );
 require_once dirname( __FILE__ ) . '/inc/admin/options-framework.php';
 // Loads options.php from child or parent theme
 $optionsfile = locate_template( 'options.php' );
-load_template( $optionsfile );
+load_template( $optionsfile );*/
 
 /**
  * Implement the Custom Header feature.
@@ -221,3 +229,57 @@ require get_template_directory() . '/inc/jetpack.php';
 
 require get_template_directory() . '/inc/navwalker.php';
 
+/**
+ * Load social nav
+ */
+require get_template_directory() . '/inc/socialnav.php';
+
+/* All Globals variables */
+global $text_domain;
+$text_domain = 'unite';
+
+global $site_layout;
+$site_layout = array('side-pull-left' => esc_html__('Right Sidebar', 'dazzling'),'side-pull-right' => esc_html__('Left Sidebar', 'dazzling'),'no-sidebar' => esc_html__('No Sidebar', 'dazzling'),'full-width' => esc_html__('Full Width', 'dazzling'));
+
+// Typography Options
+global $typography_options;
+$typography_options = array(
+        'sizes' => array( '6px' => '6px','10px' => '10px','12px' => '12px','14px' => '14px','15px' => '15px','16px' => '16px','18'=> '18px','20px' => '20px','24px' => '24px','28px' => '28px','32px' => '32px','36px' => '36px','42px' => '42px','48px' => '48px' ),
+        'faces' => array(
+                'arial'          => 'Arial',
+                'verdana'        => 'Verdana, Geneva',
+                'trebuchet'      => 'Trebuchet',
+                'georgia'        => 'Georgia',
+                'times'          => 'Times New Roman',
+                'tahoma'         => 'Tahoma, Geneva',
+                'Open Sans'      => 'Open Sans',
+                'palatino'       => 'Palatino',
+                'helvetica'      => 'Helvetica',
+                'helvetica-neue' => 'Helvetica Neue,Helvetica,Arial,sans-serif'
+        ),
+        'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
+        'color'  => true
+);
+
+/**
+ * Helper function to return the theme option value.
+ * If no value has been saved, it returns $default.
+ * Needed because options are saved as serialized strings.
+ *
+ * Not in a class to support backwards compatibility in themes.
+ */
+if ( ! function_exists( 'of_get_option' ) ) :
+function of_get_option( $name, $default = false ) {
+
+  $option_name = '';
+  // Get option settings from database
+  $options = get_option( 'unite' );
+
+  // Return specific option
+  if ( isset( $options[$name] ) ) {
+    return $options[$name];
+  }
+
+  return $default;
+}
+endif;

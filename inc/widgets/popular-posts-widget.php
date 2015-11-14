@@ -16,7 +16,7 @@ class unite_popular_posts_widget extends WP_Widget {
 		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'unite_tabbed_widget' );
 
 		/* Create the widget. */
-		$this->WP_Widget( 'unite_tabbed_widget', __('Unite: Popular Posts Widget', 'unite'), $widget_ops, $control_ops );
+		parent::__construct( 'unite_tabbed_widget', __('Unite: Popular Posts Widget', 'unite'), $widget_ops, $control_ops );
 	}
 
 	/**
