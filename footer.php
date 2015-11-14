@@ -7,6 +7,7 @@
  * @package unite
  */
 ?>
+            </div><!-- row -->
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

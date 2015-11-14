@@ -771,31 +771,15 @@ hr.section-divider:after {
 /* =Social icons
 ----------------------------------------------- */
 
-.social-profile {
-  font-size: 24px;
-  margin: 6px;
-  color: #DDD;
-}
-
 #social {
   float: right;
   top: 55px;
   position: relative;
 }
-
-.social-profile.facebook:hover {color: #3b5998;}
-.social-profile.twitter:hover {color: #00aced ;}
-.social-profile.google-plus:hover {color: #dd4b39;}
-.social-profile.youtube:hover {color: #bb0000;}
-.social-profile.linkedin:hover {color: #007bb6;}
-.social-profile.pinterest:hover {color: #cb2027;}
-.social-profile.rss:hover {color: #F0AD4E;}
-.social-profile.tumblr:hover {color: #32506d;}
-.social-profile.flickr:hover {color: #ff0084;}
-.social-profile.instagram:hover {color: #517fa4;}
-.social-profile.dribbble:hover {color: #E56193;}
-.social-profile.skype:hover {color: #00AFF0;}
-.social-profile.square:hover {color: #6D7177;}
+.widget #social {
+  float: none;
+  top: 0;
+}
 
 @media (min-width: 992px) {
 	#social {
@@ -803,6 +787,10 @@ hr.section-divider:after {
 		top: 55px;
 		position: relative;
 	}
+        .widget #social {
+            float: none;
+            top: 0;
+        }
 }
 
 @media (max-width: 992px) {
@@ -813,7 +801,10 @@ hr.section-divider:after {
 		top: 0;
 		float: none;
 		text-align: center;
-	}
+	}        
+        .side-pull-left .main-content-inner, .side-pull-right .main-content-inner{
+          float: none;
+        }
 }
 
 /* =Slider
@@ -853,4 +844,22 @@ hr.section-divider:after {
 #shipping_method_0_international_delivery,
 #shipping_method_0_flat_rate {
     margin-right: 30px;
+}
+
+/* Layout */
+.side-pull-left #primary{
+    float: left;
+}
+.side-pull-right #primary{
+    float: right;
+}
+.no-sidebar #secondary, .full-width #secondary{
+    display: none;
+}
+.no-sidebar #primary{
+    float: none;
+    margin: 0 auto;
+}
+.full-width #primary{
+    width: 100%;
 }

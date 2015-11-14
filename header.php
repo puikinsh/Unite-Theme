@@ -44,35 +44,20 @@
 				</div>
 
 			<div class="social-header col-md-6">
-				<?php unite_social(); // Social icons in header ?>
+				<?php unite_social_icons(); // Social icons in header ?>
 			</div>
 
 		</header><!-- #masthead -->
 	</div>
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
+		<!-- .site-navigation -->
 
-		        </div>
-
-				<?php
-		            wp_nav_menu( array(
-		                'theme_location'    => 'primary',
-		                'depth'             => 2,
-		                'container'         => 'div',
-		                'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-		                'menu_class'        => 'nav navbar-nav',
-		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-		                'walker'            => new wp_bootstrap_navwalker())
-		            );
-		        ?>
-		    </div>
-		</nav><!-- .site-navigation -->
-
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content container"><?php
+            global $post;
+            if( is_singular() && get_post_meta($post->ID, 'site_layout', true) ){
+                $layout_class = get_post_meta($post->ID, 'site_layout', true);
+            }
+            else{
+                $layout_class = of_get_option( 'site_layout' );
+            }
+            ?>
+            <div class="row <?php echo $layout_class; ?>">

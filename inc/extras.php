@@ -43,7 +43,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
    * @param string $sep Optional separator.
    * @return string The filtered title.
    */
-  function dazzling_wp_title( $title, $sep ) {
+  function unite_wp_title( $title, $sep ) {
     if ( is_feed() ) {
       return $title;
     }
@@ -57,23 +57,23 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
     }
     // Add a page number if necessary:
     if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-      $title .= " $sep " . sprintf( __( 'Page %s', 'dazzling' ), max( $paged, $page ) );
+      $title .= " $sep " . sprintf( __( 'Page %s', 'unite' ), max( $paged, $page ) );
     }
     return $title;
   }
-  add_filter( 'wp_title', 'dazzling_wp_title', 10, 2 );
+  add_filter( 'wp_title', 'unite_wp_title', 10, 2 );
   /**
    * Title shim for sites older than WordPress 4.1.
    *
    * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
    * @todo Remove this function when WordPress 4.3 is released.
    */
-  function dazzling_render_title() {
+  function unite_render_title() {
     ?>
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <?php
   }
-  add_action( 'wp_head', 'dazzling_render_title' );
+  add_action( 'wp_head', 'unite_render_title' );
 endif;
 
 
@@ -313,10 +313,7 @@ if ( ! function_exists( 'get_unite_theme_options' ) )  {
         echo '.site-info a {color: '.of_get_option('footer_link_color', '#000').';}';
       }
       if ( of_get_option('social_color')) {
-        echo '.social-profile {color: '.of_get_option('social_color', '#000').' !important;}';
-      }
-      if ( of_get_option('social_hover_color')) {
-        echo '.social-profile.facebook:hover, .social-profile.twitter:hover, .social-profile.google-plus:hover, .social-profile.youtube:hover, .social-profile.linkedin:hover, .social-profile.pinterest:hover, .social-profile.rss:hover, .social-profile.tumblr:hover, .social-profile.flickr:hover, .social-profile.instagram:hover, .social-profile.dribbble:hover, .social-profile.skype:hover, .social-profile.square:hover {color: '.of_get_option('social_hover_color', '#000').';}';
+        echo '.social-icons li a {color: '.of_get_option('social_color', '#000').' !important;}';
       }
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
@@ -601,3 +598,84 @@ function the_archive_description( $before = '', $after = '' ) {
   }
 }
 endif;
+
+/**
+ * Get custom CSS from Theme Options panel and output in header
+ */
+if (!function_exists('get_unite_theme_options'))  {
+  function get_unite_theme_options(){
+
+    echo '<style type="text/css">';
+
+    if ( of_get_option('link_color')) {
+      echo 'a, #infinite-handle span {color:' . of_get_option('link_color') . '}';
+    }
+    if ( of_get_option('link_hover_color')) {
+      echo 'a:hover {color: '.of_get_option('link_hover_color', '#000').';}';
+    }
+    if ( of_get_option('link_active_color')) {
+      echo 'a:active {color: '.of_get_option('link_active_color', '#000').';}';
+    }
+    if ( of_get_option('element_color')) {
+      echo '.btn-default, .label-default, .flex-caption h2, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a {background-color: '.of_get_option('element_color', '#000').'; border-color: '.of_get_option('element_color', '#000').';} .btn.btn-default.read-more, .entry-meta .fa, .site-main [class*="navigation"] a, .more-link { color: '.of_get_option('element_color', '#000').'}';
+    }
+    if ( of_get_option('element_color_hover')) {
+      echo '.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, #infinite-handle span:hover, .btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover  { background-color: '.of_get_option('element_color_hover', '#000').'; border-color: '.of_get_option('element_color_hover', '#000').'; }';
+    }
+    if ( of_get_option('cfa_bg_color')) {
+      echo '.cfa { background-color: '.of_get_option('cfa_bg_color', '#000').'; } .cfa-button:hover {color: '.of_get_option('cfa_bg_color', '#000').';}';
+    }
+    if ( of_get_option('cfa_color')) {
+      echo '.cfa-text { color: '.of_get_option('cfa_color', '#000').';}';
+    }
+    if ( of_get_option('cfa_btn_color')) {
+      echo '.cfa-button {border-color: '.of_get_option('cfa_btn_color', '#000').';}';
+    }
+    if ( of_get_option('cfa_btn_txt_color')) {
+      echo '.cfa-button {color: '.of_get_option('cfa_btn_txt_color', '#000').';}';
+    }
+    if ( of_get_option('heading_color')) {
+      echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title {color: '.of_get_option('heading_color', '#000').';}';
+    }
+    if ( of_get_option('top_nav_bg_color')) {
+      echo '.navbar.navbar-default {background-color: '.of_get_option('top_nav_bg_color', '#000').';}';
+    }
+    if ( of_get_option('top_nav_link_color')) {
+      echo '.navbar-default .navbar-nav > li > a { color: '.of_get_option('top_nav_link_color', '#000').';}';
+    }
+    if ( of_get_option('top_nav_dropdown_bg')) {
+      echo '.dropdown-menu, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {background-color: '.of_get_option('top_nav_dropdown_bg', '#000').';}';
+    }
+    if ( of_get_option('top_nav_dropdown_item')) {
+      echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a { color: '.of_get_option('top_nav_dropdown_item', '#000').';}';
+    }
+    if ( of_get_option('footer_bg_color')) {
+      echo '#colophon {background-color: '.of_get_option('footer_bg_color', '#000').';}';
+    }
+    if ( of_get_option('footer_text_color')) {
+      echo '#footer-area, .site-info {color: '.of_get_option('footer_text_color', '#000').';}';
+    }
+    if ( of_get_option('footer_widget_bg_color')) {
+      echo '#footer-area {background-color: '.of_get_option('footer_widget_bg_color', '#000').';}';
+    }
+    if ( of_get_option('footer_link_color')) {
+      echo '.site-info a, #footer-area a {color: '.of_get_option('footer_link_color', '#000').';}';
+    }
+    print_r(get_option('unite'));
+    if ( of_get_option('social_color')) {
+      echo '.social-icons ul a {color: '.of_get_option('social_color', '#000').' !important ;}';
+    }
+    global $typography_options;
+    $typography = of_get_option('main_body_typography');
+    if ( $typography ) {
+      echo '.entry-content {font-family: ' . $typography_options['faces'][$typography['face']] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
+    }
+    if ( of_get_option('custom_css')) {
+      echo html_entity_decode( of_get_option( 'custom_css', 'no entry' ) );
+    }
+      echo '</style>';
+  }
+}
+add_action('wp_head','get_unite_theme_options',10);
+
+?>
