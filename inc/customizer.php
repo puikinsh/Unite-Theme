@@ -29,23 +29,35 @@ add_action( 'customize_preview_init', 'unite_customize_preview_js' );
  * Options for Unite Theme Customizer.
  */
 function unite_customizer( $wp_customize ) {
-    global $text_domain;
     
     /* Main option Settings Panel */
     $wp_customize->add_panel('unite_main_options', array(
         'capability' => 'edit_theme_options',
         'theme_supports' => '',
-        'title' => __('Unite Options', $text_domain),
-        'description' => __('Panel to update unite theme options', $text_domain), // Include html tags such as <p>.
+        'title' => __('Unite Options', 'unite'),
+        'description' => __('Panel to update unite theme options', 'unite'), // Include html tags such as <p>.
         'priority' => 10 // Mixed with top-level-section hierarchy.
     ));
 
         $wp_customize->add_section('unite_layout_options', array(
-            'title' => __('Layout options', $text_domain),
+            'title' => __('Layout options', 'unite'),
             'priority' => 31,
             'panel' => 'unite_main_options'
         ));
             // Layout options
+            global $blog_layout;
+            $wp_customize->add_setting('unite[blog_settings]', array(
+                 'default' => '1',
+                 'type' => 'option',
+                 'sanitize_callback' => 'unite_sanitize_blog_layout'
+            ));
+            $wp_customize->add_control('unite[blog_settings]', array(
+                 'label' => __('Blog Layout', 'unite'),
+                 'section' => 'unite_layout_options',
+                 'type'    => 'select',
+                 'choices'    => $blog_layout
+            ));
+            
             global $site_layout;
             $wp_customize->add_setting('unite[site_layout]', array(
                  'default' => 'side-pull-left',
@@ -53,10 +65,10 @@ function unite_customizer( $wp_customize ) {
                  'sanitize_callback' => 'unite_sanitize_layout'
             ));
             $wp_customize->add_control('unite[site_layout]', array(
-                 'label' => __('Website Layout Options', $text_domain),
+                 'label' => __('Website Layout Options', 'unite'),
                  'section' => 'unite_layout_options',
                  'type'    => 'select',
-                 'description' => __('Choose between different layout options to be used as default', $text_domain),
+                 'description' => __('Choose between different layout options to be used as default', 'unite'),
                  'choices'    => $site_layout
             ));
 
@@ -66,8 +78,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[element_color]', array(
-                'label' => __('Element Color', $text_domain),
-                'description'   => __('Default used if no color is selected',$text_domain),
+                'label' => __('Element Color', 'unite'),
+                'description'   => __('Default used if no color is selected','unite'),
                 'section' => 'unite_layout_options',
                 'settings' => 'unite[element_color]',
             )));
@@ -78,15 +90,15 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[element_color_hover]', array(
-                'label' => __('Element color on hover', $text_domain),
-                'description'   => __('Default used if no color is selected',$text_domain),
+                'label' => __('Element color on hover', 'unite'),
+                'description'   => __('Default used if no color is selected','unite'),
                 'section' => 'unite_layout_options',
                 'settings' => 'unite[element_color_hover]',
             )));
 
         /* Unite Typography Options */
         $wp_customize->add_section('unite_typography_options', array(
-            'title' => __('Typography', $text_domain),
+            'title' => __('Typography', 'unite'),
             'priority' => 31,
             'panel' => 'unite_main_options'
         ));
@@ -105,8 +117,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_typo_size'
             ));
             $wp_customize->add_control('unite[main_body_typography][size]', array(
-                'label' => __('Main Body Text', $text_domain),
-                'description' => __('Used in p tags', $text_domain),
+                'label' => __('Main Body Text', 'unite'),
+                'description' => __('Used in p tags', 'unite'),
                 'section' => 'unite_typography_options',
                 'type'    => 'select',
                 'choices'    => $typography_options['sizes']
@@ -146,8 +158,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[heading_color]', array(
-                'label' => __('Heading Color', $text_domain),
-                'description'   => __('Color for all headings (h1-h6)',$text_domain),
+                'label' => __('Heading Color', 'unite'),
+                'description'   => __('Color for all headings (h1-h6)','unite'),
                 'section' => 'unite_typography_options',
             )));
             $wp_customize->add_setting('unite[link_color]', array(
@@ -156,8 +168,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[link_color]', array(
-                'label' => __('Link Color', $text_domain),
-                'description'   => __('Default used if no color is selected',$text_domain),
+                'label' => __('Link Color', 'unite'),
+                'description'   => __('Default used if no color is selected','unite'),
                 'section' => 'unite_typography_options',
             )));
             $wp_customize->add_setting('unite[link_hover_color]', array(
@@ -166,8 +178,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[link_hover_color]', array(
-                'label' => __('Link:hover Color', $text_domain),
-                'description'   => __('Default used if no color is selected',$text_domain),
+                'label' => __('Link:hover Color', 'unite'),
+                'description'   => __('Default used if no color is selected','unite'),
                 'section' => 'unite_typography_options',
             )));
             
@@ -177,13 +189,14 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[social_color]', array(
-                'label' => __('Social icon color', $text_domain),
-                'description' => sprintf(__('Default used if no color is selected', $text_domain)),
+                'label' => __('Social icon color', 'unite'),
+                'description' => sprintf(__('Default used if no color is selected', 'unite')),
                 'section' => 'unite_typography_options',
             )));
+            
             /* Unite Header Options */
         $wp_customize->add_section('unite_header_options', array(
-            'title' => __('Header', $text_domain),
+            'title' => __('Header', 'unite'),
             'priority' => 31,
             'panel' => 'unite_main_options'
         ));
@@ -193,8 +206,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[top_nav_bg_color]', array(
-                'label' => __('Top nav background color', $text_domain),
-                'description'   => __('Default used if no color is selected',$text_domain),
+                'label' => __('Top nav background color', 'unite'),
+                'description'   => __('Default used if no color is selected','unite'),
                 'section' => 'unite_header_options',
             )));
             $wp_customize->add_setting('unite[top_nav_link_color]', array(
@@ -203,8 +216,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[top_nav_link_color]', array(
-                'label' => __('Top nav item color', $text_domain),
-                'description'   => __('Link color',$text_domain),
+                'label' => __('Top nav item color', 'unite'),
+                'description'   => __('Link color','unite'),
                 'section' => 'unite_header_options',
             )));
 
@@ -214,8 +227,8 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[top_nav_dropdown_bg]', array(
-                'label' => __('Top nav dropdown background color', $text_domain),
-                'description'   => __('Background of dropdown item hover color',$text_domain),
+                'label' => __('Top nav dropdown background color', 'unite'),
+                'description'   => __('Background of dropdown item hover color','unite'),
                 'section' => 'unite_header_options',
             )));
 
@@ -225,14 +238,14 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[top_nav_dropdown_item]', array(
-                'label' => __('Top nav dropdown item color', $text_domain),
-                'description'   => __('Dropdown item color',$text_domain),
+                'label' => __('Top nav dropdown item color', 'unite'),
+                'description'   => __('Dropdown item color','unite'),
                 'section' => 'unite_header_options',
             )));
 
         /* Unite Footer Options */
         $wp_customize->add_section('unite_footer_options', array(
-            'title' => __('Footer', $text_domain),
+            'title' => __('Footer', 'unite'),
             'priority' => 31,
             'panel' => 'unite_main_options'
         ));
@@ -243,7 +256,7 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[footer_bg_color]', array(
-                'label' => __('Footer background color', $text_domain),
+                'label' => __('Footer background color', 'unite'),
                 'section' => 'unite_footer_options',
             )));
 
@@ -253,7 +266,7 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[footer_text_color]', array(
-                'label' => __('Footer text color', $text_domain),
+                'label' => __('Footer text color', 'unite'),
                 'section' => 'unite_footer_options',
             )));
 
@@ -263,7 +276,7 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'unite[footer_link_color]', array(
-                'label' => __('Footer link color', $text_domain),
+                'label' => __('Footer link color', 'unite'),
                 'section' => 'unite_footer_options',
             )));
 
@@ -273,15 +286,15 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_strip_slashes'
             ));
             $wp_customize->add_control('unite[custom_footer_text]', array(
-                'label' => __('Footer information', $text_domain),
-                'description' => sprintf(__('Copyright text in footer', $text_domain)),
+                'label' => __('Footer information', 'unite'),
+                'description' => sprintf(__('Copyright text in footer', 'unite')),
                 'section' => 'unite_footer_options',
                 'type' => 'textarea'
             ));
 
         /* Unite Other Options */
         $wp_customize->add_section('unite_other_options', array(
-            'title' => __('Other', $text_domain),
+            'title' => __('Other', 'unite'),
             'priority' => 31,
             'panel' => 'unite_main_options'
         ));
@@ -291,15 +304,15 @@ function unite_customizer( $wp_customize ) {
                 'sanitize_callback' => 'unite_sanitize_strip_slashes'
             ));
             $wp_customize->add_control('unite[custom_css]', array(
-                'label' => __('Custom CSS', $text_domain),
-                'description' => sprintf(__('Additional CSS', $text_domain)),
+                'label' => __('Custom CSS', 'unite'),
+                'description' => sprintf(__('Additional CSS', 'unite')),
                 'section' => 'unite_other_options',
                 'type' => 'textarea'
             ));
 
         $wp_customize->add_section('unite_important_links', array(
             'priority' => 5,
-            'title' => __('Support and Documentation', $text_domain)
+            'title' => __('Support and Documentation', 'unite')
         ));
             $wp_customize->add_setting('unite[imp_links]', array(
               'sanitize_callback' => 'esc_url_raw'
@@ -370,6 +383,19 @@ function unite_sanitize_strip_slashes($input) {
 function unite_sanitize_slidecat( $input ) {
     global $options_categories;
     if ( array_key_exists( $input, $options_categories ) ) {
+        return $input;
+    } else {
+        return '';
+    }
+}
+
+/**
+ * Adds sanitization callback function: Sidebar Layout
+ * @package Unite
+ */
+function unite_sanitize_blog_layout( $input ) {
+    global $blog_layout;
+    if ( array_key_exists( $input, $blog_layout ) ) {
         return $input;
     } else {
         return '';

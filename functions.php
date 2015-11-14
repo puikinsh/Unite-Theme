@@ -185,19 +185,6 @@ function unite_ie_support_header() {
 endif;
 add_action( 'wp_head', 'unite_ie_support_header', 1 );
 
-/*
- * Loads the Options Panel
- *
- * If you're loading from a child theme use stylesheet_directory
- * instead of template_directory
- */
-
-/*define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/' );
-require_once dirname( __FILE__ ) . '/inc/admin/options-framework.php';
-// Loads options.php from child or parent theme
-$optionsfile = locate_template( 'options.php' );
-load_template( $optionsfile );*/
-
 /**
  * Implement the Custom Header feature.
  */
@@ -240,6 +227,10 @@ $text_domain = 'unite';
 
 global $site_layout;
 $site_layout = array('side-pull-left' => esc_html__('Right Sidebar', 'dazzling'),'side-pull-right' => esc_html__('Left Sidebar', 'dazzling'),'no-sidebar' => esc_html__('No Sidebar', 'dazzling'),'full-width' => esc_html__('Full Width', 'dazzling'));
+
+// Option to switch between the_excerpt and the_content
+global $blog_layout;
+$blog_layout = array('1' => __('Display full content for each post', 'unite'),'2' => __('Display excerpt for each post', 'unite'));
 
 // Typography Options
 global $typography_options;
