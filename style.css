@@ -846,6 +846,11 @@ hr.section-divider:after {
     margin-right: 30px;
 }
 
+body label,
+body .label {
+    color: #6B6B6B;
+}
+
 /* Layout */
 .side-pull-left #primary{
     float: left;
