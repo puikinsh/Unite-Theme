@@ -527,4 +527,14 @@ if (!function_exists('get_unite_theme_options'))  {
 }
 add_action('wp_head','get_unite_theme_options',10);
 
+
+/**
+ * Allows users to save skype protocol skype: in menu URL
+ */
+function unite_allow_skype_protocol( $protocols ){
+    $protocols[] = 'skype';
+    return $protocols;
+}
+add_filter( 'kses_allowed_protocols' , 'unite_allow_skype_protocol' );
+
 ?>
