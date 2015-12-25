@@ -109,6 +109,7 @@ function unite_social_css(){ ?>
         .fa-dribbble:before {
             content: "\f17d"
         }
+        #social li a[href*="skype:"] .fa:before,
         #social li a[href*="skype.com"] .fa:before,
         .fa-skype:before {
             content: "\f17e"
