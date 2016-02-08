@@ -2,7 +2,7 @@
 
 Theme Name: Unite
 Theme URI: http://colorlib.com/wp/unite/
-Version: 2.0
+Version: 2.0.1
 Tested up to: WP 4.4
 
 #Copyright notice#
@@ -60,6 +60,10 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
 
+####2.0.1 - 08.02.2016 ####
+
+* Added missing header navigation
+
 ####2.0 - 17.11.2015 ####
 
 * Removed redundant functions
@@ -99,7 +103,7 @@ Fixed potential security vulnerability for TGM-Plugin-Activation
 
 ####1.5.9 - 11.02.2015 ####
 
-* Improved favicon support and now loaded in frontend and backend. 
+* Improved favicon support and now loaded in frontend and backend.
 
 ####1.5.8 - 26.01.2015 ####
 
@@ -109,14 +113,14 @@ Fixed potential security vulnerability for TGM-Plugin-Activation
 
 ####1.5.7 - 15.01.2015 ####
 
-* Fixed error in main JavaScript file. 
+* Fixed error in main JavaScript file.
 
 ####1.5.6 - 20.11.2014 ####
 
 * Styling improvements for WooCommerce
 * Improved social icons on hover
 * Updated readme file for Github.
-* All updated made possible thanks to [@amiyasahu](https://github.com/amiyasahu) 
+* All updated made possible thanks to [@amiyasahu](https://github.com/amiyasahu)
 
 ####1.5.5 - 15.11.2014 ####
 
@@ -125,7 +129,7 @@ Fixed potential security vulnerability for TGM-Plugin-Activation
 ####1.5.4 - 07.11.2014 ####
 
 * Tiny HTML improvements
-* Fixed problems with Jetpack Infinite scroll after plugin update. 
+* Fixed problems with Jetpack Infinite scroll after plugin update.
 
 ####1.5.3 - 02.11.2014 ####
 
