@@ -292,6 +292,23 @@ function unite_customizer( $wp_customize ) {
                 'type' => 'textarea'
             ));
 
+        /* Unite Content Options */
+        $wp_customize->add_section('unite_content_options', array(
+            'title' => __('Content Options', 'unite'),
+            'priority' => 31,
+            'panel' => 'unite_main_options'
+        ));
+            $wp_customize->add_setting('unite[single_post_image]', array(
+                'default' => 1,
+                'type' => 'option',
+                'sanitize_callback' => 'unite_sanitize_strip_slashes'
+            ));
+            $wp_customize->add_control('unite[single_post_image]', array(
+                'label' => __('Display Featured Image on Single Post', 'unite'),
+                'section' => 'unite_content_options',
+                'type' => 'checkbox'
+            ));
+
         /* Unite Other Options */
         $wp_customize->add_section('unite_other_options', array(
             'title' => __('Other', 'unite'),

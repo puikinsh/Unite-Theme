@@ -7,7 +7,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
 
-		<?php the_post_thumbnail( 'unite-featured', array( 'class' => 'thumbnail' )); ?>
+		<?php 
+                    if ( of_get_option( 'single_post_image', 1 ) == 1 ) :
+                        the_post_thumbnail( 'unite-featured', array( 'class' => 'thumbnail' )); 
+                    endif;
+                  ?>
 
 		<h1 class="entry-title "><?php the_title(); ?></h1>
 
