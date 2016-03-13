@@ -89,6 +89,10 @@ function unite_social_css(){ ?>
         .fa-linkedin:before {
             content: "\f0e1"
         }
+        #social li a[href*="xing.com"] .fa:before,
+        .fa-xing:before {
+            content: "\f168"
+        }
         #social li a[href*="youtube.com"] .fa:before,
         .fa-youtube:before {
             content: "\f167"
@@ -137,6 +141,7 @@ function unite_social_css(){ ?>
         .social-icons li a[href*="youtube.com"]:hover {color: #bb0000 !important;}
         .social-icons li a[href*="github.com"]:hover {color: #4183C4 !important;}
         .social-icons li a[href*="linkedin.com"]:hover {color: #007bb6 !important;}
+        .social-icons li a[href*="xing.com"]:hover {color: #cfdc00 !important;}
         .social-icons li a[href*="pinterest.com"]:hover {color: #cb2027 !important;}
         .social-icons li a[href*="rss.com"]:hover {color: #F0AD4E !important ;}
         .social-icons li a[href*="tumblr.com"]:hover {color: #32506d !important;}
