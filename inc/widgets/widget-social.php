@@ -6,7 +6,7 @@
  */
 class unite_social_widget extends WP_Widget
 {
-    function unite_social_widget(){
+    function __construct(){
 
        $widget_ops = array('classname' => 'unite-social','description' => esc_html__( "Unite Social Widget" ,'unite') );
        parent::__construct('unite-social', esc_html__('Unite Social Widget','unite'), $widget_ops);
