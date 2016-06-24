@@ -197,8 +197,7 @@ function unite_setPostViews($postID) {
  * function to show the footer info, copyright information
  */
 function unite_footer_info() {
-   $output = '<a href="http://colorlib.com/wp/unite" title="Unite Theme" target="_blank">Unite Theme</a> powered by <a href="http://wordpress.org" title="WordPress" target="_blank">WordPress</a>.';
-   echo $output;
+   printf( esc_html__( '%1$s powered by %2$s', 'unite' ) , '<a title="Unite Theme" href="http://colorlib.com/wp/unite/" target="_blank">Unite Theme</a>', '<a href="http://wordpress.org/" target="_blank" title="WordPress">WordPress</a>');
 }
 add_action( 'unite_footer', 'unite_footer_info', 30 );
 
