@@ -65,7 +65,7 @@ add_filter( 'the_content_more_link', 'unite_remove_more_link_scroll' );
  * Change default "Read More" button when using the_excerpt
  */
 function unite_excerpt_more( $more ) {
-  return ' <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">Continue reading <i class="fa fa-chevron-right"></i></a>';
+  return ' <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">'. __( 'Continue reading', 'unite' ) .'<i class="fa fa-chevron-right"></i></a>';
 }
 add_filter( 'excerpt_more', 'unite_excerpt_more' );
 
