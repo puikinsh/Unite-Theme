@@ -852,11 +852,13 @@ body .label {
 }
 
 /* Layout */
-.side-pull-left #primary{
-    float: left;
-}
-.side-pull-right #primary{
-    float: right;
+@media (min-width: 992px) {
+	.side-pull-left #primary{
+		float: left;
+	}
+	.side-pull-right #primary{
+		float: right;
+	}
 }
 .no-sidebar #secondary, .full-width #secondary{
     display: none;
