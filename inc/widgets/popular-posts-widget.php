@@ -8,7 +8,7 @@ class unite_popular_posts_widget extends WP_Widget {
 	/**
 	 * Widget setup.
 	 */
-	function unite_popular_posts_widget() {
+	function __construct() {
 		/* Widget settings. */
 		$widget_ops = array( 'classname' => 'unite_tabbed_widget', 'description' => __('Displays tabbed list of popular posts, recent posts & comments', 'unite') );
 
