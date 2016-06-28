@@ -65,7 +65,7 @@ add_filter( 'the_content_more_link', 'unite_remove_more_link_scroll' );
  * Change default "Read More" button when using the_excerpt
  */
 function unite_excerpt_more( $more ) {
-  return ' <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">Continue reading <i class="fa fa-chevron-right"></i></a>';
+  return ' <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">'. __( 'Continue reading', 'unite' ) .'<i class="fa fa-chevron-right"></i></a>';
 }
 add_filter( 'excerpt_more', 'unite_excerpt_more' );
 
@@ -197,8 +197,7 @@ function unite_setPostViews($postID) {
  * function to show the footer info, copyright information
  */
 function unite_footer_info() {
-   $output = '<a href="http://colorlib.com/wp/unite" title="Unite Theme" target="_blank">Unite Theme</a> powered by <a href="http://wordpress.org" title="WordPress" target="_blank">WordPress</a>.';
-   echo $output;
+   printf( esc_html__( '%1$s powered by %2$s', 'unite' ) , '<a title="Unite Theme" href="http://colorlib.com/wp/unite/" target="_blank">Unite Theme</a>', '<a href="http://wordpress.org/" target="_blank" title="WordPress">WordPress</a>');
 }
 add_action( 'unite_footer', 'unite_footer_info', 30 );
 
@@ -446,86 +445,6 @@ function unite_custom_favicon() {
 endif;
 add_action( 'wp_head', 'unite_custom_favicon', 0 );
 add_action( 'admin_head', 'unite_custom_favicon', 0 );
-
-
-/**
- * Get custom CSS from Theme Options panel and output in header
- */
-if (!function_exists('get_unite_theme_options'))  {
-  function get_unite_theme_options(){
-
-    echo '<style type="text/css">';
-
-    if ( of_get_option('link_color')) {
-      echo 'a, #infinite-handle span {color:' . of_get_option('link_color') . '}';
-    }
-    if ( of_get_option('link_hover_color')) {
-      echo 'a:hover {color: '.of_get_option('link_hover_color', '#000').';}';
-    }
-    if ( of_get_option('link_active_color')) {
-      echo 'a:active {color: '.of_get_option('link_active_color', '#000').';}';
-    }
-    if ( of_get_option('element_color')) {
-      echo '.btn-default, .label-default, .flex-caption h2, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a {background-color: '.of_get_option('element_color', '#000').'; border-color: '.of_get_option('element_color', '#000').';} .btn.btn-default.read-more, .entry-meta .fa, .site-main [class*="navigation"] a, .more-link { color: '.of_get_option('element_color', '#000').'}';
-    }
-    if ( of_get_option('element_color_hover')) {
-      echo '.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, #infinite-handle span:hover, .btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover  { background-color: '.of_get_option('element_color_hover', '#000').'; border-color: '.of_get_option('element_color_hover', '#000').'; }';
-    }
-    if ( of_get_option('cfa_bg_color')) {
-      echo '.cfa { background-color: '.of_get_option('cfa_bg_color', '#000').'; } .cfa-button:hover {color: '.of_get_option('cfa_bg_color', '#000').';}';
-    }
-    if ( of_get_option('cfa_color')) {
-      echo '.cfa-text { color: '.of_get_option('cfa_color', '#000').';}';
-    }
-    if ( of_get_option('cfa_btn_color')) {
-      echo '.cfa-button {border-color: '.of_get_option('cfa_btn_color', '#000').';}';
-    }
-    if ( of_get_option('cfa_btn_txt_color')) {
-      echo '.cfa-button {color: '.of_get_option('cfa_btn_txt_color', '#000').';}';
-    }
-    if ( of_get_option('heading_color')) {
-      echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title {color: '.of_get_option('heading_color', '#000').';}';
-    }
-    if ( of_get_option('top_nav_bg_color')) {
-      echo '.navbar.navbar-default {background-color: '.of_get_option('top_nav_bg_color', '#000').';}';
-    }
-    if ( of_get_option('top_nav_link_color')) {
-      echo '.navbar-default .navbar-nav > li > a { color: '.of_get_option('top_nav_link_color', '#000').';}';
-    }
-    if ( of_get_option('top_nav_dropdown_bg')) {
-      echo '.dropdown-menu, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {background-color: '.of_get_option('top_nav_dropdown_bg', '#000').';}';
-    }
-    if ( of_get_option('top_nav_dropdown_item')) {
-      echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a { color: '.of_get_option('top_nav_dropdown_item', '#000').';}';
-    }
-    if ( of_get_option('footer_bg_color')) {
-      echo '#colophon {background-color: '.of_get_option('footer_bg_color', '#000').';}';
-    }
-    if ( of_get_option('footer_text_color')) {
-      echo '#footer-area, .site-info {color: '.of_get_option('footer_text_color', '#000').';}';
-    }
-    if ( of_get_option('footer_widget_bg_color')) {
-      echo '#footer-area {background-color: '.of_get_option('footer_widget_bg_color', '#000').';}';
-    }
-    if ( of_get_option('footer_link_color')) {
-      echo '.site-info a, #footer-area a {color: '.of_get_option('footer_link_color', '#000').';}';
-    }
-    print_r(get_option('unite'));
-    if ( of_get_option('social_color')) {
-      echo '.social-icons ul a {color: '.of_get_option('social_color', '#000').' !important ;}';
-    }
-    global $typography_options;
-    $typography = of_get_option('main_body_typography');
-    if ( $typography ) {
-      echo '.entry-content {font-family: ' . $typography_options['faces'][$typography['face']] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
-    }
-    if ( of_get_option('custom_css')) {
-      echo html_entity_decode( of_get_option( 'custom_css', 'no entry' ) );
-    }
-      echo '</style>';
-  }
-}
-add_action('wp_head','get_unite_theme_options',10);
 
 
 /**
