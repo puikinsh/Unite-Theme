@@ -60,6 +60,11 @@ Theme documentation is available on http://colorlib.com/wp/support/unite
 
 #Changelog#
 
+####2.0.3 - 26.06.2016 ####
+* Updated TGMPA to latest available version.
+* Added Kiwi Social Share as recommended plugin
+* Fixed 2 notices re. the way widget constructs are being used (support for the old constructor way will be dropped in PHP 7)
+
 ####2.0.1 - 08.02.2016 ####
 
 * Added missing header navigation
