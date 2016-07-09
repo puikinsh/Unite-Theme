@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
 "POT-Creation-Date: 2016-07-09 09:49+0300\n"
-"PO-Revision-Date: 2016-07-09 12:01+0300\n"
+"PO-Revision-Date: 2016-07-09 12:16+0300\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -667,15 +667,15 @@ msgstr ""
 
 #: ../inc/popular-posts-widget.php:19
 msgid "Unite: Popular Posts Widget"
-msgstr ""
+msgstr "Unite: Виджет популярные записи"
 
 #: ../inc/popular-posts-widget.php:37
 msgid "Popular"
-msgstr ""
+msgstr "Популярно"
 
 #: ../inc/popular-posts-widget.php:38
 msgid "Recent"
-msgstr ""
+msgstr "Новое"
 
 #: ../inc/popular-posts-widget.php:105
 msgid "Anonymous"
@@ -683,11 +683,11 @@ msgstr "Аноним"
 
 #: ../inc/popular-posts-widget.php:105
 msgid "on"
-msgstr ""
+msgstr "в"
 
 #: ../inc/popular-posts-widget.php:149
 msgid "Number of posts to show"
-msgstr ""
+msgstr "Показывать записей: "
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
