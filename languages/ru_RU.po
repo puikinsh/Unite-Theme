@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
 "POT-Creation-Date: 2016-07-09 09:49+0300\n"
-"PO-Revision-Date: 2016-07-09 11:38+0300\n"
+"PO-Revision-Date: 2016-07-09 12:01+0300\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,6 +29,9 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"К сожалению, запрашиваемая страница не существует. Возможно, она когда-то "
+"была здесь, но потом её переместили или удалили. Ну или Вы просто ошиблись "
+"при вводе ссылки. Попробуйте воспользоваться меню или поиском."
 
 #: ../404.php:27
 msgid "Most Used Categories"
@@ -37,7 +40,7 @@ msgstr "Наиболее часто используемые категории"
 #: ../404.php:44
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Попробуйте посмотреть в ежемесячных архивов. %1$s"
+msgstr "Попробуйте посмотреть в ежемесячных архивах. %1$s"
 
 #: ../archive.php:27
 #, php-format
@@ -104,9 +107,9 @@ msgstr "Архивы"
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1$s мысль в &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s мысли в &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s мыслей в &ldquo;%2$s&rdquo;"
 
 #: ../comments.php:35 ../comments.php:59
 msgid "Comment navigation"
@@ -176,7 +179,7 @@ msgstr "Читать далее <i class=\"fa fa-chevron-right\"></i>"
 #: ../content.php:52 ../content.php:62
 #, php-format
 msgid " %1$s"
-msgstr ""
+msgstr " %1$s"
 
 #: ../content.php:68
 msgid "Leave a comment"
@@ -188,7 +191,7 @@ msgstr "1 Комментарий"
 
 #: ../content.php:68
 msgid "% Comments"
-msgstr "% Комментариев"
+msgstr "Комментариев: %"
 
 #: ../functions.php:60
 msgid "Primary Menu"
@@ -709,7 +712,7 @@ msgstr ""
 #: ../inc/template-tags.php:91
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
-msgstr ""
+msgstr "%s <span class=\"says\">пишет:</span>"
 
 #: ../inc/template-tags.php:104
 msgid "Your comment is awaiting moderation."
