@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Unite Theme\n"
 "POT-Creation-Date: 2016-07-12 12:21+0300\n"
-"PO-Revision-Date: 2016-07-12 13:08+0300\n"
+"PO-Revision-Date: 2016-07-12 13:41+0300\n"
 "Last-Translator: Andrey Shpak <ashpak@ashpak.ru>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -590,11 +590,11 @@ msgstr "Панель обновления настроек темы"
 
 #: ../inc/customizer.php:43
 msgid "Layout options"
-msgstr "Опции расположения на сайте"
+msgstr "Расположение боковой панели"
 
 #: ../inc/customizer.php:55
 msgid "Blog Layout"
-msgstr "Расположение блога"
+msgstr "Сокращение текста постов"
 
 #: ../inc/customizer.php:68
 msgid "Website Layout Options"
@@ -788,17 +788,17 @@ msgstr "Начать покупки"
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d товар"
+msgstr[1] "%d товара"
+msgstr[2] "%d товаров"
 
 #: ../inc/metaboxes.php:16
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"Выбрать расположение для конкретной записи. (Внимание: Эта настройка "
-"действует только для шаблона по умолчанию и шаблона \"Блог\")."
+"Выбрать расположение сайдбара для конкретной записи. (Внимание: Эта "
+"настройка действует только для шаблона по умолчанию и шаблона \"Блог\")."
 
 #: ../inc/metaboxes.php:21
 msgid "Select layout for this specific Post only"
@@ -822,7 +822,7 @@ msgstr "Навигация по страницам"
 
 #: ../inc/template-tags.php:81
 msgid "Pingback:"
-msgstr ""
+msgstr "Пингбек (ссылки с других блогов):"
 
 #: ../inc/template-tags.php:91
 #, php-format
@@ -906,7 +906,7 @@ msgstr "Все плагины установлены и успешно акти�
 
 #: ../inc/widgets/popular-posts-widget.php:13
 msgid "Displays tabbed list of popular posts, recent posts & comments"
-msgstr ""
+msgstr "Отображает список популярных записей и комментариев. "
 
 #: ../inc/widgets/popular-posts-widget.php:19
 msgid "Unite: Popular Posts Widget"
