@@ -1,0 +1,1160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Unite Theme\n"
+"POT-Creation-Date: 2016-07-12 12:21+0300\n"
+"PO-Revision-Date: 2016-07-12 13:41+0300\n"
+"Last-Translator: Andrey Shpak <ashpak@ashpak.ru>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_n_noop;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+"К сожалению, запрашиваемая страница не существует. Возможно, она когда-то "
+"была здесь, но потом её переместили или удалили. Ну или Вы просто ошиблись "
+"при вводе ссылки. Попробуйте воспользоваться меню или поиском."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"К сожалению, запрашиваемая страница не существует. Возможно, она когда-то "
+"была здесь, но потом её переместили или удалили. Ну или Вы просто ошиблись "
+"при вводе ссылки. Попробуйте воспользоваться меню или поиском."
+
+#: ../404.php:27
+msgid "Most Used Categories"
+msgstr "Наиболее часто используемые категории"
+
+#: ../404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Попробуйте посмотреть в ежемесячных архивах. %1$s"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s мысль в &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s мысли в &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s мыслей в &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:35 ../comments.php:59
+msgid "Comment navigation"
+msgstr "Навигация комментариев"
+
+#: ../comments.php:36 ../comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Старые комментарии"
+
+#: ../comments.php:37 ../comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Новые комментарии &rarr;"
+
+#: ../comments.php:71
+msgid "Comments are closed."
+msgstr "Комментарии запрещены. "
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Готовы сделать первую запись? <a href=\"%1$s\">Начните здесь</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Извините, но ничего не соответствует условиям поиска. Пожалуйста, попробуйте "
+"еще раз с другими ключевыми словами."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Кажется, мы не можем найти то, что вы ищете. Возможно, поиск может помочь."
+
+#: ../content-page.php:18 ../content-single.php:27 ../content.php:37
+#: ../front-page.php:19 ../image.php:82
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ../content-page.php:23 ../content-single.php:67 ../content.php:71
+#: ../front-page.php:24 ../inc/template-tags.php:81
+#: ../inc/template-tags.php:100
+msgid "Edit"
+msgstr "Редактировать"
+
+#: ../content-single.php:36 ../content-single.php:39 ../content.php:48
+#: ../content.php:58
+msgid ", "
+msgstr ","
+
+#: ../content.php:24 ../inc/extras.php:68
+msgid "Continue reading"
+msgstr "Читать далее"
+
+#: ../content.php:30
+msgid "Continue reading <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Читать далее <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../content.php:52 ../content.php:62
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:68
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
+
+#: ../content.php:68
+msgid "1 Comment"
+msgstr "1 Комментарий"
+
+#: ../content.php:68
+msgid "% Comments"
+msgstr "Комментариев: %"
+
+#: ../functions.php:60
+msgid "Primary Menu"
+msgstr "Главное меню"
+
+#: ../functions.php:61 ../inc/extras.php:156
+msgid "Footer Links"
+msgstr "Ссылки подвала"
+
+#: ../functions.php:95
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: ../functions.php:233
+msgid "Display full content for each post"
+msgstr "Отображать полную версию записей"
+
+#: ../functions.php:233
+msgid "Display excerpt for each post"
+msgstr "Отображать сокращённые записи"
+
+#: ../image.php:25
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Предыдущий"
+
+#: ../image.php:26
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Следующий <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/class-tgm-plugin-activation.php:333
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:327
+#: ../inc/tgmpa/tgm-plugin-activation.php:86
+msgid "Install Required Plugins"
+msgstr "Установить требуемые плагины"
+
+#: ../inc/class-tgm-plugin-activation.php:334
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:328
+#: ../inc/tgmpa/tgm-plugin-activation.php:87
+msgid "Install Plugins"
+msgstr "Установить плагины"
+
+#: ../inc/class-tgm-plugin-activation.php:335
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:330
+#: ../inc/tgmpa/tgm-plugin-activation.php:88
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Устанавливается плагин: %s"
+
+#: ../inc/class-tgm-plugin-activation.php:336
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:333
+#: ../inc/tgmpa/tgm-plugin-activation.php:89
+msgid "Something went wrong with the plugin API."
+msgstr "Что-то случилось с API плагина."
+
+#: ../inc/class-tgm-plugin-activation.php:338
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:336
+#: ../inc/tgmpa/tgm-plugin-activation.php:90
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "Для работы темы требуются следующие плагины: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:343
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:342
+#: ../inc/tgmpa/tgm-plugin-activation.php:91
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr "Для работы темы рекомендуются следующие плагины: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgstr "Извините, у вас нет соответствующих прав для установки %s плагина."
+
+#: ../inc/class-tgm-plugin-activation.php:353
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:348
+#: ../inc/tgmpa/tgm-plugin-activation.php:96
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+"Сопутствующий плагин нуждается в обновлении до последней версии для "
+"обеспечения максимальной совместимости с темой: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:358
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr "Доступно обновление для: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:363
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgstr "Извините, у вас нет соответствующих прав для обновления %s плагина."
+
+#: ../inc/class-tgm-plugin-activation.php:368
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:360
+#: ../inc/tgmpa/tgm-plugin-activation.php:93
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "В данный момент следующий требуемый плагин отключен: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:373
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:366
+#: ../inc/tgmpa/tgm-plugin-activation.php:94
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "В данный момент следующий рекомендованный плагин отключен: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgstr "Извините, у вас нет соответствующих прав для активации %s плагина."
+
+#: ../inc/class-tgm-plugin-activation.php:383
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:371
+#: ../inc/tgmpa/tgm-plugin-activation.php:98
+msgid "Begin installing plugin"
+msgstr "Устанавливается плагин"
+
+#: ../inc/class-tgm-plugin-activation.php:388
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:376
+msgid "Begin updating plugin"
+msgstr "Обновляется плагин"
+
+#: ../inc/class-tgm-plugin-activation.php:393
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:381
+#: ../inc/tgmpa/tgm-plugin-activation.php:99
+msgid "Begin activating plugin"
+msgstr "Активируется плагин"
+
+#: ../inc/class-tgm-plugin-activation.php:397
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:385
+#: ../inc/tgmpa/tgm-plugin-activation.php:100
+msgid "Return to Required Plugins Installer"
+msgstr "Вернуться к установщику зависимостей"
+
+#: ../inc/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr "Вернуться в консоль"
+
+#: ../inc/class-tgm-plugin-activation.php:399
+#: ../inc/class-tgm-plugin-activation.php:3025
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:387
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3159
+#: ../inc/tgmpa/tgm-plugin-activation.php:101
+msgid "Plugin activated successfully."
+msgstr ""
+"Активация плагина \n"
+"удалась."
+
+#: ../inc/class-tgm-plugin-activation.php:400
+#: ../inc/class-tgm-plugin-activation.php:2828
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:388
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Плагин был успешно активирован."
+msgstr[1] "Плагин был успешно активированы."
+msgstr[2] "Плагин был успешно активированы."
+
+#: ../inc/class-tgm-plugin-activation.php:401
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Ничего не произошло. Плагин %1$s уже активен."
+
+#: ../inc/class-tgm-plugin-activation.php:402
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Плагин не активирован. Более свежая версия %s необходима для этой темы. "
+"Пожалуйста, обновите плагин."
+
+#: ../inc/class-tgm-plugin-activation.php:403
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Все плагины установлены и успешно активированы.  %1$s"
+
+#: ../inc/class-tgm-plugin-activation.php:404
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Убрать оповещение"
+
+#: ../inc/class-tgm-plugin-activation.php:405
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Пожалуйста, свяжитесь с администратором сайта."
+
+#: ../inc/class-tgm-plugin-activation.php:520
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "Для совместимости с темой плагин должен быть обновлён."
+
+#: ../inc/class-tgm-plugin-activation.php:2163
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Требуемый"
+
+#: ../inc/class-tgm-plugin-activation.php:2166
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Рекомендованный"
+
+#: ../inc/class-tgm-plugin-activation.php:2182
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "Репозиторий WordPress "
+
+#: ../inc/class-tgm-plugin-activation.php:2185
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Внешний ресурс"
+
+#: ../inc/class-tgm-plugin-activation.php:2188
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2205
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Не установлен"
+
+#: ../inc/class-tgm-plugin-activation.php:2209
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Установлен, но не активирован"
+
+#: ../inc/class-tgm-plugin-activation.php:2211
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2217
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Требуемое обновление не доступно."
+
+#: ../inc/class-tgm-plugin-activation.php:2220
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Требует обновленияТребуемый"
+
+#: ../inc/class-tgm-plugin-activation.php:2223
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Рекомендуется обновить"
+
+#: ../inc/class-tgm-plugin-activation.php:2276
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/class-tgm-plugin-activation.php:2279
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/class-tgm-plugin-activation.php:2282
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span> обновление доступно"
+msgstr[1] "<span class=\"count\">(%s)</span> обновления доступно"
+msgstr[2] "<span class=\"count\">(%s)</span> обновлений доступно"
+
+#: ../inc/class-tgm-plugin-activation.php:2285
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/class-tgm-plugin-activation.php:2375
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Установленная версия:"
+
+#: ../inc/class-tgm-plugin-activation.php:2383
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Минимальная требуемая версия:"
+
+#: ../inc/class-tgm-plugin-activation.php:2395
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Доступная версия:"
+
+#: ../inc/class-tgm-plugin-activation.php:2418
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+"Нет плагинов для установки, обновления или активации.  <a href=\"%1$s"
+"\">Вернуться в консоль</a>"
+
+#: ../inc/class-tgm-plugin-activation.php:2432
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Плагин"
+
+#: ../inc/class-tgm-plugin-activation.php:2433
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Источник"
+
+#: ../inc/class-tgm-plugin-activation.php:2434
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Тип"
+
+#: ../inc/class-tgm-plugin-activation.php:2438
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Версия"
+
+#: ../inc/class-tgm-plugin-activation.php:2439
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Статус"
+
+#: ../inc/class-tgm-plugin-activation.php:2599
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Установить"
+
+#: ../inc/class-tgm-plugin-activation.php:2605
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Обновить"
+
+#: ../inc/class-tgm-plugin-activation.php:2608
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Активировать"
+
+#: ../inc/class-tgm-plugin-activation.php:2639
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Не выбраны плагины для установки."
+
+#: ../inc/class-tgm-plugin-activation.php:2641
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Не выбраны плагины для обновления."
+
+#: ../inc/class-tgm-plugin-activation.php:2677
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Нет плагинов доступных для установки."
+
+#: ../inc/class-tgm-plugin-activation.php:2679
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Нет плагинов доступных для обновления."
+
+#: ../inc/class-tgm-plugin-activation.php:3024
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Активация плагина не удалась."
+
+#: ../inc/class-tgm-plugin-activation.php:3358
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Обновление плагина %1$s (%2$d/%3$d)"
+
+#: ../inc/class-tgm-plugin-activation.php:3360
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Произошла ошибка при установке %1$s: <strong>%2$s</strong>."
+
+#: ../inc/class-tgm-plugin-activation.php:3361
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Установка %1$s не удалась."
+
+#: ../inc/class-tgm-plugin-activation.php:3365
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Установка и активация начаты. Процесс может занять некоторое время, "
+"пожалуйста сохраняйте спокойствие."
+
+#: ../inc/class-tgm-plugin-activation.php:3366
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s установлено и активировано успешно."
+
+#: ../inc/class-tgm-plugin-activation.php:3367
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Установка и активация завершены."
+
+#: ../inc/class-tgm-plugin-activation.php:3368
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка и активация плагина %1$s (%2$d/%3$d)"
+
+#: ../inc/class-tgm-plugin-activation.php:3371
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Начался процесс установки. Процесс может занять некоторое время, пожалуйста "
+"сохраняйте спокойствие."
+
+#: ../inc/class-tgm-plugin-activation.php:3373
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Установка завершена."
+
+#: ../inc/class-tgm-plugin-activation.php:3374
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка плагина %1$s (%2$d/%3$d)"
+
+#: ../inc/customizer.php:37
+msgid "Unite Options"
+msgstr "Опции темы"
+
+#: ../inc/customizer.php:38
+msgid "Panel to update unite theme options"
+msgstr "Панель обновления настроек темы"
+
+#: ../inc/customizer.php:43
+msgid "Layout options"
+msgstr "Расположение боковой панели"
+
+#: ../inc/customizer.php:55
+msgid "Blog Layout"
+msgstr "Сокращение текста постов"
+
+#: ../inc/customizer.php:68
+msgid "Website Layout Options"
+msgstr "Опции расположения на сайте"
+
+#: ../inc/customizer.php:71
+msgid "Choose between different layout options to be used as default"
+msgstr "Выберете расположение по умолчанию"
+
+#: ../inc/customizer.php:81
+msgid "Element Color"
+msgstr "Цвет элементов"
+
+#: ../inc/customizer.php:82 ../inc/customizer.php:94 ../inc/customizer.php:172
+#: ../inc/customizer.php:182 ../inc/customizer.php:193
+#: ../inc/customizer.php:210
+msgid "Default used if no color is selected"
+msgstr "Если цвет не выбран, будет использоваться цвет по умолчанию."
+
+#: ../inc/customizer.php:93
+msgid "Element color on hover"
+msgstr "Цвет элементов при наведении"
+
+#: ../inc/customizer.php:101
+msgid "Typography"
+msgstr "Настройка шрифтов"
+
+#: ../inc/customizer.php:120
+msgid "Main Body Text"
+msgstr "Цвет текста"
+
+#: ../inc/customizer.php:121
+msgid "Used in p tags"
+msgstr "Используется в P тегах"
+
+#: ../inc/customizer.php:161
+msgid "Heading Color"
+msgstr "Цвет заголовка"
+
+#: ../inc/customizer.php:162
+msgid "Color for all headings (h1-h6)"
+msgstr "Цвет для заголовков (h1-h6)"
+
+#: ../inc/customizer.php:171
+msgid "Link Color"
+msgstr "Цвет ссылок"
+
+#: ../inc/customizer.php:181
+msgid "Link:hover Color"
+msgstr "Цвет ссылок при наведении"
+
+#: ../inc/customizer.php:192
+msgid "Social icon color"
+msgstr "Цвет иконок социальных сетей"
+
+#: ../inc/customizer.php:199
+msgid "Header"
+msgstr "Шапка"
+
+#: ../inc/customizer.php:209
+msgid "Top nav background color"
+msgstr "Цвет фона панели навигации"
+
+#: ../inc/customizer.php:219
+msgid "Top nav item color"
+msgstr "Цвет объектов в панели навигации"
+
+#: ../inc/customizer.php:220
+msgid "Link color"
+msgstr "Цвет ссылки"
+
+#: ../inc/customizer.php:230
+msgid "Top nav dropdown background color"
+msgstr "Цвет фона выпадающего меню в панели навигации"
+
+#: ../inc/customizer.php:231
+msgid "Background of dropdown item hover color"
+msgstr "Цвет фона элемента выпадающего списка при наведении"
+
+#: ../inc/customizer.php:241
+msgid "Top nav dropdown item color"
+msgstr "Цвет объектов выпадающего меню в панели навигации"
+
+#: ../inc/customizer.php:242
+msgid "Dropdown item color"
+msgstr "Цвет объектов выпадающего меню "
+
+#: ../inc/customizer.php:248
+msgid "Footer"
+msgstr "Подвал"
+
+#: ../inc/customizer.php:259
+msgid "Footer background color"
+msgstr "Цвет фона подвала"
+
+#: ../inc/customizer.php:269
+msgid "Footer text color"
+msgstr "Цвет текста подвала"
+
+#: ../inc/customizer.php:279
+msgid "Footer link color"
+msgstr "Цвет ссылок в подвале"
+
+#: ../inc/customizer.php:289
+msgid "Footer information"
+msgstr "Информация в подвале"
+
+#: ../inc/customizer.php:290
+msgid "Copyright text in footer"
+msgstr "Текст копирайта"
+
+#: ../inc/customizer.php:297
+msgid "Content Options"
+msgstr "Опции темы"
+
+#: ../inc/customizer.php:307
+msgid "Display Featured Image on Single Post"
+msgstr "Отображать \"заглавное\" изображения для постов"
+
+#: ../inc/customizer.php:314
+msgid "Other"
+msgstr "Прочие"
+
+#: ../inc/customizer.php:324
+msgid "Custom CSS"
+msgstr "Пользовательский CSS"
+
+#: ../inc/customizer.php:325
+msgid "Additional CSS"
+msgstr "Дополнительный CSS"
+
+#: ../inc/customizer.php:332 ../inc/extras.php:289
+msgid "Support and Documentation"
+msgstr "Поддержка и документация"
+
+#: ../inc/customizer.php:514 ../inc/extras.php:295
+msgid "Unite Documentation"
+msgstr "Документация темы"
+
+#: ../inc/customizer.php:515 ../inc/extras.php:296
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr "Лучший способ связаться с нами: "
+
+#: ../inc/customizer.php:515 ../inc/extras.php:296
+msgid "Colorlib support forum"
+msgstr "форум поддержки Colorlib "
+
+#: ../inc/customizer.php:516 ../inc/extras.php:297
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Если вам понравилась эта тема, то вы можете:"
+
+#: ../inc/customizer.php:518 ../inc/extras.php:299
+msgid "Rate this Theme"
+msgstr "Оцените тему"
+
+#: ../inc/customizer.php:519 ../inc/extras.php:300
+msgid "Like on Facebook"
+msgstr "Лайкнуть на Facebook"
+
+#: ../inc/customizer.php:520 ../inc/extras.php:301
+msgid "Follow on Twitter"
+msgstr "Следить в Twitter"
+
+#: ../inc/extras.php:91
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Эта запись защищиена паролем. Для продолжения чтения введите пароль ниже:"
+"</p>"
+
+#: ../inc/extras.php:92
+msgid "Password:"
+msgstr "Пароль:"
+
+#: ../inc/extras.php:95
+msgid "Submit"
+msgstr "Отправить"
+
+#: ../inc/extras.php:339
+msgid "View your shopping cart"
+msgstr "Просмотреть корзину"
+
+#: ../inc/extras.php:340
+msgid "Start shopping"
+msgstr "Начать покупки"
+
+#: ../inc/extras.php:344
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d товар"
+msgstr[1] "%d товара"
+msgstr[2] "%d товаров"
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+"Выбрать расположение сайдбара для конкретной записи. (Внимание: Эта "
+"настройка действует только для шаблона по умолчанию и шаблона \"Блог\")."
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr "Выбрать расположение для конкретной записи."
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Навигация по страницам"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Старые записи"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Новые записи <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Навигация по страницам"
+
+#: ../inc/template-tags.php:81
+msgid "Pingback:"
+msgstr "Пингбек (ссылки с других блогов):"
+
+#: ../inc/template-tags.php:91
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">пишет:</span>"
+
+#: ../inc/template-tags.php:104
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий поставлен в очередь на модерацию."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Обновляется плагин: %s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:386
+msgid "Return to the Dashboard"
+msgstr "Вернуться в консоль"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Доступен один или более плагинов для установки, обновления или активации."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr "Установить %2$s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr "Обновить %2$s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr "Активировать %2$s"
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:92
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+"Извините, у вас нет соответствующих прав для установки %s плагина. Свяжитесь "
+"с администратором сайта и запросите помощь в установке плагина."
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:95
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+"Извините, у вас нет соответствующих прав для активации %s плагина. Свяжитесь "
+"с администратором сайта и запросите помощь в установке плагина."
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:97
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgstr ""
+"Извините, у вас нет соответствующих прав для обновления %s плагина. "
+"Свяжитесь с администратором сайта и запросите помощь в установке плагина."
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:102
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Все плагины установлены и успешно активированы. %s"
+
+#: ../inc/widgets/popular-posts-widget.php:13
+msgid "Displays tabbed list of popular posts, recent posts & comments"
+msgstr "Отображает список популярных записей и комментариев. "
+
+#: ../inc/widgets/popular-posts-widget.php:19
+msgid "Unite: Popular Posts Widget"
+msgstr "Unite: Виджет популярные записи"
+
+#: ../inc/widgets/popular-posts-widget.php:37
+msgid "Popular"
+msgstr "Популярно"
+
+#: ../inc/widgets/popular-posts-widget.php:38
+msgid "Recent"
+msgstr "Новое"
+
+#: ../inc/widgets/popular-posts-widget.php:105
+msgid "Anonymous"
+msgstr "Аноним"
+
+#: ../inc/widgets/popular-posts-widget.php:105
+msgid "on"
+msgstr "в"
+
+#: ../inc/widgets/popular-posts-widget.php:149
+msgid "Number of posts to show"
+msgstr "Показывать записей"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска для: %s"
+
+#: ../searchform.php:9
+msgid "Search for:"
+msgstr "Искать: "
+
+#: ../searchform.php:11
+msgid "Search..."
+msgstr "Найти..."
+
+#: ../sidebar.php:17
+msgid "Archives"
+msgstr "Архивы"
+
+#: ../sidebar.php:24
+msgid "Meta"
+msgstr "Мета"
+
+#~ msgid "Author: %s"
+#~ msgstr "Автор: %s"
+
+#~ msgid "Day: %s"
+#~ msgstr "День: %s"
+
+#~ msgid "Month: %s"
+#~ msgstr "Месяц: %s"
+
+#~ msgid "Year: %s"
+#~ msgstr "Год: %s"
+
+#~ msgid "Galleries"
+#~ msgstr "Галереи"
+
+#~ msgid "Images"
+#~ msgstr "Изображения"
+
+#~ msgid "Videos"
+#~ msgstr "Видео"
+
+#~ msgid "Quotes"
+#~ msgstr "Цитаты"
+
+#~ msgid "Links"
+#~ msgstr "Ссылки"
+
+#~ msgid "Statuses"
+#~ msgstr "Статусы"
+
+#~ msgid "Audios"
+#~ msgstr "Аудио"
+
+#~ msgid "Chats"
+#~ msgstr "Чаты"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr "Нажмите ОК для сброса. Все настройки темы будут потеряны!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Настройки по умолчанию восстановлены."
+
+#~ msgid "Options saved."
+#~ msgstr "Настройки сохранены. "
+
+#~ msgid "No file chosen"
+#~ msgstr "Файл не выбран"
+
+#~ msgid "Upload"
+#~ msgstr "Загрузить"
+
+#~ msgid "Remove"
+#~ msgstr "Удалить"
+
+#~ msgid "No Repeat"
+#~ msgstr "Не повторять"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Повторять по горизонтали"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Повторять по вертикале"
+
+#~ msgid "Repeat All"
+#~ msgstr "Замостить"
+
+#~ msgid "Top Left"
+#~ msgstr "Сверху слева"
+
+#~ msgid "Top Center"
+#~ msgstr "Сверху по центру"
+
+#~ msgid "Top Right"
+#~ msgstr "Сверху справа"
+
+#~ msgid "Middle Left"
+#~ msgstr "По центру слева"
+
+#~ msgid "Middle Center"
+#~ msgstr "В центре"
+
+#~ msgid "Middle Right"
+#~ msgstr "По центру справа"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Снизу слева"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Снизу в центре"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Снизу справа"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Использовать скроллинг"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Зафиксировать"
+
+#~ msgid "Normal"
+#~ msgstr "Обычный"
+
+#~ msgid "Italic"
+#~ msgstr "Курсив"
+
+#~ msgid "Bold"
+#~ msgstr "Жирный"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Жирный курсив"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Что-то пошло не так."
+
+#~ msgid "Install package not available."
+#~ msgstr "Пакет для установки не доступен."
+
+#~ msgid ""
+#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgstr "Скачать пакет установки с <span class=\"code\">%s</span>&#8230;"
+
+#~ msgid "Unpacking the package&#8230;"
+#~ msgstr "Распаковываем пакет&#8230;"
+
+#~ msgid "Installing the plugin&#8230;"
+#~ msgstr "Устанавливаем плагин&#8230;"
+
+#~ msgid "Plugin install failed."
+#~ msgstr "Установка плагина не удалась."
+
+#~ msgid "Plugin installed successfully."
+#~ msgstr "Установка плагина прошла успешно."
+
+#~ msgid "Show Details"
+#~ msgstr "Показать подробности"
+
+#~ msgid "Hide Details"
+#~ msgstr "Спрятать подробности"
+
+#~ msgid "Page %s"
+#~ msgstr "Страница %s"
+
+#~ msgid "Right Sidebar"
+#~ msgstr "Правая боковая панель"
+
+#~ msgid "Left Sidebar"
+#~ msgstr "Левая боковая панель"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Своя иконка сайта"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr ""
+#~ "Загрузите рисунок размером 32px x 32px в формате PNG/GIF. Будет "
+#~ "использоваться как иконка сайта."
+
+#~ msgid "Link:active Color"
+#~ msgstr "Цвет активных ссылок"
+
+#~ msgid "Default used if no color is selected."
+#~ msgstr "Если цвет не выбран, будет использоваться цвет по умолчанию."
+
+#~ msgid "Social Icon:hover Color"
+#~ msgstr "Цвет иконок социальных сетей при наведении"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "Новостная лента"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribbble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
