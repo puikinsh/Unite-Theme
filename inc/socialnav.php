@@ -134,6 +134,10 @@ function unite_social_css(){ ?>
         .fa-soundcloud:before {
             content: "\f1be"
         }
+        #social li a[href*="profiles.wordpress.org"] .fa:before,
+        .fa-wordpress:before {
+            content: "\f19a"
+        }
         
         .social-icons li a[href*="facebook.com"]:hover {color: #3b5998 !important;}
         .social-icons li a[href*="twitter.com"]:hover {color: #00aced !important;}
@@ -154,6 +158,7 @@ function unite_social_css(){ ?>
         .social-icons li a[href*="vimeo.com"]:hover {color:  #1bb6ec !important;}
         .social-icons li a[href*="spotify.com"]:hover {color: #81b71a !important;}
         .social-icons li a[href*="/feed"]:hover {color: #f39c12 !important;}
+        .social-icons li a[href*="profiles.wordpress.org"]:hover {color: #21759A !important;}
     </style><?php
 }
 add_action( 'wp_head', 'unite_social_css', 10 );
