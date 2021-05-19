@@ -28,7 +28,7 @@ Unite theme uses:
 
 Unite is a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. It is a highly customizable theme with unlimited color variations that can be tweaked via simple yet powerful Theme Options. Theme has a built-in Popular Posts Widget, Infinite Scroll (powered by Jatpack) and translation support. It's now available in German and French. Theme features fancy image slider, SEO friendly structure, logo support, social links and widgetized homepage.  This theme was built to be used for wedding related websites but can be tweaked to be used as any other image-centric blog such as travel. Unite theme now supports WooCommerce to create your own eStore.
 
-For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
+For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums/).
 
 # Installation
 
